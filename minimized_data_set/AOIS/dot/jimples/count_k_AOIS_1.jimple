@@ -1,0 +1,50 @@
+public class count_k_AOIS_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        count_k_AOIS_1 r0;
+
+        r0 := @this: count_k_AOIS_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int count_k_AOIS_1(java.lang.Integer[], java.lang.Integer)
+    {
+        java.lang.Integer[] r0;
+        int $i0, i1, i2, i3;
+        java.lang.Integer r1, $r2;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r1 := @parameter1: java.lang.Integer;
+
+        i1 = 0;
+
+        i2 = 0;
+
+     label1:
+        i3 = i2 + 1;
+
+        $i0 = lengthof r0;
+
+        if i3 >= $i0 goto label3;
+
+        $r2 = r0[i3];
+
+        if $r2 != r1 goto label2;
+
+        i1 = i1 + 1;
+
+     label2:
+        i2 = i3 + 1;
+
+        goto label1;
+
+     label3:
+        return i1;
+    }
+}

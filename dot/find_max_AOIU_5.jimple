@@ -1,0 +1,54 @@
+public class find_max_AOIU_5 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        find_max_AOIU_5 r0;
+
+        r0 := @this: find_max_AOIU_5;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int find_max_AOIU_5_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        java.lang.Integer $r1, $r2, $r3;
+        int $i0, $i1, $i2, i3, i4;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        $r1 = r0[0];
+
+        i3 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        i4 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i4 >= $i0 goto label3;
+
+        $r2 = r0[i4];
+
+        $i1 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        if $i1 <= i3 goto label2;
+
+        $i2 = neg i4;
+
+        $r3 = r0[$i2];
+
+        i3 = virtualinvoke $r3.<java.lang.Integer: int intValue()>();
+
+     label2:
+        i4 = i4 + 1;
+
+        goto label1;
+
+     label3:
+        return i3;
+    }
+}

@@ -1,0 +1,81 @@
+public class bi_SearchFromTo_AOIS_36 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        bi_SearchFromTo_AOIS_36 r0;
+
+        r0 := @this: bi_SearchFromTo_AOIS_36;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int bi_SearchFromTo_AOIS_36_m(java.lang.Double[], java.lang.Double, java.lang.Integer, java.lang.Integer)
+    {
+        java.lang.Integer r0, r1;
+        int $i0, $i1, $i2, i5, i6, i7;
+        java.lang.Double[] r2;
+        java.lang.Double $r3, r4;
+        double d0, $d1, $d2;
+        byte $b3, $b4;
+
+        r2 := @parameter0: java.lang.Double[];
+
+        r4 := @parameter1: java.lang.Double;
+
+        r0 := @parameter2: java.lang.Integer;
+
+        r1 := @parameter3: java.lang.Integer;
+
+        i5 = virtualinvoke r0.<java.lang.Integer: int intValue()>();
+
+        i6 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+     label1:
+        if i5 > i6 goto label5;
+
+        $i2 = i5 + i6;
+
+        i7 = $i2 / 2;
+
+        $r3 = r2[i7];
+
+        d0 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d1 = virtualinvoke r4.<java.lang.Double: double doubleValue()>();
+
+        $b3 = d0 cmpg $d1;
+
+        if $b3 >= 0 goto label2;
+
+        i5 = i7 + 1;
+
+        goto label4;
+
+     label2:
+        $d2 = virtualinvoke r4.<java.lang.Double: double doubleValue()>();
+
+        $b4 = d0 cmpl $d2;
+
+        if $b4 <= 0 goto label3;
+
+        i6 = i7 - 1;
+
+        goto label4;
+
+     label3:
+        return i7;
+
+     label4:
+        goto label1;
+
+     label5:
+        $i0 = i5 + 1;
+
+        $i1 = neg $i0;
+
+        return $i1;
+    }
+}

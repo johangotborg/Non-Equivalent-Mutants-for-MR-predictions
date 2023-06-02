@@ -1,0 +1,56 @@
+public class array_calc_LOI_6 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        array_calc_LOI_6 r0;
+
+        r0 := @this: array_calc_LOI_6;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int[] array_calc_LOI_6_m(java.lang.Integer[], java.lang.Integer)
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, $i2, $i3, $i4, $i5, i6;
+        int[] r1;
+        java.lang.Integer $r2, r3;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r3 := @parameter1: java.lang.Integer;
+
+        $i0 = lengthof r0;
+
+        r1 = newarray (int)[$i0];
+
+        i6 = 0;
+
+     label1:
+        $i1 = lengthof r0;
+
+        if i6 >= $i1 goto label2;
+
+        $i2 = i6 ^ -1;
+
+        $r2 = r0[$i2];
+
+        $i3 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        $i4 = virtualinvoke r3.<java.lang.Integer: int intValue()>();
+
+        $i5 = $i3 / $i4;
+
+        r1[i6] = $i5;
+
+        i6 = i6 + 1;
+
+        goto label1;
+
+     label2:
+        return r1;
+    }
+}

@@ -1,0 +1,34 @@
+public class min_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        min_SDL_1 r0;
+
+        r0 := @this: min_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double min_SDL_1(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int i0, $i1;
+        java.lang.Double $r1;
+        double d0;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        i0 = lengthof r0;
+
+        $i1 = i0 - 1;
+
+        $r1 = r0[$i1];
+
+        d0 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        return d0;
+    }
+}

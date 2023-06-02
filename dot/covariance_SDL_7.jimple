@@ -1,0 +1,62 @@
+public class covariance_SDL_7 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        covariance_SDL_7 r0;
+
+        r0 := @this: covariance_SDL_7;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double covariance_SDL_7_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r2;
+        int i0, $i1, i2;
+        java.lang.Double $r1, $r3, $r4, $r5;
+        double $d2, $d4;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double[];
+
+        i0 = lengthof r0;
+
+        $r1 = r0[0];
+
+        virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r2[0];
+
+        virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        i2 = 1;
+
+     label1:
+        if i2 >= i0 goto label2;
+
+        $r4 = r0[i2];
+
+        virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $r5 = r2[i2];
+
+        virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $i1 = i2 + 1;
+
+        $d2 = (double) $i1;
+
+        $d4 = (double) i2;
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        return 0.0;
+    }
+}

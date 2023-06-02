@@ -1,0 +1,31 @@
+public class harmonicMean_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        harmonicMean_SDL_1 r0;
+
+        r0 := @this: harmonicMean_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double harmonicMean_SDL_1(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int $i0;
+        double $d1, $d2;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        $i0 = lengthof r0;
+
+        $d1 = (double) $i0;
+
+        $d2 = $d1 / 0.0;
+
+        return $d2;
+    }
+}

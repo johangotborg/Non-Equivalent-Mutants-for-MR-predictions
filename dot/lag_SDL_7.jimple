@@ -1,0 +1,74 @@
+public class lag_SDL_7 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        lag_SDL_7 r0;
+
+        r0 := @this: lag_SDL_7;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double lag_SDL_7_m(java.lang.Double[], java.lang.Double)
+    {
+        java.lang.Double[] r0;
+        int i0, $i1, $i2, $i3, i4;
+        java.lang.Double $r1, r2, $r3, $r4, $r5;
+        double $d14, $d18;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double;
+
+        i0 = lengthof r0;
+
+        $r1 = r0[0];
+
+        virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        virtualinvoke r2.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r0[0];
+
+        virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        virtualinvoke r2.<java.lang.Double: double doubleValue()>();
+
+        i4 = 1;
+
+     label1:
+        if i4 >= i0 goto label2;
+
+        $i1 = i4 - 1;
+
+        $r4 = r0[$i1];
+
+        virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        virtualinvoke r2.<java.lang.Double: double doubleValue()>();
+
+        $r5 = r0[i4];
+
+        virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        virtualinvoke r2.<java.lang.Double: double doubleValue()>();
+
+        $i2 = i4 + 1;
+
+        $d14 = (double) $i2;
+
+        $i3 = i4 + 1;
+
+        $d18 = (double) $i3;
+
+        i4 = i4 + 1;
+
+        goto label1;
+
+     label2:
+        return 0.0;
+    }
+}

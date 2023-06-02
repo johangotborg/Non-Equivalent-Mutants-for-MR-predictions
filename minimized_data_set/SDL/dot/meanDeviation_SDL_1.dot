@@ -1,0 +1,15 @@
+digraph "double meanDeviation_SDL_1(java.lang.Double[],java.lang.Double)" {
+    label="double meanDeviation_SDL_1(java.lang.Double[],java.lang.Double)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r1 := @parameter1",];
+    "0"->"1";
+    "2" [label="i0 = lengthof r0",];
+    "1"->"2";
+    "3" [label="$d1 = (double) i0",];
+    "2"->"3";
+    "4" [label="$d2 = 0.0 / $d1",];
+    "3"->"4";
+    "5" [style=filled,fillcolor=lightgray,label="return $d2",];
+    "4"->"5";
+}

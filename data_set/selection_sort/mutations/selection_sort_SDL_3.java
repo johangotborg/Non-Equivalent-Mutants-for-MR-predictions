@@ -1,0 +1,22 @@
+package data_set.selection_sort.mutations;
+// This is a mutant program.
+// Author : ysma
+
+public class selection_sort_SDL_3
+{
+
+    public static  java.lang.Integer[] selection_sort_SDL_3( java.lang.Integer[] list )
+    {
+        int i;
+        int j;
+        int min;
+        for (i = 0; i < list.length - 1; i++) {
+            min = i;
+            int tmp = list[i];
+            list[i] = list[min];
+            list[min] = tmp;
+        }
+        return list;
+    }
+
+}

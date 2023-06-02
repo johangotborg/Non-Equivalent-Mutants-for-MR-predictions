@@ -1,0 +1,52 @@
+public class manhattanDist_ODL_4 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        manhattanDist_ODL_4 r0;
+
+        r0 := @this: manhattanDist_ODL_4;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double manhattanDist_ODL_4(java.lang.Integer[], java.lang.Integer[])
+    {
+        java.lang.Integer[] r0, r2;
+        int $i0, $i1, $i2, i3;
+        java.lang.Integer $r1;
+        double $d0, d1;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r2 := @parameter1: java.lang.Integer[];
+
+        d1 = 0.0;
+
+        i3 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i3 >= $i0 goto label2;
+
+        $r1 = r0[i3];
+
+        $i1 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        $i2 = staticinvoke <java.lang.Math: int abs(int)>($i1);
+
+        $d0 = (double) $i2;
+
+        d1 = d1 + $d0;
+
+        i3 = i3 + 1;
+
+        goto label1;
+
+     label2:
+        return d1;
+    }
+}

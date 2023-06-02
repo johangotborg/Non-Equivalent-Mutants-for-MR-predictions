@@ -1,0 +1,59 @@
+public class max_AOIS_3 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        max_AOIS_3 r0;
+
+        r0 := @this: max_AOIS_3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double max_AOIS_3_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int $i0, i2, i3, i4;
+        java.lang.Double $r1, $r2, $r3;
+        double $d0, d1;
+        byte $b1;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        i2 = lengthof r0;
+
+        i3 = i2 + 1;
+
+        $i0 = i3 - 1;
+
+        $r1 = r0[$i0];
+
+        d1 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        i4 = i3 - 1;
+
+     label1:
+        i4 = i4 + -1;
+
+        if i4 < 0 goto label2;
+
+        $r2 = r0[i4];
+
+        $d0 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        $b1 = $d0 cmpl d1;
+
+        if $b1 <= 0 goto label1;
+
+        $r3 = r0[i4];
+
+        d1 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        goto label1;
+
+     label2:
+        return d1;
+    }
+}

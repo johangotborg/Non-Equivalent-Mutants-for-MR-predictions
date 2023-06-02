@@ -1,0 +1,40 @@
+public class bi_SearchFromTo_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        bi_SearchFromTo_SDL_1 r0;
+
+        r0 := @this: bi_SearchFromTo_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int bi_SearchFromTo_SDL_1(java.lang.Double[], java.lang.Double, java.lang.Integer, java.lang.Integer)
+    {
+        java.lang.Integer r0, r1;
+        int i0, $i2, $i3;
+        java.lang.Double[] r2;
+        java.lang.Double r3;
+
+        r2 := @parameter0: java.lang.Double[];
+
+        r3 := @parameter1: java.lang.Double;
+
+        r0 := @parameter2: java.lang.Integer;
+
+        r1 := @parameter3: java.lang.Integer;
+
+        i0 = virtualinvoke r0.<java.lang.Integer: int intValue()>();
+
+        virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        $i2 = i0 + 1;
+
+        $i3 = neg $i2;
+
+        return $i3;
+    }
+}

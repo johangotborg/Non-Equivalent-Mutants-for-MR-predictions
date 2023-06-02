@@ -1,0 +1,74 @@
+public class clip_SDL_10 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        clip_SDL_10 r0;
+
+        r0 := @this: clip_SDL_10;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int[] clip_SDL_10_m(java.lang.Integer[], java.lang.Integer, java.lang.Integer)
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, i8;
+        int[] r1;
+        java.lang.Integer $r2, r3, $r4, r5;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r3 := @parameter1: java.lang.Integer;
+
+        r5 := @parameter2: java.lang.Integer;
+
+        $i0 = lengthof r0;
+
+        r1 = newarray (int)[$i0];
+
+        i8 = 0;
+
+     label1:
+        $i1 = lengthof r0;
+
+        if i8 >= $i1 goto label4;
+
+        $r2 = r0[i8];
+
+        $i2 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        $i3 = virtualinvoke r3.<java.lang.Integer: int intValue()>();
+
+        if $i2 >= $i3 goto label2;
+
+        $i7 = virtualinvoke r3.<java.lang.Integer: int intValue()>();
+
+        r1[i8] = $i7;
+
+        goto label3;
+
+     label2:
+        $r4 = r0[i8];
+
+        $i4 = virtualinvoke $r4.<java.lang.Integer: int intValue()>();
+
+        $i5 = virtualinvoke r5.<java.lang.Integer: int intValue()>();
+
+        if $i4 <= $i5 goto label3;
+
+        $i6 = virtualinvoke r5.<java.lang.Integer: int intValue()>();
+
+        r1[i8] = $i6;
+
+     label3:
+        i8 = i8 + 1;
+
+        goto label1;
+
+     label4:
+        return r1;
+    }
+}

@@ -1,0 +1,141 @@
+public class partition_ROR_25 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        partition_ROR_25 r0;
+
+        r0 := @this: partition_ROR_25;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int partition_ROR_25_m(java.lang.Double[], java.lang.Integer, java.lang.Integer, java.lang.Integer)
+    {
+        java.lang.Double[] r0;
+        java.lang.Integer r1, r3, r5;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i7, $i8, i11, i12, $i13;
+        java.lang.Double $r2, $r4, $r6, $r7, $r8, $r9, $r10, $r11, $r12, $r13;
+        double d0, $d1, d2, $d3, $d4;
+        byte $b6, $b9, $b10;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r3 := @parameter1: java.lang.Integer;
+
+        r5 := @parameter2: java.lang.Integer;
+
+        r1 := @parameter3: java.lang.Integer;
+
+        $i0 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        $r2 = r0[$i0];
+
+        d0 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        $i1 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        $i2 = virtualinvoke r3.<java.lang.Integer: int intValue()>();
+
+        $r4 = r0[$i2];
+
+        r0[$i1] = $r4;
+
+        $i3 = virtualinvoke r3.<java.lang.Integer: int intValue()>();
+
+        i11 = $i3 + 1;
+
+        $i4 = virtualinvoke r5.<java.lang.Integer: int intValue()>();
+
+        i12 = $i4 - 1;
+
+     label1:
+        if i11 >= i12 goto label5;
+
+     label2:
+        if i11 >= i12 goto label3;
+
+        $r11 = r0[i12];
+
+        $d4 = virtualinvoke $r11.<java.lang.Double: double doubleValue()>();
+
+        $b10 = $d4 cmpl d0;
+
+        if $b10 <= 0 goto label3;
+
+        i12 = i12 + -1;
+
+        goto label2;
+
+     label3:
+        if i11 >= i12 goto label4;
+
+        $r10 = r0[i11];
+
+        $d3 = virtualinvoke $r10.<java.lang.Double: double doubleValue()>();
+
+        $b9 = $d3 cmpg d0;
+
+        if $b9 >= 0 goto label4;
+
+        i11 = i11 + 1;
+
+        goto label3;
+
+     label4:
+        if i11 != i12 goto label1;
+
+        $r7 = r0[i11];
+
+        d2 = virtualinvoke $r7.<java.lang.Double: double doubleValue()>();
+
+        $i7 = i11;
+
+        i11 = i11 + 1;
+
+        $r8 = r0[i12];
+
+        r0[$i7] = $r8;
+
+        $i8 = i12;
+
+        i12 = i12 + -1;
+
+        $r9 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>(d2);
+
+        r0[$i8] = $r9;
+
+        goto label1;
+
+     label5:
+        $i5 = virtualinvoke r5.<java.lang.Integer: int intValue()>();
+
+        if i11 >= $i5 goto label6;
+
+        $r6 = r0[i11];
+
+        $d1 = virtualinvoke $r6.<java.lang.Double: double doubleValue()>();
+
+        $b6 = $d1 cmpl d0;
+
+        if $b6 <= 0 goto label7;
+
+     label6:
+        i11 = i11 + -1;
+
+     label7:
+        $i13 = virtualinvoke r3.<java.lang.Integer: int intValue()>();
+
+        $r12 = r0[i11];
+
+        r0[$i13] = $r12;
+
+        $r13 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>(d0);
+
+        r0[i11] = $r13;
+
+        return i11;
+    }
+}

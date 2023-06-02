@@ -1,0 +1,59 @@
+public class sum_labeled_AOIS_7 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sum_labeled_AOIS_7 r0;
+
+        r0 := @this: sum_labeled_AOIS_7;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double sum_labeled_AOIS_7_m(int[], int, int)
+    {
+        int[] r0;
+        int $i0, i1, $i2, $i3, $i4, i5, i6;
+        double $d0, $d1, $d2, $d3;
+
+        r0 := @parameter0: int[];
+
+        i5 := @parameter1: int;
+
+        i1 := @parameter2: int;
+
+        if i5 < 0 goto label1;
+
+        i6 = i5 + 1;
+
+        $i0 = lengthof r0;
+
+        if i5 >= $i0 goto label1;
+
+        if i1 < 0 goto label1;
+
+        $i2 = lengthof r0;
+
+        if i1 < $i2 goto label2;
+
+     label1:
+        return -100000.0;
+
+     label2:
+        $i3 = r0[i6];
+
+        $d2 = (double) $i3;
+
+        $i4 = r0[i1];
+
+        $d0 = (double) $i4;
+
+        $d1 = $d0 / 2.0;
+
+        $d3 = $d2 + $d1;
+
+        return $d3;
+    }
+}

@@ -1,0 +1,67 @@
+public class insertion_sort_CDL_2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        insertion_sort_CDL_2 r0;
+
+        r0 := @this: insertion_sort_CDL_2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Integer[] insertion_sort_CDL_2(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, i1, $i2, $i3, i4, i5;
+        java.lang.Integer $r1, $r2, $r3, $r4;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        i4 = 1;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i4 >= $i0 goto label4;
+
+        i5 = i4;
+
+        $r1 = r0[i4];
+
+        i1 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+     label2:
+        if i5 <= 0 goto label3;
+
+        $r3 = r0[i5];
+
+        $i2 = virtualinvoke $r3.<java.lang.Integer: int intValue()>();
+
+        if $i2 <= i1 goto label3;
+
+        $i3 = i5 - 1;
+
+        $r4 = r0[$i3];
+
+        r0[i5] = $r4;
+
+        i5 = i5 + -1;
+
+        goto label2;
+
+     label3:
+        $r2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i1);
+
+        r0[i5] = $r2;
+
+        i4 = i4 + 1;
+
+        goto label1;
+
+     label4:
+        return r0;
+    }
+}

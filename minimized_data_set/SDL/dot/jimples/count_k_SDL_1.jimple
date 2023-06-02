@@ -1,0 +1,26 @@
+public class count_k_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        count_k_SDL_1 r0;
+
+        r0 := @this: count_k_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int count_k_SDL_1(java.lang.Integer[], java.lang.Integer)
+    {
+        java.lang.Integer[] r0;
+        java.lang.Integer r1;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r1 := @parameter1: java.lang.Integer;
+
+        return 0;
+    }
+}

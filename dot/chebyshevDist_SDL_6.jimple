@@ -1,0 +1,78 @@
+public class chebyshevDist_SDL_6 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        chebyshevDist_SDL_6 r0;
+
+        r0 := @this: chebyshevDist_SDL_6;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double chebyshevDist_SDL_6_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1;
+        int $i0, $i1, $i2, i3;
+        java.lang.Double $r2, $r3, $r4, $r5;
+        double $d0, $d1, $d2, d3, $d4, $d5, $d6;
+        java.io.PrintStream $r6;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        $i1 = lengthof r0;
+
+        $i0 = lengthof r1;
+
+        if $i1 == $i0 goto label1;
+
+        $r6 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r6.<java.io.PrintStream: void println(java.lang.String)>("Error!");
+
+        return -1.0;
+
+     label1:
+        $r2 = r0[0];
+
+        $d0 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r1[0];
+
+        $d1 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d2 = $d0 - $d1;
+
+        d3 = staticinvoke <java.lang.Math: double abs(double)>($d2);
+
+        i3 = 1;
+
+     label2:
+        $i2 = lengthof r0;
+
+        if i3 >= $i2 goto label3;
+
+        $r4 = r0[i3];
+
+        $d4 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $r5 = r1[i3];
+
+        $d5 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $d6 = $d4 - $d5;
+
+        staticinvoke <java.lang.Math: double abs(double)>($d6);
+
+        i3 = i3 + 1;
+
+        goto label2;
+
+     label3:
+        return d3;
+    }
+}

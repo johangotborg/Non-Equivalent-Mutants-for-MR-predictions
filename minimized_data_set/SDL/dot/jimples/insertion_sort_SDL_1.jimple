@@ -1,0 +1,23 @@
+public class insertion_sort_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        insertion_sort_SDL_1 r0;
+
+        r0 := @this: insertion_sort_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Integer[] insertion_sort_SDL_1(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        return r0;
+    }
+}

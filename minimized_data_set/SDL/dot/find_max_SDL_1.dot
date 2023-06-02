@@ -1,0 +1,11 @@
+digraph "int find_max_SDL_1(java.lang.Integer[])" {
+    label="int find_max_SDL_1(java.lang.Integer[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="$r1 = r0[0]",];
+    "0"->"1";
+    "2" [label="i0 = $r1.intValue()",];
+    "1"->"2";
+    "3" [style=filled,fillcolor=lightgray,label="return i0",];
+    "2"->"3";
+}

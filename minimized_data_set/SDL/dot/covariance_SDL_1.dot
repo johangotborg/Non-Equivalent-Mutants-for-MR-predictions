@@ -1,0 +1,25 @@
+digraph "double covariance_SDL_1(java.lang.Double[],java.lang.Double[])" {
+    label="double covariance_SDL_1(java.lang.Double[],java.lang.Double[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r2 := @parameter1",];
+    "0"->"1";
+    "2" [label="i0 = lengthof r0",];
+    "1"->"2";
+    "3" [label="$r1 = r0[0]",];
+    "2"->"3";
+    "4" [label="$r1.doubleValue()",];
+    "3"->"4";
+    "5" [label="$r3 = r2[0]",];
+    "4"->"5";
+    "6" [label="$r3.doubleValue()",];
+    "5"->"6";
+    "7" [label="$i1 = i0 - 1",];
+    "6"->"7";
+    "8" [label="$d3 = (double) $i1",];
+    "7"->"8";
+    "9" [label="$d4 = 0.0 / $d3",];
+    "8"->"9";
+    "10" [style=filled,fillcolor=lightgray,label="return $d4",];
+    "9"->"10";
+}

@@ -1,0 +1,66 @@
+public class mean_abs_error_AOIS_15 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        mean_abs_error_AOIS_15 r0;
+
+        r0 := @this: mean_abs_error_AOIS_15;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double mean_abs_error_AOIS_15_m(java.lang.Integer[], java.lang.Integer[])
+    {
+        java.lang.Integer[] r0, r2;
+        int $i0, $i1, $i2, $i3, $i4, $i5, i6, i7, i8;
+        double $d0, $d1, $d2;
+        java.lang.Integer $r1, $r3;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r2 := @parameter1: java.lang.Integer[];
+
+        i6 = 0;
+
+        i7 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i7 >= $i0 goto label2;
+
+        $r1 = r0[i7];
+
+        $i2 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        i8 = i7 + 1;
+
+        $r3 = r2[i7];
+
+        $i3 = virtualinvoke $r3.<java.lang.Integer: int intValue()>();
+
+        $i4 = $i2 - $i3;
+
+        $i5 = staticinvoke <java.lang.Math: int abs(int)>($i4);
+
+        i6 = i6 + $i5;
+
+        i7 = i8 + 1;
+
+        goto label1;
+
+     label2:
+        $d1 = (double) i6;
+
+        $i1 = lengthof r0;
+
+        $d0 = (double) $i1;
+
+        $d2 = $d1 / $d0;
+
+        return $d2;
+    }
+}

@@ -1,0 +1,36 @@
+public class sampleWeightedVar_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sampleWeightedVar_SDL_1 r0;
+
+        r0 := @this: sampleWeightedVar_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double sampleWeightedVar_SDL_1(java.lang.Double[], java.lang.Double[])
+    {
+        double $d3, $d4, $d5, $d6, $d7;
+        java.lang.Double[] r0, r1;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        $d3 = 0.0 * 0.0;
+
+        $d4 = $d3 / 0.0;
+
+        $d6 = 0.0 - $d4;
+
+        $d5 = 0.0 - 1.0;
+
+        $d7 = $d6 / $d5;
+
+        return $d7;
+    }
+}

@@ -1,0 +1,56 @@
+public class mean_Diff_VDL_2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        mean_Diff_VDL_2 r0;
+
+        r0 := @this: mean_Diff_VDL_2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double mean_Diff_VDL_2_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r2;
+        int $i1, $i2;
+        double $d0, $d1, $d2, $d3, $d4, d5;
+        java.lang.Double $r1, $r3;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double[];
+
+        d5 = 0.0;
+
+     label1:
+        $i1 = lengthof r0;
+
+        if 0 >= $i1 goto label2;
+
+        $r1 = r0[0];
+
+        $d2 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r2[0];
+
+        $d3 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d4 = $d2 - $d3;
+
+        d5 = d5 + $d4;
+
+        goto label1;
+
+     label2:
+        $i2 = lengthof r0;
+
+        $d0 = (double) $i2;
+
+        $d1 = d5 / $d0;
+
+        return $d1;
+    }
+}

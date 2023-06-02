@@ -1,0 +1,23 @@
+public class product_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        product_SDL_1 r0;
+
+        r0 := @this: product_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double product_SDL_1(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        return 1.0;
+    }
+}

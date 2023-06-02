@@ -1,0 +1,113 @@
+public class find_median_ROR_20 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        find_median_ROR_20 r0;
+
+        r0 := @this: find_median_ROR_20;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double find_median_ROR_20_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, i14, i15, i16, i17, i18;
+        java.lang.Integer $r1, $r2, $r3, $r4, $r5, $r6, $r7, $r8, $r9;
+        double $d0, $d1;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        $i0 = lengthof r0;
+
+        $i1 = $i0 / 2;
+
+        i2 = $i1 + 1;
+
+        $r1 = r0[0];
+
+        virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        i14 = 0;
+
+     label1:
+        if i14 >= i2 goto label5;
+
+        i15 = i14;
+
+        $r4 = r0[i14];
+
+        i16 = virtualinvoke $r4.<java.lang.Integer: int intValue()>();
+
+        i17 = i14 + 1;
+
+     label2:
+        $i11 = lengthof r0;
+
+        if i17 >= $i11 goto label4;
+
+        $r8 = r0[i17];
+
+        $i12 = virtualinvoke $r8.<java.lang.Integer: int intValue()>();
+
+        if $i12 >= i16 goto label3;
+
+        i15 = i17;
+
+        $r9 = r0[i17];
+
+        i16 = virtualinvoke $r9.<java.lang.Integer: int intValue()>();
+
+     label3:
+        i17 = i17 + 1;
+
+        goto label2;
+
+     label4:
+        $r5 = r0[i14];
+
+        i18 = virtualinvoke $r5.<java.lang.Integer: int intValue()>();
+
+        $r6 = r0[i15];
+
+        r0[i14] = $r6;
+
+        $r7 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i18);
+
+        r0[i15] = $r7;
+
+        i14 = i14 + 1;
+
+        goto label1;
+
+     label5:
+        $i3 = lengthof r0;
+
+        $i4 = $i3 / 2;
+
+        $i5 = $i4 - 1;
+
+        $r2 = r0[$i5];
+
+        $i6 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        $i7 = lengthof r0;
+
+        $i8 = $i7 / 2;
+
+        $r3 = r0[$i8];
+
+        $i9 = virtualinvoke $r3.<java.lang.Integer: int intValue()>();
+
+        $i10 = $i6 + $i9;
+
+        $d0 = (double) $i10;
+
+        $d1 = $d0 / 2.0;
+
+        return $d1;
+    }
+}

@@ -1,0 +1,44 @@
+public class count_k_VDL_5 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        count_k_VDL_5 r0;
+
+        r0 := @this: count_k_VDL_5;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int count_k_VDL_5(java.lang.Integer[], java.lang.Integer)
+    {
+        java.lang.Integer[] r0;
+        int $i1, i2;
+        java.lang.Integer r1, $r2;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r1 := @parameter1: java.lang.Integer;
+
+        i2 = 0;
+
+     label1:
+        $i1 = lengthof r0;
+
+        if i2 >= $i1 goto label3;
+
+        $r2 = r0[i2];
+
+        if $r2 != r1 goto label2;
+
+     label2:
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label3:
+        return 0;
+    }
+}

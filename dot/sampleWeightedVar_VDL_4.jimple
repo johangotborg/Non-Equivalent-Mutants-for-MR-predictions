@@ -1,0 +1,86 @@
+public class sampleWeightedVar_VDL_4 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sampleWeightedVar_VDL_4 r0;
+
+        r0 := @this: sampleWeightedVar_VDL_4;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double sampleWeightedVar_VDL_4_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1;
+        int $i0, i1;
+        double $d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, $d11, d12, d13, d14;
+        java.lang.Double $r2, $r3, $r4, $r5, $r6;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        d12 = 0.0;
+
+        d13 = 0.0;
+
+        d14 = 0.0;
+
+        i1 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i1 >= $i0 goto label2;
+
+        $r2 = r1[i1];
+
+        $d5 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        d12 = d12 + $d5;
+
+        $r3 = r0[i1];
+
+        $d6 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        d13 = d13 + $d6;
+
+        $r4 = r0[i1];
+
+        $d7 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $r5 = r0[i1];
+
+        $d8 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $d9 = $d7 * $d8;
+
+        $r6 = r1[i1];
+
+        $d10 = virtualinvoke $r6.<java.lang.Double: double doubleValue()>();
+
+        $d11 = $d9 * $d10;
+
+        d14 = d14 + $d11;
+
+        i1 = i1 + 1;
+
+        goto label1;
+
+     label2:
+        $d0 = d13 * d13;
+
+        $d1 = $d0 / d12;
+
+        $d3 = d14 - $d1;
+
+        $d2 = d12 - 1.0;
+
+        $d4 = $d3 / $d2;
+
+        return $d4;
+    }
+}

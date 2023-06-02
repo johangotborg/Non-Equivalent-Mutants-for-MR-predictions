@@ -1,0 +1,50 @@
+public class sumOfLogarithms_AOIS_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sumOfLogarithms_AOIS_1 r0;
+
+        r0 := @this: sumOfLogarithms_AOIS_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double sumOfLogarithms_AOIS_1_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int $i0, i1, i2;
+        java.lang.Double $r1;
+        double $d0, $d1, d2;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        d2 = 0.0;
+
+        i1 = 0;
+
+     label1:
+        i2 = i1 + 1;
+
+        $i0 = lengthof r0;
+
+        if i2 >= $i0 goto label2;
+
+        $r1 = r0[i2];
+
+        $d0 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $d1 = staticinvoke <java.lang.Math: double log(double)>($d0);
+
+        d2 = d2 + $d1;
+
+        i1 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        return d2;
+    }
+}

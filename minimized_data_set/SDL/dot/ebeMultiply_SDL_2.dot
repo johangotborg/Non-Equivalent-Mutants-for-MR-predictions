@@ -1,0 +1,21 @@
+digraph "java.lang.Double[] ebeMultiply_SDL_2(java.lang.Double[],java.lang.Double[])" {
+    label="java.lang.Double[] ebeMultiply_SDL_2(java.lang.Double[],java.lang.Double[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r1 := @parameter1",];
+    "0"->"1";
+    "2" [label="$i1 = lengthof r0",];
+    "1"->"2";
+    "3" [label="$i0 = lengthof r1",];
+    "2"->"3";
+    "4" [label="if $i1 == $i0 goto label1",];
+    "3"->"4";
+    "5" [style=filled,fillcolor=lightgray,label="return null",];
+    "4"->"5";
+    "6" [label="label1: $r2 = r0.clone()",];
+    "4"->"6";
+    "7" [label="r3 = (java.lang.Double[]) $r2",];
+    "6"->"7";
+    "8" [style=filled,fillcolor=lightgray,label="return r3",];
+    "7"->"8";
+}

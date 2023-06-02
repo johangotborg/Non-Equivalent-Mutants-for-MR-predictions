@@ -1,0 +1,57 @@
+public class sum_labeled_ROR_9 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sum_labeled_ROR_9 r0;
+
+        r0 := @this: sum_labeled_ROR_9;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double sum_labeled_ROR_9_m(int[], int, int)
+    {
+        int i0, $i1, i2, $i3, $i4, $i5;
+        int[] r0;
+        double $d0, $d1, $d2, $d3;
+
+        r0 := @parameter0: int[];
+
+        i0 := @parameter1: int;
+
+        i2 := @parameter2: int;
+
+        if i0 < 0 goto label1;
+
+        $i1 = lengthof r0;
+
+        if i0 < $i1 goto label1;
+
+        if i2 < 0 goto label1;
+
+        $i3 = lengthof r0;
+
+        if i2 < $i3 goto label2;
+
+     label1:
+        return -100000.0;
+
+     label2:
+        $i4 = r0[i0];
+
+        $d2 = (double) $i4;
+
+        $i5 = r0[i2];
+
+        $d0 = (double) $i5;
+
+        $d1 = $d0 / 2.0;
+
+        $d3 = $d2 + $d1;
+
+        return $d3;
+    }
+}

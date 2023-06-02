@@ -1,0 +1,28 @@
+digraph "boolean checkPositive_AOIU_2_m(double[])" {
+    label="boolean checkPositive_AOIU_2_m(double[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="i3 = 0",];
+    "0"->"1";
+    "2" [label="label1: $i0 = lengthof r0",];
+    "1"->"2";
+    "3" [label="$i1 = neg $i0",];
+    "2"->"3";
+    "4" [label="if i3 >= $i1 goto label3",];
+    "3"->"4";
+    "5" [label="$d0 = r0[i3]",];
+    "4"->"5";
+    "11" [style=filled,fillcolor=lightgray,label="label3: return 1",];
+    "4"->"11";
+    "6" [label="$b2 = $d0 cmpg 0.0",];
+    "5"->"6";
+    "7" [label="if $b2 > 0 goto label2",];
+    "6"->"7";
+    "8" [style=filled,fillcolor=lightgray,label="return 0",];
+    "7"->"8";
+    "9" [label="label2: i3 = i3 + 1",];
+    "7"->"9";
+    "10" [label="goto label1",];
+    "9"->"10";
+    "10"->"2";
+}

@@ -1,0 +1,26 @@
+digraph "int hamming_dist_VDL_5(java.lang.Integer[],java.lang.Integer[])" {
+    label="int hamming_dist_VDL_5(java.lang.Integer[],java.lang.Integer[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r1 := @parameter1",];
+    "0"->"1";
+    "2" [label="i2 = 0",];
+    "1"->"2";
+    "3" [label="label1: $i1 = lengthof r0",];
+    "2"->"3";
+    "4" [label="if i2 >= $i1 goto label3",];
+    "3"->"4";
+    "5" [label="$r3 = r0[i2]",];
+    "4"->"5";
+    "10" [style=filled,fillcolor=lightgray,label="label3: return 0",];
+    "4"->"10";
+    "6" [label="$r2 = r1[i2]",];
+    "5"->"6";
+    "7" [label="if $r3 == $r2 goto label2",];
+    "6"->"7";
+    "8" [label="label2: i2 = i2 + 1",];
+    "7"->"8";
+    "9" [label="goto label1",];
+    "8"->"9";
+    "9"->"3";
+}

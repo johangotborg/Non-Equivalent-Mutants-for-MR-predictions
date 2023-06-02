@@ -1,0 +1,53 @@
+public class geometric_mean_ODL_5 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        geometric_mean_ODL_5 r0;
+
+        r0 := @this: geometric_mean_ODL_5;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double geometric_mean_ODL_5_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, i4;
+        double $d0, $d1;
+        java.lang.Integer $r1;
+        long $l2, l3;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        l3 = 1L;
+
+        i4 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i4 >= $i0 goto label2;
+
+        $r1 = r0[i4];
+
+        $i1 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        $l2 = (long) $i1;
+
+        l3 = l3 * $l2;
+
+        i4 = i4 + 1;
+
+        goto label1;
+
+     label2:
+        $d0 = (double) l3;
+
+        $d1 = staticinvoke <java.lang.Math: double pow(double,double)>($d0, 1.0);
+
+        return $d1;
+    }
+}

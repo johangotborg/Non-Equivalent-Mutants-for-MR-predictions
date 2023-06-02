@@ -1,0 +1,19 @@
+package minimized_data_set.VDL;
+// This is a mutant program.
+// Author : ysma
+
+public class durbinWatson_VDL_4
+{
+
+    public static  double durbinWatson_VDL_4( java.lang.Double[] elements )
+    {
+        int size = elements.length;
+        double run = 0;
+        for (int i = 1; i < size; ++i) {
+            double x = elements[i] - elements[1];
+            run += x * x;
+        }
+        return run;
+    }
+
+}

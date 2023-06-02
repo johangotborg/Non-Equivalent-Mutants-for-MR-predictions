@@ -1,0 +1,45 @@
+public class find_min_SDL_6 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        find_min_SDL_6 r0;
+
+        r0 := @this: find_min_SDL_6;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int find_min_SDL_6_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        java.lang.Integer $r1, $r2;
+        int $i0, i1, i2;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        $r1 = r0[0];
+
+        i1 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        i2 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i2 >= $i0 goto label2;
+
+        $r2 = r0[i2];
+
+        i1 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        return i1;
+    }
+}

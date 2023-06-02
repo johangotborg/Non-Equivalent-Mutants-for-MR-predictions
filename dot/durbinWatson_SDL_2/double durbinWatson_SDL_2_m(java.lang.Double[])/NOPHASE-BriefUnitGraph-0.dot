@@ -1,0 +1,28 @@
+digraph "double durbinWatson_SDL_2_m(java.lang.Double[])" {
+    label="double durbinWatson_SDL_2_m(java.lang.Double[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="i0 = lengthof r0",];
+    "0"->"1";
+    "2" [label="i2 = 1",];
+    "1"->"2";
+    "3" [label="label1: if i2 >= i0 goto label2",];
+    "2"->"3";
+    "4" [label="$r1 = r0[i2]",];
+    "3"->"4";
+    "11" [style=filled,fillcolor=lightgray,label="label2: return 0.0",];
+    "3"->"11";
+    "5" [label="$r1.doubleValue()",];
+    "4"->"5";
+    "6" [label="$i1 = i2 - 1",];
+    "5"->"6";
+    "7" [label="$r2 = r0[$i1]",];
+    "6"->"7";
+    "8" [label="$r2.doubleValue()",];
+    "7"->"8";
+    "9" [label="i2 = i2 + 1",];
+    "8"->"9";
+    "10" [label="goto label1",];
+    "9"->"10";
+    "10"->"3";
+}

@@ -1,0 +1,28 @@
+public class check_eq_tolerance_ROR_6 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        check_eq_tolerance_ROR_6 r0;
+
+        r0 := @this: check_eq_tolerance_ROR_6;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static boolean check_eq_tolerance_ROR_6_m(java.lang.Double[], java.lang.Double[], java.lang.Double)
+    {
+        java.lang.Double[] r0, r1;
+        java.lang.Double r2;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        r2 := @parameter2: java.lang.Double;
+
+        return 0;
+    }
+}

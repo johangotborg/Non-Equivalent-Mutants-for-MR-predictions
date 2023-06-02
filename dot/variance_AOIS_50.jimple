@@ -1,0 +1,92 @@
+public class variance_AOIS_50 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        variance_AOIS_50 r0;
+
+        r0 := @this: variance_AOIS_50;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double variance_AOIS_50_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int $i0, $i1, $i2, $i3, i4, i5;
+        double $d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, d9, d10, d13, d14;
+        java.lang.Double $r1, $r2, $r3;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        d9 = 0.0;
+
+        d10 = 0.0;
+
+        i4 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i4 >= $i0 goto label2;
+
+        $r3 = r0[i4];
+
+        $d8 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        d9 = d9 + $d8;
+
+        i4 = i4 + 1;
+
+        goto label1;
+
+     label2:
+        $i1 = lengthof r0;
+
+        $d0 = (double) $i1;
+
+        d13 = d9 / $d0;
+
+        i5 = 0;
+
+     label3:
+        $i2 = lengthof r0;
+
+        if i5 >= $i2 goto label4;
+
+        $r1 = r0[i5];
+
+        $d2 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $d3 = $d2 - d13;
+
+        $r2 = r0[i5];
+
+        $d4 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        $d5 = d13 - 1.0;
+
+        d13 = $d5;
+
+        $d6 = $d4 - $d5;
+
+        $d7 = $d3 * $d6;
+
+        d10 = d10 + $d7;
+
+        i5 = i5 + 1;
+
+        goto label3;
+
+     label4:
+        $i3 = lengthof r0;
+
+        $d1 = (double) $i3;
+
+        d14 = d10 / $d1;
+
+        return d14;
+    }
+}

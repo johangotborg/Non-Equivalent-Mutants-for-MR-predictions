@@ -1,0 +1,72 @@
+public class errorRate_AOIS_11 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        errorRate_AOIS_11 r0;
+
+        r0 := @this: errorRate_AOIS_11;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double errorRate_AOIS_11_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1;
+        int $i0, i2, i3;
+        double $d0, $d1, d2, d3;
+        java.lang.Double $r2, $r3, $r4;
+        byte $b1;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        d2 = 0.0;
+
+        d3 = 0.0;
+
+        i2 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i2 >= $i0 goto label5;
+
+        i3 = i2 + 1;
+
+        $r2 = r1[i2];
+
+        $d1 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        $b1 = $d1 cmpl -1.0;
+
+        if $b1 != 0 goto label2;
+
+        goto label4;
+
+     label2:
+        $r4 = r1[i3];
+
+        $r3 = r0[i3];
+
+        if $r4 == $r3 goto label3;
+
+        d2 = d2 + 1.0;
+
+     label3:
+        d3 = d3 + 1.0;
+
+     label4:
+        i2 = i3 + 1;
+
+        goto label1;
+
+     label5:
+        $d0 = d2 / d3;
+
+        return $d0;
+    }
+}

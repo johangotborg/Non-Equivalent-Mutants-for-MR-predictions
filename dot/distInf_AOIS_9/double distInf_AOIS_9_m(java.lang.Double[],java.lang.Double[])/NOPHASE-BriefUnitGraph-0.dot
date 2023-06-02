@@ -1,0 +1,38 @@
+digraph "double distInf_AOIS_9_m(java.lang.Double[],java.lang.Double[])" {
+    label="double distInf_AOIS_9_m(java.lang.Double[],java.lang.Double[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r2 := @parameter1",];
+    "0"->"1";
+    "2" [label="d5 = 0.0",];
+    "1"->"2";
+    "3" [label="i1 = 0",];
+    "2"->"3";
+    "4" [label="label1: $i0 = lengthof r0",];
+    "3"->"4";
+    "5" [label="if i1 >= $i0 goto label2",];
+    "4"->"5";
+    "6" [label="$d0 = d5 + 1.0",];
+    "5"->"6";
+    "16" [style=filled,fillcolor=lightgray,label="label2: return d5",];
+    "5"->"16";
+    "7" [label="$r1 = r0[i1]",];
+    "6"->"7";
+    "8" [label="$d1 = $r1.doubleValue()",];
+    "7"->"8";
+    "9" [label="$r3 = r2[i1]",];
+    "8"->"9";
+    "10" [label="$d2 = $r3.doubleValue()",];
+    "9"->"10";
+    "11" [label="$d3 = $d1 - $d2",];
+    "10"->"11";
+    "12" [label="$d4 = java.lang.Math.abs($d3)",];
+    "11"->"12";
+    "13" [label="d5 = java.lang.Math.max($d0, $d4)",];
+    "12"->"13";
+    "14" [label="i1 = i1 + 1",];
+    "13"->"14";
+    "15" [label="goto label1",];
+    "14"->"15";
+    "15"->"4";
+}

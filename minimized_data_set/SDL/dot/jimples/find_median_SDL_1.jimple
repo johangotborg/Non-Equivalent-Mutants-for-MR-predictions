@@ -1,0 +1,73 @@
+public class find_median_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        find_median_SDL_1 r0;
+
+        r0 := @this: find_median_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double find_median_SDL_1(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        java.lang.Integer $r1, $r2, $r3, $r4;
+        int $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, $i13, $i14, $i15, $i16;
+        double $d0, $d1, $d2;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        $r1 = r0[0];
+
+        virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        $i4 = lengthof r0;
+
+        $i5 = $i4 % 2;
+
+        if $i5 != 0 goto label1;
+
+        $i9 = lengthof r0;
+
+        $i10 = $i9 / 2;
+
+        $i11 = $i10 - 1;
+
+        $r3 = r0[$i11];
+
+        $i12 = virtualinvoke $r3.<java.lang.Integer: int intValue()>();
+
+        $i13 = lengthof r0;
+
+        $i14 = $i13 / 2;
+
+        $r4 = r0[$i14];
+
+        $i15 = virtualinvoke $r4.<java.lang.Integer: int intValue()>();
+
+        $i16 = $i12 + $i15;
+
+        $d1 = (double) $i16;
+
+        $d2 = $d1 / 2.0;
+
+        return $d2;
+
+     label1:
+        $i6 = lengthof r0;
+
+        $i7 = $i6 / 2;
+
+        $r2 = r0[$i7];
+
+        $i8 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        $d0 = (double) $i8;
+
+        return $d0;
+    }
+}

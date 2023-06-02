@@ -1,0 +1,18 @@
+package minimized_data_set.VDL;
+// This is a mutant program.
+// Author : ysma
+
+public class dot_product_VDL_3
+{
+
+    public static  int dot_product_VDL_3( java.lang.Integer[] a, java.lang.Integer[] b )
+    {
+        int sum = 0;
+        int i;
+        for (i = 0; i < a.length; i++) {
+            sum += b[i];
+        }
+        return sum;
+    }
+
+}

@@ -1,0 +1,60 @@
+public class sampleSkew_AOIS_2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sampleSkew_AOIS_2 r0;
+
+        r0 := @this: sampleSkew_AOIS_2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double sampleSkew_AOIS_2_m(java.lang.Integer, java.lang.Double, double)
+    {
+        java.lang.Integer r0;
+        int i0, $i1, $i2, $i3;
+        double d1, $d2, $d3, d4, $d5, $d6, $d7, $d8, $d9, $d10, $d11, d12;
+        java.lang.Double r1;
+
+        r0 := @parameter0: java.lang.Integer;
+
+        r1 := @parameter1: java.lang.Double;
+
+        d12 := @parameter2: double;
+
+        i0 = virtualinvoke r0.<java.lang.Integer: int intValue()>();
+
+        d1 = staticinvoke <java.lang.Math: double sqrt(double)>(d12);
+
+        $d2 = virtualinvoke r1.<java.lang.Double: double doubleValue()>();
+
+        $d3 = (double) i0;
+
+        d4 = $d2 * $d3;
+
+        $d5 = (double) i0;
+
+        $d10 = $d5 * d4;
+
+        $i2 = i0 - 1;
+
+        $i1 = i0 - 2;
+
+        $i3 = $i2 * $i1;
+
+        $d6 = (double) $i3;
+
+        $d7 = $d6 * d1;
+
+        $d8 = $d7 * d1;
+
+        $d9 = $d8 * d1;
+
+        $d11 = $d10 / $d9;
+
+        return $d11;
+    }
+}

@@ -1,0 +1,50 @@
+public class dist_VDL_3 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        dist_VDL_3 r0;
+
+        r0 := @this: dist_VDL_3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double dist_VDL_3(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1;
+        int $i0, i1;
+        java.lang.Double $r2;
+        double $d0, $d1, d2;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        d2 = 0.0;
+
+        i1 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i1 >= $i0 goto label2;
+
+        $r2 = r1[i1];
+
+        $d0 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        $d1 = staticinvoke <java.lang.Math: double abs(double)>($d0);
+
+        d2 = d2 + $d1;
+
+        i1 = i1 + 1;
+
+        goto label1;
+
+     label2:
+        return d2;
+    }
+}

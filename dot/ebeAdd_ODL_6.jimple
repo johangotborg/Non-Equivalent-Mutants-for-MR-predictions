@@ -1,0 +1,57 @@
+public class ebeAdd_ODL_6 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        ebeAdd_ODL_6 r0;
+
+        r0 := @this: ebeAdd_ODL_6;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Double[] ebeAdd_ODL_6_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1, r3;
+        int $i0, $i1, $i2, i3;
+        java.lang.Object $r2;
+        java.lang.Double $r4;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        $i1 = lengthof r0;
+
+        $i0 = lengthof r1;
+
+        if $i1 == $i0 goto label1;
+
+        return null;
+
+     label1:
+        $r2 = virtualinvoke r0.<java.lang.Object: java.lang.Object clone()>();
+
+        r3 = (java.lang.Double[]) $r2;
+
+        i3 = 0;
+
+     label2:
+        $i2 = lengthof r0;
+
+        if i3 >= $i2 goto label3;
+
+        $r4 = r1[i3];
+
+        r3[i3] = $r4;
+
+        i3 = i3 + 1;
+
+        goto label2;
+
+     label3:
+        return r3;
+    }
+}

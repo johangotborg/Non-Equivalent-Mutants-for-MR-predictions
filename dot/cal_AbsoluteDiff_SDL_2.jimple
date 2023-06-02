@@ -1,0 +1,56 @@
+public class cal_AbsoluteDiff_SDL_2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        cal_AbsoluteDiff_SDL_2 r0;
+
+        r0 := @this: cal_AbsoluteDiff_SDL_2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double[] cal_AbsoluteDiff_SDL_2_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int $i0, $i1, i2;
+        double[] r1;
+        java.lang.Double $r2;
+        double $d0, $d1;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        if r0 != null goto label1;
+
+        return null;
+
+     label1:
+        $i0 = lengthof r0;
+
+        r1 = newarray (double)[$i0];
+
+        i2 = 0;
+
+     label2:
+        $i1 = lengthof r0;
+
+        if i2 >= $i1 goto label3;
+
+        $r2 = r0[i2];
+
+        $d0 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        $d1 = staticinvoke <java.lang.Math: double abs(double)>($d0);
+
+        r1[i2] = $d1;
+
+        i2 = i2 + 1;
+
+        goto label2;
+
+     label3:
+        return r1;
+    }
+}

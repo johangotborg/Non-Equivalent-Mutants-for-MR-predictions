@@ -1,0 +1,146 @@
+public class pooledVariance_ODL_23 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        pooledVariance_ODL_23 r0;
+
+        r0 := @this: pooledVariance_ODL_23;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double pooledVariance_ODL_23_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, i10, i11;
+        double $d0, $d1, $d2, $d3, d4, $d5, $d6, $d7, d8, $d9, $d10, $d11, $d12, $d13, $d14, $d15, $d16, $d17, $d18, $d19, $d20, $d21, $d22, $d23, d24, d25, d26, d27, d28;
+        java.lang.Double $r2, $r3, $r4, $r5, $r6, $r7;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        d24 = 0.0;
+
+        d25 = 0.0;
+
+        i10 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i10 >= $i0 goto label2;
+
+        $r5 = r0[i10];
+
+        $d20 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        d24 = d24 + $d20;
+
+        $r6 = r0[i10];
+
+        $d21 = virtualinvoke $r6.<java.lang.Double: double doubleValue()>();
+
+        $r7 = r0[i10];
+
+        $d22 = virtualinvoke $r7.<java.lang.Double: double doubleValue()>();
+
+        $d23 = $d21 * $d22;
+
+        d25 = d25 + $d23;
+
+        i10 = i10 + 1;
+
+        goto label1;
+
+     label2:
+        $i1 = lengthof r0;
+
+        $d0 = (double) $i1;
+
+        d26 = d24 / $d0;
+
+        $d1 = d26 * d24;
+
+        $d3 = d25 - $d1;
+
+        $i2 = lengthof r0;
+
+        $d2 = (double) $i2;
+
+        d4 = $d3 / $d2;
+
+        d27 = 0.0;
+
+        d28 = 0.0;
+
+        i11 = 0;
+
+     label3:
+        $i3 = lengthof r1;
+
+        if i11 >= $i3 goto label4;
+
+        $r2 = r1[i11];
+
+        $d16 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        d27 = d27 + $d16;
+
+        $r3 = r1[i11];
+
+        $d17 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $r4 = r1[i11];
+
+        $d18 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $d19 = $d17 * $d18;
+
+        d28 = d28 + $d19;
+
+        i11 = i11 + 1;
+
+        goto label3;
+
+     label4:
+        $d5 = d27 * d27;
+
+        $d7 = d28 - $d5;
+
+        $i4 = lengthof r1;
+
+        $d6 = (double) $i4;
+
+        d8 = $d7 / $d6;
+
+        $i5 = lengthof r0;
+
+        $d9 = (double) $i5;
+
+        $d12 = $d9 * d4;
+
+        $i6 = lengthof r1;
+
+        $d10 = (double) $i6;
+
+        $d11 = $d10 * d8;
+
+        $d14 = $d12 + $d11;
+
+        $i8 = lengthof r0;
+
+        $i7 = lengthof r1;
+
+        $i9 = $i8 + $i7;
+
+        $d13 = (double) $i9;
+
+        $d15 = $d14 / $d13;
+
+        return $d15;
+    }
+}

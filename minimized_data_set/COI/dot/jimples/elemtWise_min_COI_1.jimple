@@ -1,0 +1,70 @@
+public class elemtWise_min_COI_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        elemtWise_min_COI_1 r0;
+
+        r0 := @this: elemtWise_min_COI_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int[] elemtWise_min_COI_1(java.lang.Integer[], java.lang.Integer[])
+    {
+        java.lang.Integer[] r0, r3;
+        int $i0, $i1, $i2, $i3, $i4, $i5, i6;
+        int[] r1;
+        java.lang.Integer $r2, $r4, $r5, $r6;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r3 := @parameter1: java.lang.Integer[];
+
+        $i0 = lengthof r0;
+
+        r1 = newarray (int)[$i0];
+
+        i6 = 0;
+
+     label1:
+        $i1 = lengthof r0;
+
+        if i6 < $i1 goto label4;
+
+        $r2 = r0[i6];
+
+        $i2 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        $r4 = r3[i6];
+
+        $i3 = virtualinvoke $r4.<java.lang.Integer: int intValue()>();
+
+        if $i2 >= $i3 goto label2;
+
+        $r6 = r0[i6];
+
+        $i5 = virtualinvoke $r6.<java.lang.Integer: int intValue()>();
+
+        r1[i6] = $i5;
+
+        goto label3;
+
+     label2:
+        $r5 = r3[i6];
+
+        $i4 = virtualinvoke $r5.<java.lang.Integer: int intValue()>();
+
+        r1[i6] = $i4;
+
+     label3:
+        i6 = i6 + 1;
+
+        goto label1;
+
+     label4:
+        return r1;
+    }
+}

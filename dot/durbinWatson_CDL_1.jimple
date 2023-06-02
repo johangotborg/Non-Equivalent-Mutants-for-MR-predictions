@@ -1,0 +1,54 @@
+public class durbinWatson_CDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        durbinWatson_CDL_1 r0;
+
+        r0 := @this: durbinWatson_CDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double durbinWatson_CDL_1_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int i0, i1;
+        java.lang.Double $r1, $r2;
+        double $d0, $d1, d2, $d3, d4;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        i0 = lengthof r0;
+
+        d4 = 0.0;
+
+        i1 = 1;
+
+     label1:
+        if i1 >= i0 goto label2;
+
+        $r1 = r0[i1];
+
+        $d0 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r2 = r0[i1];
+
+        $d1 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        d2 = $d0 - $d1;
+
+        $d3 = d2 * d2;
+
+        d4 = d4 + $d3;
+
+        i1 = i1 + 1;
+
+        goto label1;
+
+     label2:
+        return d4;
+    }
+}

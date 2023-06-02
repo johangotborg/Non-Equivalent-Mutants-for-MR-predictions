@@ -1,0 +1,74 @@
+public class weightedRMS_AORB_2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        weightedRMS_AORB_2 r0;
+
+        r0 := @this: weightedRMS_AORB_2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double weightedRMS_AORB_2_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r2;
+        int $i0, i1;
+        double $d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, d8, d9;
+        java.lang.Double $r1, $r3, $r4, $r5, $r6;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double[];
+
+        d8 = 0.0;
+
+        d9 = 0.0;
+
+        i1 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i1 >= $i0 goto label2;
+
+        $r1 = r0[i1];
+
+        $d1 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r2[i1];
+
+        $d2 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d3 = $d1 * $d2;
+
+        d8 = d8 + $d3;
+
+        $r4 = r0[i1];
+
+        $d4 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $r5 = r0[i1];
+
+        $d5 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $d6 = $d4 * $d5;
+
+        $r6 = r2[i1];
+
+        $d7 = virtualinvoke $r6.<java.lang.Double: double doubleValue()>();
+
+        d9 = $d6 * $d7;
+
+        i1 = i1 + 1;
+
+        goto label1;
+
+     label2:
+        $d0 = d8 % d9;
+
+        return $d0;
+    }
+}

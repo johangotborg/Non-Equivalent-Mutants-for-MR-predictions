@@ -1,0 +1,15 @@
+digraph "int[] clip_SDL_1(java.lang.Integer[],java.lang.Integer,java.lang.Integer)" {
+    label="int[] clip_SDL_1(java.lang.Integer[],java.lang.Integer,java.lang.Integer)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r2 := @parameter1",];
+    "0"->"1";
+    "2" [label="r3 := @parameter2",];
+    "1"->"2";
+    "3" [label="$i0 = lengthof r0",];
+    "2"->"3";
+    "4" [label="r1 = newarray (int)[$i0]",];
+    "3"->"4";
+    "5" [style=filled,fillcolor=lightgray,label="return r1",];
+    "4"->"5";
+}

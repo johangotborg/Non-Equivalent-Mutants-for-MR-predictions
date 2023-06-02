@@ -1,0 +1,54 @@
+public class reverse_AOIU_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        reverse_AOIU_1 r0;
+
+        r0 := @this: reverse_AOIU_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int[] reverse_AOIU_1(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, $i2, $i3, i4, i5;
+        int[] r1;
+        java.lang.Integer $r2;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        $i0 = lengthof r0;
+
+        $i1 = neg $i0;
+
+        r1 = newarray (int)[$i1];
+
+        i4 = 0;
+
+        $i2 = lengthof r0;
+
+        i5 = $i2 - 1;
+
+     label1:
+        if i5 < 0 goto label2;
+
+        $r2 = r0[i5];
+
+        $i3 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        r1[i4] = $i3;
+
+        i4 = i4 + 1;
+
+        i5 = i5 + -1;
+
+        goto label1;
+
+     label2:
+        return r1;
+    }
+}

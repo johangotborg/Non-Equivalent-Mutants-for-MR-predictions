@@ -1,0 +1,24 @@
+digraph "void dec_SDL_4_method(int[],int[])" {
+    label="void dec_SDL_4_method(int[],int[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r1 := @parameter1",];
+    "0"->"1";
+    "2" [label="label1: $i1 = lengthof r0",];
+    "1"->"2";
+    "3" [label="if 0 >= $i1 goto label2",];
+    "2"->"3";
+    "4" [label="$i3 = r0[0]",];
+    "3"->"4";
+    "9" [style=filled,fillcolor=lightgray,label="label2: return",];
+    "3"->"9";
+    "5" [label="$i2 = r1[0]",];
+    "4"->"5";
+    "6" [label="$i4 = $i3 - $i2",];
+    "5"->"6";
+    "7" [label="r0[0] = $i4",];
+    "6"->"7";
+    "8" [label="goto label1",];
+    "7"->"8";
+    "8"->"2";
+}

@@ -1,0 +1,78 @@
+public class chiSquare_SDL_11 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        chiSquare_SDL_11 r0;
+
+        r0 := @this: chiSquare_SDL_11;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double chiSquare_SDL_11_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1;
+        int $i0, i2, i3, $i4;
+        double $d0, $d1, $d3, $d4, d5, d6;
+        byte $b1;
+        java.lang.Double $r2, $r3;
+
+        r1 := @parameter0: java.lang.Double[];
+
+        r0 := @parameter1: java.lang.Double[];
+
+        d5 = 0.0;
+
+        d6 = 0.0;
+
+        i2 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i2 >= $i0 goto label2;
+
+        $r2 = r1[i2];
+
+        $d3 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        d5 = d5 + $d3;
+
+        $r3 = r0[i2];
+
+        $d4 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        d6 = d6 + $d4;
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        $d0 = d5 - d6;
+
+        $d1 = staticinvoke <java.lang.Math: double abs(double)>($d0);
+
+        $b1 = $d1 cmpl 1.0E-5;
+
+        if $b1 <= 0 goto label3;
+
+     label3:
+        i3 = 0;
+
+     label4:
+        $i4 = lengthof r0;
+
+        if i3 >= $i4 goto label5;
+
+        i3 = i3 + 1;
+
+        goto label4;
+
+     label5:
+        return 0.0;
+    }
+}

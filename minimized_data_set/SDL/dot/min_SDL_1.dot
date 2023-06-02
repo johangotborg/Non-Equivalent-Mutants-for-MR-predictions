@@ -1,0 +1,15 @@
+digraph "double min_SDL_1(java.lang.Double[])" {
+    label="double min_SDL_1(java.lang.Double[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="i0 = lengthof r0",];
+    "0"->"1";
+    "2" [label="$i1 = i0 - 1",];
+    "1"->"2";
+    "3" [label="$r1 = r0[$i1]",];
+    "2"->"3";
+    "4" [label="d0 = $r1.doubleValue()",];
+    "3"->"4";
+    "5" [style=filled,fillcolor=lightgray,label="return d0",];
+    "4"->"5";
+}

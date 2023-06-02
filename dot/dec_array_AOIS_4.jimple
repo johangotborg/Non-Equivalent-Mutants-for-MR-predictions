@@ -1,0 +1,53 @@
+public class dec_array_AOIS_4 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        dec_array_AOIS_4 r0;
+
+        r0 := @this: dec_array_AOIS_4;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Integer[] dec_array_AOIS_4_m(java.lang.Integer[], java.lang.Integer)
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i2, $i3, $i4, i5, i6;
+        java.lang.Integer $r2, r3, $r4;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r3 := @parameter1: java.lang.Integer;
+
+        i5 = 0;
+
+     label1:
+        i6 = i5 + -1;
+
+        $i0 = lengthof r0;
+
+        if i5 >= $i0 goto label2;
+
+        $r2 = r0[i6];
+
+        $i2 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        $i3 = virtualinvoke r3.<java.lang.Integer: int intValue()>();
+
+        $i4 = $i2 - $i3;
+
+        $r4 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($i4);
+
+        r0[i6] = $r4;
+
+        i5 = i6 + 1;
+
+        goto label1;
+
+     label2:
+        return r0;
+    }
+}

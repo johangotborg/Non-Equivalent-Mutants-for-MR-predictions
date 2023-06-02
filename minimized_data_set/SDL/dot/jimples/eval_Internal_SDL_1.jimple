@@ -1,0 +1,142 @@
+public class eval_Internal_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        eval_Internal_SDL_1 r0;
+
+        r0 := @this: eval_Internal_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double eval_Internal_SDL_1(java.lang.Double[], java.lang.Double[], java.lang.Double)
+    {
+        java.lang.Double[] r0, r3;
+        int i0, $i1, $i2, $i3, $i5, $i6, $i7, i8, i9, i10;
+        double[] r1, r2;
+        java.lang.Double $r4, $r5, r6, $r7, $r8, $r9;
+        double $d1, $d2, $d3, $d4, $d5, $d6, $d7, d8, $d9, $d10, d11, $d12, $d13, d14, $d15, $d16, $d17, d18, $d19, $d20, d21;
+        byte $b4;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r3 := @parameter1: java.lang.Double[];
+
+        r6 := @parameter2: java.lang.Double;
+
+        i8 = 0;
+
+        i0 = lengthof r0;
+
+        r1 = newarray (double)[i0];
+
+        r2 = newarray (double)[i0];
+
+        $r4 = r3[0];
+
+        d21 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        i9 = 1;
+
+     label1:
+        if i9 >= i0 goto label6;
+
+        i10 = 0;
+
+     label2:
+        $i1 = i0 - i9;
+
+        if i10 >= $i1 goto label3;
+
+        $r5 = r0[i10];
+
+        $d6 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $d7 = virtualinvoke r6.<java.lang.Double: double doubleValue()>();
+
+        d8 = $d6 - $d7;
+
+        $i5 = i9 + i10;
+
+        $r7 = r0[$i5];
+
+        $d9 = virtualinvoke $r7.<java.lang.Double: double doubleValue()>();
+
+        $d10 = virtualinvoke r6.<java.lang.Double: double doubleValue()>();
+
+        d11 = $d9 - $d10;
+
+        $r8 = r0[i10];
+
+        $d12 = virtualinvoke $r8.<java.lang.Double: double doubleValue()>();
+
+        $i6 = i9 + i10;
+
+        $r9 = r0[$i6];
+
+        $d13 = virtualinvoke $r9.<java.lang.Double: double doubleValue()>();
+
+        d14 = $d12 - $d13;
+
+        $i7 = i10 + 1;
+
+        $d16 = r1[$i7];
+
+        $d15 = r2[i10];
+
+        $d17 = $d16 - $d15;
+
+        d18 = $d17 / d14;
+
+        $d19 = d8 * d18;
+
+        r1[i10] = $d19;
+
+        $d20 = d11 * d18;
+
+        r2[i10] = $d20;
+
+        i10 = i10 + 1;
+
+        goto label2;
+
+     label3:
+        $d3 = (double) i8;
+
+        $i2 = i0 - i9;
+
+        $i3 = $i2 + 1;
+
+        $d1 = (double) $i3;
+
+        $d2 = 0.5 * $d1;
+
+        $b4 = $d3 cmpg $d2;
+
+        if $b4 >= 0 goto label4;
+
+        $d5 = r1[i8];
+
+        d21 = d21 + $d5;
+
+        goto label5;
+
+     label4:
+        i8 = i8 + -1;
+
+        $d4 = r2[i8];
+
+        d21 = d21 + $d4;
+
+     label5:
+        i9 = i9 + 1;
+
+        goto label1;
+
+     label6:
+        return d21;
+    }
+}

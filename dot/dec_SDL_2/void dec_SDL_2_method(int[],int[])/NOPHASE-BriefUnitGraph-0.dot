@@ -1,0 +1,20 @@
+digraph "void dec_SDL_2_method(int[],int[])" {
+    label="void dec_SDL_2_method(int[],int[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r1 := @parameter1",];
+    "0"->"1";
+    "2" [label="i1 = 0",];
+    "1"->"2";
+    "3" [label="label1: $i0 = lengthof r0",];
+    "2"->"3";
+    "4" [label="if i1 >= $i0 goto label2",];
+    "3"->"4";
+    "5" [label="i1 = i1 + 1",];
+    "4"->"5";
+    "7" [style=filled,fillcolor=lightgray,label="label2: return",];
+    "4"->"7";
+    "6" [label="goto label1",];
+    "5"->"6";
+    "6"->"3";
+}

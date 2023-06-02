@@ -1,0 +1,99 @@
+public class find_median_ODL_16 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        find_median_ODL_16 r0;
+
+        r0 := @this: find_median_ODL_16;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double find_median_ODL_16_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, i2, $i3, $i4, $i5, $i6, $i7, i9, i10, i11, i12, i13;
+        java.lang.Integer $r1, $r2, $r3, $r4, $r5, $r6, $r7, $r8;
+        double $d0;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        $i0 = lengthof r0;
+
+        $i1 = $i0 / 2;
+
+        i2 = $i1 + 1;
+
+        $r1 = r0[0];
+
+        virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        i9 = 0;
+
+     label1:
+        if i9 >= i2 goto label5;
+
+        i10 = i9;
+
+        $r3 = r0[i9];
+
+        i11 = virtualinvoke $r3.<java.lang.Integer: int intValue()>();
+
+        i12 = i9 + 1;
+
+     label2:
+        $i6 = lengthof r0;
+
+        if i12 >= $i6 goto label4;
+
+        $r7 = r0[i12];
+
+        $i7 = virtualinvoke $r7.<java.lang.Integer: int intValue()>();
+
+        if $i7 >= i11 goto label3;
+
+        i10 = i12;
+
+        $r8 = r0[i12];
+
+        i11 = virtualinvoke $r8.<java.lang.Integer: int intValue()>();
+
+     label3:
+        i12 = i12 + 1;
+
+        goto label2;
+
+     label4:
+        $r4 = r0[i9];
+
+        i13 = virtualinvoke $r4.<java.lang.Integer: int intValue()>();
+
+        $r5 = r0[i10];
+
+        r0[i9] = $r5;
+
+        $r6 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i13);
+
+        r0[i10] = $r6;
+
+        i9 = i9 + 1;
+
+        goto label1;
+
+     label5:
+        $i3 = lengthof r0;
+
+        $i4 = $i3 / 2;
+
+        $r2 = r0[$i4];
+
+        $i5 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        $d0 = (double) $i5;
+
+        return $d0;
+    }
+}

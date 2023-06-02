@@ -1,0 +1,49 @@
+public class checkNonNegative_AOIS_3 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        checkNonNegative_AOIS_3 r0;
+
+        r0 := @this: checkNonNegative_AOIS_3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static boolean checkNonNegative_AOIS_3_m(double[])
+    {
+        double[] r0;
+        int $i0, i2, i3;
+        double $d0;
+        byte $b1;
+
+        r0 := @parameter0: double[];
+
+        i2 = 0;
+
+     label1:
+        i3 = i2 + 1;
+
+        $i0 = lengthof r0;
+
+        if i2 >= $i0 goto label3;
+
+        $d0 = r0[i3];
+
+        $b1 = $d0 cmpg 0.0;
+
+        if $b1 >= 0 goto label2;
+
+        return 0;
+
+     label2:
+        i2 = i3 + 1;
+
+        goto label1;
+
+     label3:
+        return 1;
+    }
+}

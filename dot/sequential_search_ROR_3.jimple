@@ -1,0 +1,46 @@
+public class sequential_search_ROR_3 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sequential_search_ROR_3 r0;
+
+        r0 := @this: sequential_search_ROR_3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int sequential_search_ROR_3_m(java.lang.Integer[], java.lang.Integer)
+    {
+        java.lang.Integer[] r0;
+        int $i0, i1;
+        java.lang.Integer r1, $r2;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r1 := @parameter1: java.lang.Integer;
+
+        i1 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i1 > $i0 goto label3;
+
+        $r2 = r0[i1];
+
+        if $r2 != r1 goto label2;
+
+        return i1;
+
+     label2:
+        i1 = i1 + 1;
+
+        goto label1;
+
+     label3:
+        return -1;
+    }
+}

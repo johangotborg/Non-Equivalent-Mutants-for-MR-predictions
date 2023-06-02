@@ -1,0 +1,56 @@
+public class weighted_average_ODL_9 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        weighted_average_ODL_9 r0;
+
+        r0 := @this: weighted_average_ODL_9;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double weighted_average_ODL_9_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r2;
+        int $i0, i1;
+        java.lang.Double $r1, $r3, $r4;
+        double $d3, d5;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double[];
+
+        d5 = 0.0;
+
+        i1 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i1 >= $i0 goto label2;
+
+        $r1 = r0[i1];
+
+        virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r2[i1];
+
+        virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $r4 = r2[i1];
+
+        $d3 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        d5 = d5 + $d3;
+
+        i1 = i1 + 1;
+
+        goto label1;
+
+     label2:
+        return d5;
+    }
+}

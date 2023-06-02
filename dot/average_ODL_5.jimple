@@ -1,0 +1,48 @@
+public class average_ODL_5 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        average_ODL_5 r0;
+
+        r0 := @this: average_ODL_5;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double average_ODL_5_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, i2;
+        java.lang.Integer $r1;
+        double $d0, d1;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        d1 = 0.0;
+
+        i2 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i2 >= $i0 goto label2;
+
+        $r1 = r0[i2];
+
+        $i1 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        $d0 = (double) $i1;
+
+        d1 = d1 + $d0;
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        return d1;
+    }
+}

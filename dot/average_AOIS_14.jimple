@@ -1,0 +1,56 @@
+public class average_AOIS_14 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        average_AOIS_14 r0;
+
+        r0 := @this: average_AOIS_14;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double average_AOIS_14_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, $i2, i3;
+        double $d0, $d1, $d2, $d3, d4;
+        java.lang.Integer $r1;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        d4 = 0.0;
+
+        i3 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i3 >= $i0 goto label2;
+
+        $r1 = r0[i3];
+
+        $i2 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        $d3 = (double) $i2;
+
+        d4 = d4 + $d3;
+
+        i3 = i3 + 1;
+
+        goto label1;
+
+     label2:
+        $d0 = d4 - 1.0;
+
+        $i1 = lengthof r0;
+
+        $d1 = (double) $i1;
+
+        $d2 = $d0 / $d1;
+
+        return $d2;
+    }
+}

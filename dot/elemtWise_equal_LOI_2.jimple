@@ -1,0 +1,60 @@
+public class elemtWise_equal_LOI_2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        elemtWise_equal_LOI_2 r0;
+
+        r0 := @this: elemtWise_equal_LOI_2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static boolean[] elemtWise_equal_LOI_2_m(java.lang.Integer[], java.lang.Integer[])
+    {
+        java.lang.Integer[] r0, r2;
+        int $i0, $i1, $i2, i3;
+        boolean[] r1;
+        java.lang.Integer $r3, $r4;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r2 := @parameter1: java.lang.Integer[];
+
+        $i0 = lengthof r0;
+
+        r1 = newarray (boolean)[$i0];
+
+        i3 = 0;
+
+     label1:
+        $i2 = i3 ^ -1;
+
+        $i1 = lengthof r0;
+
+        if $i2 >= $i1 goto label4;
+
+        $r4 = r0[i3];
+
+        $r3 = r2[i3];
+
+        if $r4 != $r3 goto label2;
+
+        r1[i3] = 1;
+
+        goto label3;
+
+     label2:
+        r1[i3] = 0;
+
+     label3:
+        i3 = i3 + 1;
+
+        goto label1;
+
+     label4:
+        return r1;
+    }
+}

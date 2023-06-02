@@ -1,0 +1,76 @@
+public class entropy_SDL_3 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        entropy_SDL_3 r0;
+
+        r0 := @this: entropy_SDL_3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double entropy_SDL_3_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int $i0, $i1, i3, i4;
+        double $d1, $d2, $d3, d4, $d5, $d6, d7;
+        java.lang.Double $r1, $r2;
+        byte $b2;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        d7 = 0.0;
+
+        i3 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i3 >= $i0 goto label2;
+
+        i3 = i3 + 1;
+
+        goto label1;
+
+     label2:
+        i4 = 0;
+
+     label3:
+        $i1 = lengthof r0;
+
+        if i4 >= $i1 goto label5;
+
+        $r1 = r0[i4];
+
+        $d2 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $b2 = $d2 cmpl 0.0;
+
+        if $b2 == 0 goto label4;
+
+        $r2 = r0[i4];
+
+        $d3 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        d4 = $d3 / 0.0;
+
+        $d5 = staticinvoke <java.lang.Math: double log(double)>(d4);
+
+        $d6 = d4 * $d5;
+
+        d7 = d7 + $d6;
+
+     label4:
+        i4 = i4 + 1;
+
+        goto label3;
+
+     label5:
+        $d1 = neg d7;
+
+        return $d1;
+    }
+}

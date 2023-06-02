@@ -1,0 +1,32 @@
+digraph "double manhattanDist_ODL_4(java.lang.Integer[],java.lang.Integer[])" {
+    label="double manhattanDist_ODL_4(java.lang.Integer[],java.lang.Integer[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r2 := @parameter1",];
+    "0"->"1";
+    "2" [label="d1 = 0.0",];
+    "1"->"2";
+    "3" [label="i3 = 0",];
+    "2"->"3";
+    "4" [label="label1: $i0 = lengthof r0",];
+    "3"->"4";
+    "5" [label="if i3 >= $i0 goto label2",];
+    "4"->"5";
+    "6" [label="$r1 = r0[i3]",];
+    "5"->"6";
+    "13" [style=filled,fillcolor=lightgray,label="label2: return d1",];
+    "5"->"13";
+    "7" [label="$i1 = $r1.intValue()",];
+    "6"->"7";
+    "8" [label="$i2 = java.lang.Math.abs($i1)",];
+    "7"->"8";
+    "9" [label="$d0 = (double) $i2",];
+    "8"->"9";
+    "10" [label="d1 = d1 + $d0",];
+    "9"->"10";
+    "11" [label="i3 = i3 + 1",];
+    "10"->"11";
+    "12" [label="goto label1",];
+    "11"->"12";
+    "12"->"4";
+}

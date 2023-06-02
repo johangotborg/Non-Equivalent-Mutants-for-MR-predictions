@@ -1,0 +1,61 @@
+public class geometric_mean_AOIU_5 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        geometric_mean_AOIU_5 r0;
+
+        r0 := @this: geometric_mean_AOIU_5;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double geometric_mean_AOIU_5_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, $i2, $i3, i6;
+        double $d0, $d1, $d2, $d3;
+        java.lang.Integer $r1;
+        long $l4, l5;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        l5 = 1L;
+
+        i6 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i6 >= $i0 goto label2;
+
+        $r1 = r0[i6];
+
+        $i3 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        $l4 = (long) $i3;
+
+        l5 = l5 * $l4;
+
+        i6 = i6 + 1;
+
+        goto label1;
+
+     label2:
+        $d2 = (double) l5;
+
+        $i1 = lengthof r0;
+
+        $i2 = neg $i1;
+
+        $d0 = (double) $i2;
+
+        $d1 = 1.0 / $d0;
+
+        $d3 = staticinvoke <java.lang.Math: double pow(double,double)>($d2, $d1);
+
+        return $d3;
+    }
+}

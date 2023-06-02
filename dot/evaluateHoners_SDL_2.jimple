@@ -1,0 +1,46 @@
+public class evaluateHoners_SDL_2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        evaluateHoners_SDL_2 r0;
+
+        r0 := @this: evaluateHoners_SDL_2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double evaluateHoners_SDL_2_m(java.lang.Double[], java.lang.Double)
+    {
+        java.lang.Double[] r0;
+        int i0, $i1, i2;
+        java.lang.Double $r1, r2;
+        double d0;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double;
+
+        i0 = lengthof r0;
+
+        $i1 = i0 - 1;
+
+        $r1 = r0[$i1];
+
+        d0 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        i2 = i0 - 2;
+
+     label1:
+        if i2 < 0 goto label2;
+
+        i2 = i2 + -1;
+
+        goto label1;
+
+     label2:
+        return d0;
+    }
+}

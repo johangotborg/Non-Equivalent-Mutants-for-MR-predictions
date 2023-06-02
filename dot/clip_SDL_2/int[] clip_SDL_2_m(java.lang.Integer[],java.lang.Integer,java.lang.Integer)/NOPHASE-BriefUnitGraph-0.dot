@@ -1,0 +1,26 @@
+digraph "int[] clip_SDL_2_m(java.lang.Integer[],java.lang.Integer,java.lang.Integer)" {
+    label="int[] clip_SDL_2_m(java.lang.Integer[],java.lang.Integer,java.lang.Integer)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r2 := @parameter1",];
+    "0"->"1";
+    "2" [label="r3 := @parameter2",];
+    "1"->"2";
+    "3" [label="$i0 = lengthof r0",];
+    "2"->"3";
+    "4" [label="r1 = newarray (int)[$i0]",];
+    "3"->"4";
+    "5" [label="i2 = 0",];
+    "4"->"5";
+    "6" [label="label1: $i1 = lengthof r0",];
+    "5"->"6";
+    "7" [label="if i2 >= $i1 goto label2",];
+    "6"->"7";
+    "8" [label="i2 = i2 + 1",];
+    "7"->"8";
+    "10" [style=filled,fillcolor=lightgray,label="label2: return r1",];
+    "7"->"10";
+    "9" [label="goto label1",];
+    "8"->"9";
+    "9"->"6";
+}

@@ -1,0 +1,36 @@
+public class checkNonNegative_ROR_14 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        checkNonNegative_ROR_14 r0;
+
+        r0 := @this: checkNonNegative_ROR_14;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static boolean checkNonNegative_ROR_14_m(double[])
+    {
+        double[] r0;
+        int $i0, i1;
+
+        r0 := @parameter0: double[];
+
+        i1 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i1 >= $i0 goto label2;
+
+        i1 = i1 + 1;
+
+        goto label1;
+
+     label2:
+        return 1;
+    }
+}

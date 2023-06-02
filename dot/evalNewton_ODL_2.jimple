@@ -1,0 +1,60 @@
+public class evalNewton_ODL_2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        evalNewton_ODL_2 r0;
+
+        r0 := @this: evalNewton_ODL_2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double evalNewton_ODL_2_m(java.lang.Double[], java.lang.Double[], java.lang.Double)
+    {
+        java.lang.Double[] r0, r4;
+        java.lang.Double $r1, $r2, r3, $r5;
+        double $d0, $d1, $d2, $d3, $d4, d5;
+        int i0;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r4 := @parameter1: java.lang.Double[];
+
+        r3 := @parameter2: java.lang.Double;
+
+        $r1 = r0[1];
+
+        d5 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        i0 = 0;
+
+     label1:
+        if i0 < 0 goto label2;
+
+        $r2 = r0[i0];
+
+        $d0 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        $d1 = virtualinvoke r3.<java.lang.Double: double doubleValue()>();
+
+        $r5 = r4[i0];
+
+        $d2 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $d3 = $d1 - $d2;
+
+        $d4 = $d3 * d5;
+
+        d5 = $d0 + $d4;
+
+        i0 = i0 + -1;
+
+        goto label1;
+
+     label2:
+        return d5;
+    }
+}

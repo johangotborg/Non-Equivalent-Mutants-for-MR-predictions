@@ -1,0 +1,62 @@
+public class weightedMean_AOIS_9 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        weightedMean_AOIS_9 r0;
+
+        r0 := @this: weightedMean_AOIS_9;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double weightedMean_AOIS_9_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1;
+        int i0, i1, i2;
+        double $d0, d1, $d2, $d3, d4, d5;
+        java.lang.Double $r2, $r3;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        i0 = lengthof r0;
+
+        d4 = 0.0;
+
+        d5 = 0.0;
+
+        i1 = i0;
+
+     label1:
+        i2 = i1 + -1;
+
+        if i2 < 0 goto label2;
+
+        $r2 = r1[i2];
+
+        d1 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        i1 = i2 + 1;
+
+        $r3 = r0[i2];
+
+        $d2 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d3 = $d2 * d1;
+
+        d4 = d4 + $d3;
+
+        d5 = d5 + d1;
+
+        goto label1;
+
+     label2:
+        $d0 = d4 / d5;
+
+        return $d0;
+    }
+}

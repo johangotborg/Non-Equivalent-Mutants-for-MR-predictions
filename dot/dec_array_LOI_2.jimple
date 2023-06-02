@@ -1,0 +1,53 @@
+public class dec_array_LOI_2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        dec_array_LOI_2 r0;
+
+        r0 := @this: dec_array_LOI_2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Integer[] dec_array_LOI_2_m(java.lang.Integer[], java.lang.Integer)
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, $i3, $i4, $i5, i6;
+        java.lang.Integer $r2, r3, $r4;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r3 := @parameter1: java.lang.Integer;
+
+        i6 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        $i1 = $i0 ^ -1;
+
+        if i6 >= $i1 goto label2;
+
+        $r2 = r0[i6];
+
+        $i3 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        $i4 = virtualinvoke r3.<java.lang.Integer: int intValue()>();
+
+        $i5 = $i3 - $i4;
+
+        $r4 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($i5);
+
+        r0[i6] = $r4;
+
+        i6 = i6 + 1;
+
+        goto label1;
+
+     label2:
+        return r0;
+    }
+}

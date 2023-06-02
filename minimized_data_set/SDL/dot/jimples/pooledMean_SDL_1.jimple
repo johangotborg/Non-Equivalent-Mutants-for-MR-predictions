@@ -1,0 +1,84 @@
+public class pooledMean_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        pooledMean_SDL_1 r0;
+
+        r0 := @this: pooledMean_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double pooledMean_SDL_1(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, i8;
+        double $d1, d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, $d11, d12, d13;
+        java.lang.Double $r2;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        $i0 = lengthof r0;
+
+        $d1 = (double) $i0;
+
+        d2 = 0.0 / $d1;
+
+        d12 = 0.0;
+
+        i8 = 0;
+
+     label1:
+        $i1 = lengthof r1;
+
+        if i8 >= $i1 goto label2;
+
+        $r2 = r1[i8];
+
+        $d11 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        d12 = d12 + $d11;
+
+        i8 = i8 + 1;
+
+        goto label1;
+
+     label2:
+        $i2 = lengthof r1;
+
+        $d3 = (double) $i2;
+
+        d13 = d12 / $d3;
+
+        $i3 = lengthof r0;
+
+        $d4 = (double) $i3;
+
+        $d7 = $d4 * d2;
+
+        $i4 = lengthof r1;
+
+        $d5 = (double) $i4;
+
+        $d6 = $d5 * d13;
+
+        $d9 = $d7 + $d6;
+
+        $i6 = lengthof r0;
+
+        $i5 = lengthof r1;
+
+        $i7 = $i6 + $i5;
+
+        $d8 = (double) $i7;
+
+        $d10 = $d9 / $d8;
+
+        return $d10;
+    }
+}

@@ -1,0 +1,63 @@
+public class autoCorrelation_ODL_18 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        autoCorrelation_ODL_18 r0;
+
+        r0 := @this: autoCorrelation_ODL_18;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double autoCorrelation_ODL_18_m(java.lang.Double[], java.lang.Integer, java.lang.Double, java.lang.Double)
+    {
+        java.lang.Double[] r0;
+        int i0, $i1, $i2, i3;
+        java.lang.Integer r1;
+        java.lang.Double r2, $r3, r4, $r5;
+        double $d0;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Integer;
+
+        r4 := @parameter2: java.lang.Double;
+
+        r2 := @parameter3: java.lang.Double;
+
+        i0 = lengthof r0;
+
+        i3 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+     label1:
+        if i3 >= i0 goto label2;
+
+        $r3 = r0[i3];
+
+        virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        virtualinvoke r4.<java.lang.Double: double doubleValue()>();
+
+        $i1 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        $i2 = i3 - $i1;
+
+        $r5 = r0[$i2];
+
+        virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        virtualinvoke r4.<java.lang.Double: double doubleValue()>();
+
+        i3 = i3 + 1;
+
+        goto label1;
+
+     label2:
+        $d0 = virtualinvoke r2.<java.lang.Double: double doubleValue()>();
+
+        return $d0;
+    }
+}

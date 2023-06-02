@@ -1,0 +1,76 @@
+public class elemtWise_max_AOIS_22 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        elemtWise_max_AOIS_22 r0;
+
+        r0 := @this: elemtWise_max_AOIS_22;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int[] elemtWise_max_AOIS_22_m(java.lang.Integer[], java.lang.Integer[])
+    {
+        java.lang.Integer[] r0, r3;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, i8;
+        int[] r1;
+        java.lang.Integer $r2, $r4, $r5, $r6;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r3 := @parameter1: java.lang.Integer[];
+
+        $i0 = lengthof r0;
+
+        r1 = newarray (int)[$i0];
+
+        i8 = 0;
+
+     label1:
+        $i1 = lengthof r0;
+
+        if i8 >= $i1 goto label4;
+
+        $r2 = r0[i8];
+
+        $i2 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        $r4 = r3[i8];
+
+        $i3 = virtualinvoke $r4.<java.lang.Integer: int intValue()>();
+
+        if $i2 <= $i3 goto label2;
+
+        $i5 = i8;
+
+        $i6 = i8;
+
+        i8 = i8 + -1;
+
+        $r6 = r0[$i6];
+
+        $i7 = virtualinvoke $r6.<java.lang.Integer: int intValue()>();
+
+        r1[$i5] = $i7;
+
+        goto label3;
+
+     label2:
+        $r5 = r3[i8];
+
+        $i4 = virtualinvoke $r5.<java.lang.Integer: int intValue()>();
+
+        r1[i8] = $i4;
+
+     label3:
+        i8 = i8 + 1;
+
+        goto label1;
+
+     label4:
+        return r1;
+    }
+}

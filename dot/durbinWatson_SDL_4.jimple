@@ -1,0 +1,52 @@
+public class durbinWatson_SDL_4 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        durbinWatson_SDL_4 r0;
+
+        r0 := @this: durbinWatson_SDL_4;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double durbinWatson_SDL_4_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int i0, $i2;
+        java.lang.Double $r1, $r2;
+        double $d0, $d1, d2, $d3, d4;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        i0 = lengthof r0;
+
+        d4 = 0.0;
+
+     label1:
+        if 1 >= i0 goto label2;
+
+        $r1 = r0[1];
+
+        $d0 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $i2 = 1 - 1;
+
+        $r2 = r0[$i2];
+
+        $d1 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        d2 = $d0 - $d1;
+
+        $d3 = d2 * d2;
+
+        d4 = d4 + $d3;
+
+        goto label1;
+
+     label2:
+        return d4;
+    }
+}

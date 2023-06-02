@@ -1,0 +1,26 @@
+public class find_magnitude_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        find_magnitude_SDL_1 r0;
+
+        r0 := @this: find_magnitude_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double find_magnitude_SDL_1_m(java.lang.Integer[])
+    {
+        double d1;
+        java.lang.Integer[] r0;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        d1 = staticinvoke <java.lang.Math: double sqrt(double)>(0.0);
+
+        return d1;
+    }
+}

@@ -1,0 +1,96 @@
+public class standardize_VDL_11 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        standardize_VDL_11 r0;
+
+        r0 := @this: standardize_VDL_11;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Double[] standardize_VDL_11_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int $i0, $i1, $i2, $i3, i4, i5;
+        double $d0, $d1, $d2, $d3, $d4, d5, $d6, $d7, $d8, $d9, $d10, d11, d12, d13;
+        java.lang.Double $r1, $r2, $r3, $r4;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        d11 = 0.0;
+
+        d12 = 0.0;
+
+        i4 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i4 >= $i0 goto label2;
+
+        $r2 = r0[i4];
+
+        $d7 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        d11 = d11 + $d7;
+
+        $r3 = r0[i4];
+
+        $d8 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $r4 = r0[i4];
+
+        $d9 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $d10 = $d8 * $d9;
+
+        d12 = d12 + $d10;
+
+        i4 = i4 + 1;
+
+        goto label1;
+
+     label2:
+        $i1 = lengthof r0;
+
+        $d0 = (double) $i1;
+
+        d13 = d11 / $d0;
+
+        $d1 = d13 * d11;
+
+        $d3 = d12 - $d1;
+
+        $i2 = lengthof r0;
+
+        $d2 = (double) $i2;
+
+        $d4 = $d3 / $d2;
+
+        d5 = staticinvoke <java.lang.Math: double sqrt(double)>($d4);
+
+        i5 = 0;
+
+     label3:
+        $i3 = lengthof r0;
+
+        if i5 >= $i3 goto label4;
+
+        $d6 = d13 / d5;
+
+        $r1 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>($d6);
+
+        r0[i5] = $r1;
+
+        i5 = i5 + 1;
+
+        goto label3;
+
+     label4:
+        return r0;
+    }
+}

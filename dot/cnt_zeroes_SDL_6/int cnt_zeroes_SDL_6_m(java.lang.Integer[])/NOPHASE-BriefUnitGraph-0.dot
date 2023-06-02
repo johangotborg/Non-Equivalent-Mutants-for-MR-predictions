@@ -1,0 +1,22 @@
+digraph "int cnt_zeroes_SDL_6_m(java.lang.Integer[])" {
+    label="int cnt_zeroes_SDL_6_m(java.lang.Integer[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="i1 = 0",];
+    "0"->"1";
+    "2" [label="i2 = 0",];
+    "1"->"2";
+    "3" [label="label1: $i0 = lengthof r0",];
+    "2"->"3";
+    "4" [label="if i2 >= $i0 goto label2",];
+    "3"->"4";
+    "5" [label="i1 = i1 + 1",];
+    "4"->"5";
+    "8" [style=filled,fillcolor=lightgray,label="label2: return i1",];
+    "4"->"8";
+    "6" [label="i2 = i2 + 1",];
+    "5"->"6";
+    "7" [label="goto label1",];
+    "6"->"7";
+    "7"->"3";
+}

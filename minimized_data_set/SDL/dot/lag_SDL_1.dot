@@ -1,0 +1,29 @@
+digraph "double lag_SDL_1(java.lang.Double[],java.lang.Double)" {
+    label="double lag_SDL_1(java.lang.Double[],java.lang.Double)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r2 := @parameter1",];
+    "0"->"1";
+    "2" [label="$r1 = r0[0]",];
+    "1"->"2";
+    "3" [label="$d1 = $r1.doubleValue()",];
+    "2"->"3";
+    "4" [label="$d2 = r2.doubleValue()",];
+    "3"->"4";
+    "5" [label="$d3 = $d1 - $d2",];
+    "4"->"5";
+    "6" [label="$r3 = r0[0]",];
+    "5"->"6";
+    "7" [label="$d4 = $r3.doubleValue()",];
+    "6"->"7";
+    "8" [label="$d5 = r2.doubleValue()",];
+    "7"->"8";
+    "9" [label="$d6 = $d4 - $d5",];
+    "8"->"9";
+    "10" [label="d7 = $d3 * $d6",];
+    "9"->"10";
+    "11" [label="d8 = 0.0 / d7",];
+    "10"->"11";
+    "12" [style=filled,fillcolor=lightgray,label="return d8",];
+    "11"->"12";
+}

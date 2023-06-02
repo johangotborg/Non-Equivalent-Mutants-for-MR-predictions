@@ -1,0 +1,34 @@
+digraph "java.lang.Integer[] dec_array_LOI_4_m(java.lang.Integer[],java.lang.Integer)" {
+    label="java.lang.Integer[] dec_array_LOI_4_m(java.lang.Integer[],java.lang.Integer)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r3 := @parameter1",];
+    "0"->"1";
+    "2" [label="i5 = 0",];
+    "1"->"2";
+    "3" [label="label1: $i0 = lengthof r0",];
+    "2"->"3";
+    "4" [label="if i5 >= $i0 goto label2",];
+    "3"->"4";
+    "5" [label="i1 = i5 ^ -1",];
+    "4"->"5";
+    "14" [style=filled,fillcolor=lightgray,label="label2: return r0",];
+    "4"->"14";
+    "6" [label="$r2 = r0[i1]",];
+    "5"->"6";
+    "7" [label="$i2 = $r2.intValue()",];
+    "6"->"7";
+    "8" [label="$i3 = r3.intValue()",];
+    "7"->"8";
+    "9" [label="$i4 = $i2 - $i3",];
+    "8"->"9";
+    "10" [label="$r4 = java.lang.Integer.valueOf($i4)",];
+    "9"->"10";
+    "11" [label="r0[i1] = $r4",];
+    "10"->"11";
+    "12" [label="i5 = i5 + 1",];
+    "11"->"12";
+    "13" [label="goto label1",];
+    "12"->"13";
+    "13"->"3";
+}

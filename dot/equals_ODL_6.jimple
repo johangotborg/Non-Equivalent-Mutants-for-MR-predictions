@@ -1,0 +1,107 @@
+public class equals_ODL_6 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        equals_ODL_6 r0;
+
+        r0 := @this: equals_ODL_6;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static boolean equals_ODL_6_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1;
+        int $i0, $i1, $i2, $i6, i7;
+        java.lang.Double $r2, $r3;
+        double $d0, $d1, $d2, $d3;
+        byte $b3, $b4, $b5;
+        boolean $z0;
+
+        r1 := @parameter0: java.lang.Double[];
+
+        r0 := @parameter1: java.lang.Double[];
+
+        if r0 != null goto label07;
+
+        if r1 != null goto label01;
+
+        $b4 = 1;
+
+        goto label02;
+
+     label01:
+        $b4 = 0;
+
+     label02:
+        if r0 != null goto label03;
+
+        $b5 = 1;
+
+        goto label04;
+
+     label03:
+        $b5 = 0;
+
+     label04:
+        $i6 = $b4 ^ $b5;
+
+        if $i6 != 0 goto label05;
+
+        $z0 = 1;
+
+        goto label06;
+
+     label05:
+        $z0 = 0;
+
+     label06:
+        return $z0;
+
+     label07:
+        $i1 = lengthof r1;
+
+        $i0 = lengthof r0;
+
+        if $i1 == $i0 goto label08;
+
+        return 0;
+
+     label08:
+        i7 = 0;
+
+     label09:
+        $i2 = lengthof r1;
+
+        if i7 >= $i2 goto label11;
+
+        $r2 = r0[i7];
+
+        $d0 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r1[i7];
+
+        $d1 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d2 = $d0 - $d1;
+
+        $d3 = staticinvoke <java.lang.Math: double abs(double)>($d2);
+
+        $b3 = $d3 cmpl 1.0E-4;
+
+        if $b3 <= 0 goto label10;
+
+        return 0;
+
+     label10:
+        i7 = i7 + 1;
+
+        goto label09;
+
+     label11:
+        return 1;
+    }
+}

@@ -1,0 +1,48 @@
+public class product_AOIU_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        product_AOIU_1 r0;
+
+        r0 := @this: product_AOIU_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double product_AOIU_1_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int $i0, i1, i2;
+        java.lang.Double $r1;
+        double $d0, d1;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        $i0 = lengthof r0;
+
+        i1 = neg $i0;
+
+        d1 = 1.0;
+
+        i2 = i1;
+
+     label1:
+        i2 = i2 + -1;
+
+        if i2 < 0 goto label2;
+
+        $r1 = r0[i2];
+
+        $d0 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        d1 = d1 * $d0;
+
+        goto label1;
+
+     label2:
+        return d1;
+    }
+}

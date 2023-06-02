@@ -1,0 +1,116 @@
+public class skew_AOIS_68 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        skew_AOIS_68 r0;
+
+        r0 := @this: skew_AOIS_68;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double skew_AOIS_68_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int $i0, $i1, $i2, $i3, $i4, i5, i6;
+        double $d0, $d1, $d2, $d3, $d4, d5, $d6, $d7, $d8, $d9, $d10, $d11, $d12, $d13, $d14, $d15, $d16, $d17, d18, d19, d20, d21, d22;
+        java.lang.Double $r1, $r2, $r3, $r4;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        d18 = 0.0;
+
+        d19 = 0.0;
+
+        d20 = 0.0;
+
+        i5 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i5 >= $i0 goto label2;
+
+        $r2 = r0[i5];
+
+        $d14 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        d18 = d18 + $d14;
+
+        $r3 = r0[i5];
+
+        $d15 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $r4 = r0[i5];
+
+        $d16 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $d17 = $d15 * $d16;
+
+        d20 = d20 + $d17;
+
+        i5 = i5 + 1;
+
+        goto label1;
+
+     label2:
+        $i1 = lengthof r0;
+
+        $d0 = (double) $i1;
+
+        d21 = d18 / $d0;
+
+        $d1 = d21 * d18;
+
+        $d3 = d20 - $d1;
+
+        $i2 = lengthof r0;
+
+        $d2 = (double) $i2;
+
+        $d4 = $d3 / $d2;
+
+        d5 = staticinvoke <java.lang.Math: double sqrt(double)>($d4);
+
+        i6 = 0;
+
+     label3:
+        $i3 = lengthof r0;
+
+        if i6 >= $i3 goto label4;
+
+        $r1 = r0[i6];
+
+        $d11 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $d12 = $d11 - d21;
+
+        $d13 = staticinvoke <java.lang.Math: double pow(double,double)>($d12, 3.0);
+
+        d19 = d19 + $d13;
+
+        i6 = i6 + 1;
+
+        goto label3;
+
+     label4:
+        $i4 = lengthof r0;
+
+        $d6 = (double) $i4;
+
+        d22 = d19 / $d6;
+
+        $d7 = d22 - 1.0;
+
+        $d8 = d5 * d5;
+
+        $d9 = $d8 * d5;
+
+        $d10 = $d7 / $d9;
+
+        return $d10;
+    }
+}

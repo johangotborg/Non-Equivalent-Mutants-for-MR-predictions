@@ -1,0 +1,40 @@
+public class ebeSubtract_SDL_2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        ebeSubtract_SDL_2 r0;
+
+        r0 := @this: ebeSubtract_SDL_2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Double[] ebeSubtract_SDL_2(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1, r3;
+        int $i0, $i1;
+        java.lang.Object $r2;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        $i1 = lengthof r0;
+
+        $i0 = lengthof r1;
+
+        if $i1 == $i0 goto label1;
+
+        return null;
+
+     label1:
+        $r2 = virtualinvoke r0.<java.lang.Object: java.lang.Object clone()>();
+
+        r3 = (java.lang.Double[]) $r2;
+
+        return r3;
+    }
+}

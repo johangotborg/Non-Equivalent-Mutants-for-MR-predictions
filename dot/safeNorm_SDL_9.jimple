@@ -1,0 +1,166 @@
+public class safeNorm_SDL_9 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        safeNorm_SDL_9 r0;
+
+        r0 := @this: safeNorm_SDL_9;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double safeNorm_SDL_9_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int $i0, $i1, i10;
+        double d4, d5, $d6, $d7, $d8, $d9, $d10, $d11, $d12, $d13, $d14, $d15, $d16, $d17, $d18, $d19, $d20, d21, $d22, $d23, $d24, $d25, d26, d27, d28, d29, d30, d31;
+        byte $b2, $b3, $b4, $b5, $b6, $b7, $b8, $b9;
+        java.lang.Double $r1;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        d26 = 0.0;
+
+        d27 = 0.0;
+
+        d28 = 0.0;
+
+        $i0 = lengthof r0;
+
+        d4 = (double) $i0;
+
+        d5 = 1.304E19 / d4;
+
+        i10 = 0;
+
+     label01:
+        $i1 = lengthof r0;
+
+        if i10 >= $i1 goto label07;
+
+        $r1 = r0[i10];
+
+        $d20 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        d21 = staticinvoke <java.lang.Math: double abs(double)>($d20);
+
+        $b5 = d21 cmpg 3.834E-20;
+
+        if $b5 < 0 goto label02;
+
+        $b9 = d21 cmpl d5;
+
+        if $b9 <= 0 goto label05;
+
+     label02:
+        $b6 = d21 cmpl 3.834E-20;
+
+        if $b6 <= 0 goto label03;
+
+        goto label06;
+
+     label03:
+        $b7 = d21 cmpl d28;
+
+        if $b7 <= 0 goto label04;
+
+        d29 = d28 / d21;
+
+        $d23 = d27 * d29;
+
+        $d24 = $d23 * d29;
+
+        d27 = 1.0 + $d24;
+
+        d28 = d21;
+
+        goto label06;
+
+     label04:
+        $b8 = d21 cmpl 0.0;
+
+        if $b8 == 0 goto label06;
+
+        d30 = d21 / d28;
+
+        $d22 = d30 * d30;
+
+        d27 = d27 + $d22;
+
+        goto label06;
+
+     label05:
+        $d25 = d21 * d21;
+
+        d26 = d26 + $d25;
+
+     label06:
+        i10 = i10 + 1;
+
+        goto label01;
+
+     label07:
+        $b2 = 0.0 cmpl 0.0;
+
+        if $b2 == 0 goto label08;
+
+        $d16 = d26 / 0.0;
+
+        $d17 = $d16 / 0.0;
+
+        $d18 = 0.0 + $d17;
+
+        $d19 = staticinvoke <java.lang.Math: double sqrt(double)>($d18);
+
+        d31 = 0.0 * $d19;
+
+        goto label11;
+
+     label08:
+        $b3 = d26 cmpl 0.0;
+
+        if $b3 != 0 goto label09;
+
+        $d15 = staticinvoke <java.lang.Math: double sqrt(double)>(d27);
+
+        d31 = d28 * $d15;
+
+        goto label11;
+
+     label09:
+        $b4 = d26 cmpl d28;
+
+        if $b4 < 0 goto label10;
+
+        $d11 = d28 / d26;
+
+        $d10 = d28 * d27;
+
+        $d12 = $d11 * $d10;
+
+        $d13 = 1.0 + $d12;
+
+        $d14 = d26 * $d13;
+
+        d31 = staticinvoke <java.lang.Math: double sqrt(double)>($d14);
+
+        goto label11;
+
+     label10:
+        $d7 = d26 / d28;
+
+        $d6 = d28 * d27;
+
+        $d8 = $d7 + $d6;
+
+        $d9 = d28 * $d8;
+
+        d31 = staticinvoke <java.lang.Math: double sqrt(double)>($d9);
+
+     label11:
+        return d31;
+    }
+}

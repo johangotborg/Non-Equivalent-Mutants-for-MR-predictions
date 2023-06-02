@@ -1,0 +1,87 @@
+public class g_Test_ROR_14 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        g_Test_ROR_14 r0;
+
+        r0 := @this: g_Test_ROR_14;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double g_Test_ROR_14_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r2;
+        int $i0, $i1, i2, i3;
+        double $d0, $d1, $d2, $d3, $d5, $d6, d16, $d17;
+        java.lang.Double $r1, $r3, $r4, $r7, $r8;
+
+        r2 := @parameter0: java.lang.Double[];
+
+        r0 := @parameter1: java.lang.Double[];
+
+        i2 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i2 >= $i0 goto label2;
+
+        $r7 = r2[i2];
+
+        virtualinvoke $r7.<java.lang.Double: double doubleValue()>();
+
+        $r8 = r0[i2];
+
+        virtualinvoke $r8.<java.lang.Double: double doubleValue()>();
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        d16 = 0.0;
+
+        i3 = 0;
+
+     label3:
+        $i1 = lengthof r0;
+
+        if i3 >= $i1 goto label5;
+
+        goto label4;
+
+     label4:
+        $r1 = r0[i3];
+
+        $d1 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r2[i3];
+
+        $d2 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d3 = $d1 / $d2;
+
+        $d17 = staticinvoke <java.lang.Math: double log(double)>($d3);
+
+        $r4 = r0[i3];
+
+        $d5 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $d6 = $d5 * $d17;
+
+        d16 = d16 + $d6;
+
+        i3 = i3 + 1;
+
+        goto label3;
+
+     label5:
+        $d0 = 2.0 * d16;
+
+        return $d0;
+    }
+}

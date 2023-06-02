@@ -1,0 +1,92 @@
+public class shell_sort_AOIS_51 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        shell_sort_AOIS_51 r0;
+
+        r0 := @this: shell_sort_AOIS_51;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Integer[] shell_sort_AOIS_51_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, $i2, $i3, $i4, i5, $i6, $i7, i8, i9, i10, i11;
+        java.lang.Integer $r1, $r2, $r3, $r4, $r5;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        $i0 = lengthof r0;
+
+        i8 = $i0 / 2;
+
+     label1:
+        if i8 <= 0 goto label7;
+
+        i9 = i8;
+
+     label2:
+        $i1 = lengthof r0;
+
+        if i9 >= $i1 goto label6;
+
+        i10 = i9 - i8;
+
+     label3:
+        if i10 < 0 goto label5;
+
+        $i2 = i10 + i8;
+
+        $r1 = r0[$i2];
+
+        $i3 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        $r2 = r0[i10];
+
+        $i4 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        if $i3 < $i4 goto label4;
+
+        goto label5;
+
+     label4:
+        $r3 = r0[i10];
+
+        i5 = virtualinvoke $r3.<java.lang.Integer: int intValue()>();
+
+        i11 = i10 + 1;
+
+        $i6 = i11 + i8;
+
+        $r4 = r0[$i6];
+
+        r0[i10] = $r4;
+
+        $i7 = i11 + i8;
+
+        $r5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i5);
+
+        r0[$i7] = $r5;
+
+        i10 = i11 - i8;
+
+        goto label3;
+
+     label5:
+        i9 = i9 + 1;
+
+        goto label2;
+
+     label6:
+        i8 = i8 / 2;
+
+        goto label1;
+
+     label7:
+        return r0;
+    }
+}

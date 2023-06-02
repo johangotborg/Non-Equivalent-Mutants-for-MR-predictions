@@ -1,0 +1,13 @@
+digraph "boolean checkNonNegative_SDL_5_m(double[])" {
+    label="boolean checkNonNegative_SDL_5_m(double[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="$i1 = lengthof r0",];
+    "0"->"1";
+    "2" [label="if 0 >= $i1 goto label1",];
+    "1"->"2";
+    "3" [style=filled,fillcolor=lightgray,label="return 0",];
+    "2"->"3";
+    "4" [style=filled,fillcolor=lightgray,label="label1: return 1",];
+    "2"->"4";
+}

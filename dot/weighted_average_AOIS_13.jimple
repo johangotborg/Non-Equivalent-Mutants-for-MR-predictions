@@ -1,0 +1,66 @@
+public class weighted_average_AOIS_13 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        weighted_average_AOIS_13 r0;
+
+        r0 := @this: weighted_average_AOIS_13;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double weighted_average_AOIS_13_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r2;
+        int $i0, i1, i2;
+        double $d0, $d1, $d2, $d3, $d4, d5, d6;
+        java.lang.Double $r1, $r3, $r4;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double[];
+
+        d5 = 0.0;
+
+        d6 = 0.0;
+
+        i1 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i1 >= $i0 goto label2;
+
+        $r1 = r0[i1];
+
+        $d1 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        i2 = i1 + 1;
+
+        $r3 = r2[i2];
+
+        $d2 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d3 = $d1 * $d2;
+
+        d5 = d5 + $d3;
+
+        $r4 = r2[i2];
+
+        $d4 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        d6 = d6 + $d4;
+
+        i1 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        $d0 = d5 / d6;
+
+        return $d0;
+    }
+}

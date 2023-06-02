@@ -1,0 +1,23 @@
+public class cal_AbsoluteDiff_SDL_4 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        cal_AbsoluteDiff_SDL_4 r0;
+
+        r0 := @this: cal_AbsoluteDiff_SDL_4;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double[] cal_AbsoluteDiff_SDL_4_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        return null;
+    }
+}

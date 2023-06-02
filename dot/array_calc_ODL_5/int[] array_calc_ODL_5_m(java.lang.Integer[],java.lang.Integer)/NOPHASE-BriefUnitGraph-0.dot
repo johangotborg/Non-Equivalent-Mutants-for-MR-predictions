@@ -1,0 +1,28 @@
+digraph "int[] array_calc_ODL_5_m(java.lang.Integer[],java.lang.Integer)" {
+    label="int[] array_calc_ODL_5_m(java.lang.Integer[],java.lang.Integer)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r2 := @parameter1",];
+    "0"->"1";
+    "2" [label="$i0 = lengthof r0",];
+    "1"->"2";
+    "3" [label="r1 = newarray (int)[$i0]",];
+    "2"->"3";
+    "4" [label="i3 = 0",];
+    "3"->"4";
+    "5" [label="label1: $i1 = lengthof r0",];
+    "4"->"5";
+    "6" [label="if i3 >= $i1 goto label2",];
+    "5"->"6";
+    "7" [label="$i2 = r2.intValue()",];
+    "6"->"7";
+    "11" [style=filled,fillcolor=lightgray,label="label2: return r1",];
+    "6"->"11";
+    "8" [label="r1[i3] = $i2",];
+    "7"->"8";
+    "9" [label="i3 = i3 + 1",];
+    "8"->"9";
+    "10" [label="goto label1",];
+    "9"->"10";
+    "10"->"5";
+}

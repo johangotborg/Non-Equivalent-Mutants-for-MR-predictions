@@ -1,0 +1,28 @@
+digraph "java.lang.Integer[] dec_array_VDL_2_m(java.lang.Integer[],java.lang.Integer)" {
+    label="java.lang.Integer[] dec_array_VDL_2_m(java.lang.Integer[],java.lang.Integer)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r3 := @parameter1",];
+    "0"->"1";
+    "2" [label="label1: $i1 = lengthof r0",];
+    "1"->"2";
+    "3" [label="if 0 >= $i1 goto label2",];
+    "2"->"3";
+    "4" [label="$r2 = r0[0]",];
+    "3"->"4";
+    "11" [style=filled,fillcolor=lightgray,label="label2: return r0",];
+    "3"->"11";
+    "5" [label="$i3 = $r2.intValue()",];
+    "4"->"5";
+    "6" [label="$i4 = r3.intValue()",];
+    "5"->"6";
+    "7" [label="$i5 = $i3 - $i4",];
+    "6"->"7";
+    "8" [label="$r4 = java.lang.Integer.valueOf($i5)",];
+    "7"->"8";
+    "9" [label="r0[0] = $r4",];
+    "8"->"9";
+    "10" [label="goto label1",];
+    "9"->"10";
+    "10"->"2";
+}

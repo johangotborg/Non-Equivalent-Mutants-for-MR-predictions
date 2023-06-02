@@ -1,0 +1,26 @@
+public class power_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        power_SDL_1 r0;
+
+        r0 := @this: power_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Double[] power_SDL_1_m(java.lang.Double[], java.lang.Integer)
+    {
+        java.lang.Double[] r0;
+        java.lang.Integer r1;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Integer;
+
+        return r0;
+    }
+}

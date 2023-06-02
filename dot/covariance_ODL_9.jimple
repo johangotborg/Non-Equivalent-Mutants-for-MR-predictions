@@ -1,0 +1,76 @@
+public class covariance_ODL_9 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        covariance_ODL_9 r0;
+
+        r0 := @this: covariance_ODL_9;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double covariance_ODL_9_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r2;
+        int i0, $i1, i2;
+        java.lang.Double $r1, $r3, $r4, $r5;
+        double $d0, $d1, d2, d3, $d4, $d5, $d6, $d7, d9, d10;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double[];
+
+        i0 = lengthof r0;
+
+        $r1 = r0[0];
+
+        virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r2[0];
+
+        d9 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        d10 = 0.0;
+
+        i2 = 1;
+
+     label1:
+        if i2 >= i0 goto label2;
+
+        $r4 = r0[i2];
+
+        d2 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $r5 = r2[i2];
+
+        d3 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $d4 = (double) i2;
+
+        $d5 = d9 / $d4;
+
+        $d6 = d3 - $d5;
+
+        $d7 = d2 * $d6;
+
+        d10 = d10 + $d7;
+
+        d9 = d9 + d3;
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        $i1 = i0 - 1;
+
+        $d0 = (double) $i1;
+
+        $d1 = d10 / $d0;
+
+        return $d1;
+    }
+}

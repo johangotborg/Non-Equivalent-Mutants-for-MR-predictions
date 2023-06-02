@@ -1,0 +1,88 @@
+public class sampleKurtosis_VDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sampleKurtosis_VDL_1 r0;
+
+        r0 := @this: sampleKurtosis_VDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double sampleKurtosis_VDL_1_m(java.lang.Integer, java.lang.Double, java.lang.Double)
+    {
+        java.lang.Integer r0;
+        int i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11;
+        java.lang.Double r1, r2;
+        double d0, d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, $d11, $d12, $d13, $d14, $d15, $d16;
+
+        r0 := @parameter0: java.lang.Integer;
+
+        r2 := @parameter1: java.lang.Double;
+
+        r1 := @parameter2: java.lang.Double;
+
+        i0 = virtualinvoke r0.<java.lang.Integer: int intValue()>();
+
+        d0 = virtualinvoke r1.<java.lang.Double: double doubleValue()>();
+
+        d1 = (double) i0;
+
+        $d2 = (double) i0;
+
+        $d4 = d1 * $d2;
+
+        $i1 = i0 + 1;
+
+        $d3 = (double) $i1;
+
+        $d8 = $d4 * $d3;
+
+        $i3 = i0 - 1;
+
+        $i2 = i0 - 2;
+
+        $i5 = $i3 * $i2;
+
+        $i4 = i0 - 3;
+
+        $i6 = $i5 * $i4;
+
+        $d5 = (double) $i6;
+
+        $d6 = $d5 * d0;
+
+        $d7 = $d6 * d0;
+
+        $d15 = $d8 / $d7;
+
+        $i7 = i0 - 1;
+
+        $d9 = (double) $i7;
+
+        $d11 = 3.0 * $d9;
+
+        $i8 = i0 - 1;
+
+        $d10 = (double) $i8;
+
+        $d13 = $d11 * $d10;
+
+        $i10 = i0 - 2;
+
+        $i9 = i0 - 3;
+
+        $i11 = $i10 * $i9;
+
+        $d12 = (double) $i11;
+
+        $d14 = $d13 / $d12;
+
+        $d16 = $d15 - $d14;
+
+        return $d16;
+    }
+}

@@ -1,0 +1,7 @@
+digraph "boolean checkNonNegative_SDL_1_m(double[])" {
+    label="boolean checkNonNegative_SDL_1_m(double[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [style=filled,fillcolor=lightgray,label="return 1",];
+    "0"->"1";
+}

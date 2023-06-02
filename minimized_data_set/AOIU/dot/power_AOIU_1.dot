@@ -1,0 +1,36 @@
+digraph "java.lang.Double[] power_AOIU_1(java.lang.Double[],java.lang.Integer)" {
+    label="java.lang.Double[] power_AOIU_1(java.lang.Double[],java.lang.Integer)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r2 := @parameter1",];
+    "0"->"1";
+    "2" [label="i3 = 0",];
+    "1"->"2";
+    "3" [label="label1: $i1 = neg i3",];
+    "2"->"3";
+    "4" [label="$i0 = lengthof r0",];
+    "3"->"4";
+    "5" [label="if $i1 >= $i0 goto label2",];
+    "4"->"5";
+    "6" [label="$r1 = r0[i3]",];
+    "5"->"6";
+    "15" [style=filled,fillcolor=lightgray,label="label2: return r0",];
+    "5"->"15";
+    "7" [label="$d0 = $r1.doubleValue()",];
+    "6"->"7";
+    "8" [label="$i2 = r2.intValue()",];
+    "7"->"8";
+    "9" [label="$d1 = (double) $i2",];
+    "8"->"9";
+    "10" [label="$d2 = java.lang.Math.pow($d0, $d1)",];
+    "9"->"10";
+    "11" [label="$r3 = java.lang.Double.valueOf($d2)",];
+    "10"->"11";
+    "12" [label="r0[i3] = $r3",];
+    "11"->"12";
+    "13" [label="i3 = i3 + 1",];
+    "12"->"13";
+    "14" [label="goto label1",];
+    "13"->"14";
+    "14"->"3";
+}

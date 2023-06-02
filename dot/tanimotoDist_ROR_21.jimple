@@ -1,0 +1,92 @@
+public class tanimotoDist_ROR_21 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        tanimotoDist_ROR_21 r0;
+
+        r0 := @this: tanimotoDist_ROR_21;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double tanimotoDist_ROR_21_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r2;
+        int $i0, i2;
+        double $d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, d10, d11, d12, d13;
+        byte $b1;
+        java.lang.Double $r1, $r3, $r4, $r5, $r6, $r7;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double[];
+
+        d10 = 0.0;
+
+        d11 = 0.0;
+
+        d12 = 0.0;
+
+        i2 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i2 >= $i0 goto label2;
+
+        $r1 = r0[i2];
+
+        $d1 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r2[i2];
+
+        $d2 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d3 = $d1 * $d2;
+
+        d10 = d10 + $d3;
+
+        $r4 = r0[i2];
+
+        $d4 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $r5 = r0[i2];
+
+        $d5 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $d6 = $d4 * $d5;
+
+        d11 = d11 + $d6;
+
+        $r6 = r2[i2];
+
+        $d7 = virtualinvoke $r6.<java.lang.Double: double doubleValue()>();
+
+        $r7 = r2[i2];
+
+        $d8 = virtualinvoke $r7.<java.lang.Double: double doubleValue()>();
+
+        $d9 = $d7 * $d8;
+
+        d12 = d12 + $d9;
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        $d0 = d11 + d12;
+
+        d13 = $d0 - d10;
+
+        $b1 = d13 cmpg d10;
+
+        if $b1 >= 0 goto label3;
+
+     label3:
+        return 0.0;
+    }
+}

@@ -1,0 +1,41 @@
+public class add_values_VDL_2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        add_values_VDL_2 r0;
+
+        r0 := @this: add_values_VDL_2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int add_values_VDL_2_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i1, $i2, i3;
+        java.lang.Integer $r1;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        i3 = 0;
+
+     label1:
+        $i1 = lengthof r0;
+
+        if 0 >= $i1 goto label2;
+
+        $r1 = r0[0];
+
+        $i2 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        i3 = i3 + $i2;
+
+        goto label1;
+
+     label2:
+        return i3;
+    }
+}

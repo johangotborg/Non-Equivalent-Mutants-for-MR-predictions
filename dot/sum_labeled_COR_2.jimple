@@ -1,0 +1,78 @@
+public class sum_labeled_COR_2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sum_labeled_COR_2 r0;
+
+        r0 := @this: sum_labeled_COR_2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double sum_labeled_COR_2_m(int[], int, int)
+    {
+        int i0, $i1, i2, $i3, $i4, $i5, $i8;
+        int[] r0;
+        double $d0, $d1, $d2, $d3;
+        byte $b6, $b7;
+
+        r0 := @parameter0: int[];
+
+        i0 := @parameter1: int;
+
+        i2 := @parameter2: int;
+
+        if i0 >= 0 goto label1;
+
+        $b6 = 1;
+
+        goto label2;
+
+     label1:
+        $b6 = 0;
+
+     label2:
+        $i1 = lengthof r0;
+
+        if i0 < $i1 goto label3;
+
+        $b7 = 1;
+
+        goto label4;
+
+     label3:
+        $b7 = 0;
+
+     label4:
+        $i8 = $b6 ^ $b7;
+
+        if $i8 != 0 goto label5;
+
+        if i2 < 0 goto label5;
+
+        $i3 = lengthof r0;
+
+        if i2 < $i3 goto label6;
+
+     label5:
+        return -100000.0;
+
+     label6:
+        $i4 = r0[i0];
+
+        $d2 = (double) $i4;
+
+        $i5 = r0[i2];
+
+        $d0 = (double) $i5;
+
+        $d1 = $d0 / 2.0;
+
+        $d3 = $d2 + $d1;
+
+        return $d3;
+    }
+}

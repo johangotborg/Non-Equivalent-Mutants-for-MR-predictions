@@ -1,0 +1,106 @@
+public class pooledMean_LOI_6 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        pooledMean_LOI_6 r0;
+
+        r0 := @this: pooledMean_LOI_6;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double pooledMean_LOI_6_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, i10, i11;
+        double $d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, d11, d12, d13, d14;
+        java.lang.Double $r2, $r3;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        d11 = 0.0;
+
+        i10 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i10 >= $i0 goto label2;
+
+        $r3 = r0[i10];
+
+        $d10 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        d11 = d11 + $d10;
+
+        i10 = i10 + 1;
+
+        goto label1;
+
+     label2:
+        $i1 = lengthof r0;
+
+        $i2 = $i1 ^ -1;
+
+        $d0 = (double) $i2;
+
+        d12 = d11 / $d0;
+
+        d13 = 0.0;
+
+        i11 = 0;
+
+     label3:
+        $i3 = lengthof r1;
+
+        if i11 >= $i3 goto label4;
+
+        $r2 = r1[i11];
+
+        $d9 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        d13 = d13 + $d9;
+
+        i11 = i11 + 1;
+
+        goto label3;
+
+     label4:
+        $i4 = lengthof r1;
+
+        $d1 = (double) $i4;
+
+        d14 = d13 / $d1;
+
+        $i5 = lengthof r0;
+
+        $d2 = (double) $i5;
+
+        $d5 = $d2 * d12;
+
+        $i6 = lengthof r1;
+
+        $d3 = (double) $i6;
+
+        $d4 = $d3 * d14;
+
+        $d7 = $d5 + $d4;
+
+        $i8 = lengthof r0;
+
+        $i7 = lengthof r1;
+
+        $i9 = $i8 + $i7;
+
+        $d6 = (double) $i9;
+
+        $d8 = $d7 / $d6;
+
+        return $d8;
+    }
+}

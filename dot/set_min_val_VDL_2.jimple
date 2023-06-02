@@ -1,0 +1,45 @@
+public class set_min_val_VDL_2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        set_min_val_VDL_2 r0;
+
+        r0 := @this: set_min_val_VDL_2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Integer[] set_min_val_VDL_2_m(java.lang.Integer[], java.lang.Integer)
+    {
+        java.lang.Integer[] r0;
+        java.lang.Integer $r1, r2;
+        int $i1, $i2, $i3;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r2 := @parameter1: java.lang.Integer;
+
+     label1:
+        $i3 = lengthof r0;
+
+        if 0 >= $i3 goto label2;
+
+        $r1 = r0[0];
+
+        $i1 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        $i2 = virtualinvoke r2.<java.lang.Integer: int intValue()>();
+
+        if $i1 >= $i2 goto label1;
+
+        r0[0] = r2;
+
+        goto label1;
+
+     label2:
+        return r0;
+    }
+}

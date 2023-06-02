@@ -1,0 +1,23 @@
+public class durbinWatson_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        durbinWatson_SDL_1 r0;
+
+        r0 := @this: durbinWatson_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double durbinWatson_SDL_1_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        return 0.0;
+    }
+}

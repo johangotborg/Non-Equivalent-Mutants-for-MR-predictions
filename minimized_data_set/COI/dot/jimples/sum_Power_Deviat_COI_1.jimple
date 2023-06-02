@@ -1,0 +1,61 @@
+public class sum_Power_Deviat_COI_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sum_Power_Deviat_COI_1 r0;
+
+        r0 := @this: sum_Power_Deviat_COI_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double sum_Power_Deviat_COI_1(java.lang.Double[], java.lang.Integer, java.lang.Double)
+    {
+        java.lang.Double[] r0;
+        int $i0, $i1, i2;
+        java.lang.Double $r1, r2;
+        double $d0, $d1, $d2, $d3, $d4, d5;
+        java.lang.Integer r3;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r3 := @parameter1: java.lang.Integer;
+
+        r2 := @parameter2: java.lang.Double;
+
+        d5 = 0.0;
+
+        i2 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i2 < $i0 goto label2;
+
+        $r1 = r0[i2];
+
+        $d0 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $d1 = virtualinvoke r2.<java.lang.Double: double doubleValue()>();
+
+        $d2 = $d0 - $d1;
+
+        $i1 = virtualinvoke r3.<java.lang.Integer: int intValue()>();
+
+        $d3 = (double) $i1;
+
+        $d4 = staticinvoke <java.lang.Math: double pow(double,double)>($d2, $d3);
+
+        d5 = d5 + $d4;
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        return d5;
+    }
+}

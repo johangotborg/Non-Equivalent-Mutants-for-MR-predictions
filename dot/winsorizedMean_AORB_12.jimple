@@ -1,0 +1,127 @@
+public class winsorizedMean_AORB_12 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        winsorizedMean_AORB_12 r0;
+
+        r0 := @this: winsorizedMean_AORB_12;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double winsorizedMean_AORB_12_m(java.lang.Double[], java.lang.Integer, java.lang.Integer)
+    {
+        java.lang.Double[] r0;
+        int i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, i11, i12, i13;
+        double $d0, d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, d11, d12, d13;
+        java.lang.Integer r1, r3;
+        java.lang.Double $r2, $r4, $r5, $r6, $r7;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Integer;
+
+        r3 := @parameter2: java.lang.Integer;
+
+        i0 = lengthof r0;
+
+        d11 = 0.0;
+
+        i11 = 0;
+
+     label1:
+        $i1 = lengthof r0;
+
+        if i11 >= $i1 goto label2;
+
+        $r7 = r0[i11];
+
+        $d10 = virtualinvoke $r7.<java.lang.Double: double doubleValue()>();
+
+        d11 = d11 + $d10;
+
+        i11 = i11 + 1;
+
+        goto label1;
+
+     label2:
+        $i2 = lengthof r0;
+
+        $d0 = (double) $i2;
+
+        d12 = d11 / $d0;
+
+        $i3 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        $r2 = r0[$i3];
+
+        d1 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        i12 = 0;
+
+     label3:
+        $i4 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        if i12 >= $i4 goto label4;
+
+        $r6 = r0[i12];
+
+        $d6 = virtualinvoke $r6.<java.lang.Double: double doubleValue()>();
+
+        $d8 = d1 - $d6;
+
+        $d7 = (double) i0;
+
+        $d9 = $d8 - $d7;
+
+        d12 = d12 + $d9;
+
+        i12 = i12 + 1;
+
+        goto label3;
+
+     label4:
+        $i5 = i0 - 1;
+
+        $i6 = virtualinvoke r3.<java.lang.Integer: int intValue()>();
+
+        $i7 = $i5 - $i6;
+
+        $r4 = r0[$i7];
+
+        d13 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        i13 = 0;
+
+     label5:
+        $i8 = virtualinvoke r3.<java.lang.Integer: int intValue()>();
+
+        if i13 >= $i8 goto label6;
+
+        $i9 = i0 - 1;
+
+        $i10 = $i9 - i13;
+
+        $r5 = r0[$i10];
+
+        $d2 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $d4 = d13 - $d2;
+
+        $d3 = (double) i0;
+
+        $d5 = $d4 / $d3;
+
+        d12 = d12 + $d5;
+
+        i13 = i13 + 1;
+
+        goto label5;
+
+     label6:
+        return d12;
+    }
+}

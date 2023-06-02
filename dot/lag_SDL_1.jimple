@@ -1,0 +1,47 @@
+public class lag_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        lag_SDL_1 r0;
+
+        r0 := @this: lag_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double lag_SDL_1_m(java.lang.Double[], java.lang.Double)
+    {
+        java.lang.Double[] r0;
+        java.lang.Double $r1, r2, $r3;
+        double $d1, $d2, $d3, $d4, $d5, $d6, d7, d8;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double;
+
+        $r1 = r0[0];
+
+        $d1 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $d2 = virtualinvoke r2.<java.lang.Double: double doubleValue()>();
+
+        $d3 = $d1 - $d2;
+
+        $r3 = r0[0];
+
+        $d4 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d5 = virtualinvoke r2.<java.lang.Double: double doubleValue()>();
+
+        $d6 = $d4 - $d5;
+
+        d7 = $d3 * $d6;
+
+        d8 = 0.0 / d7;
+
+        return d8;
+    }
+}

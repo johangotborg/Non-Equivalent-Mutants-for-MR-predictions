@@ -1,0 +1,23 @@
+public class square_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        square_SDL_1 r0;
+
+        r0 := @this: square_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Double[] square_SDL_1(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        return r0;
+    }
+}

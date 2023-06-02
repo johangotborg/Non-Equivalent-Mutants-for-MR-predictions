@@ -1,0 +1,39 @@
+public class s_add_SDL_3 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        s_add_SDL_3 r0;
+
+        r0 := @this: s_add_SDL_3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void s_add_SDL_3_m(int[], int[])
+    {
+        int[] r0, r1;
+        int $i0, $i1, $i2, i4;
+
+        r0 := @parameter0: int[];
+
+        r1 := @parameter1: int[];
+
+        i4 = 0;
+
+     label1:
+        $i1 = r0[i4];
+
+        $i0 = r1[i4];
+
+        $i2 = $i1 + $i0;
+
+        r0[i4] = $i2;
+
+        i4 = i4 + 1;
+
+        goto label1;
+    }
+}

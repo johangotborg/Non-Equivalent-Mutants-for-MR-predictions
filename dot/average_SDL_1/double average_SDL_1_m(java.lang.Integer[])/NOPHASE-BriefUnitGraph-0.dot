@@ -1,0 +1,13 @@
+digraph "double average_SDL_1_m(java.lang.Integer[])" {
+    label="double average_SDL_1_m(java.lang.Integer[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="$i0 = lengthof r0",];
+    "0"->"1";
+    "2" [label="$d1 = (double) $i0",];
+    "1"->"2";
+    "3" [label="$d2 = 0.0 / $d1",];
+    "2"->"3";
+    "4" [style=filled,fillcolor=lightgray,label="return $d2",];
+    "3"->"4";
+}

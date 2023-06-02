@@ -1,0 +1,107 @@
+public class winsorizedMean_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        winsorizedMean_SDL_1 r0;
+
+        r0 := @this: winsorizedMean_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double winsorizedMean_SDL_1(java.lang.Double[], java.lang.Integer, java.lang.Integer)
+    {
+        java.lang.Double[] r0;
+        int i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, i10, i11;
+        double $d1, d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, d11, d12;
+        java.lang.Integer r1, r3;
+        java.lang.Double $r2, $r4, $r5, $r6;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Integer;
+
+        r3 := @parameter2: java.lang.Integer;
+
+        i0 = lengthof r0;
+
+        $i1 = lengthof r0;
+
+        $d1 = (double) $i1;
+
+        d11 = 0.0 / $d1;
+
+        $i2 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        $r2 = r0[$i2];
+
+        d2 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        i10 = 0;
+
+     label1:
+        $i3 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        if i10 >= $i3 goto label2;
+
+        $r6 = r0[i10];
+
+        $d7 = virtualinvoke $r6.<java.lang.Double: double doubleValue()>();
+
+        $d9 = d2 - $d7;
+
+        $d8 = (double) i0;
+
+        $d10 = $d9 / $d8;
+
+        d11 = d11 + $d10;
+
+        i10 = i10 + 1;
+
+        goto label1;
+
+     label2:
+        $i4 = i0 - 1;
+
+        $i5 = virtualinvoke r3.<java.lang.Integer: int intValue()>();
+
+        $i6 = $i4 - $i5;
+
+        $r4 = r0[$i6];
+
+        d12 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        i11 = 0;
+
+     label3:
+        $i7 = virtualinvoke r3.<java.lang.Integer: int intValue()>();
+
+        if i11 >= $i7 goto label4;
+
+        $i8 = i0 - 1;
+
+        $i9 = $i8 - i11;
+
+        $r5 = r0[$i9];
+
+        $d3 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $d5 = d12 - $d3;
+
+        $d4 = (double) i0;
+
+        $d6 = $d5 / $d4;
+
+        d11 = d11 + $d6;
+
+        i11 = i11 + 1;
+
+        goto label3;
+
+     label4:
+        return d11;
+    }
+}

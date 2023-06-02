@@ -1,0 +1,38 @@
+public class sampleKurtosis_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sampleKurtosis_SDL_1 r0;
+
+        r0 := @this: sampleKurtosis_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double sampleKurtosis_SDL_1_m(java.lang.Integer, java.lang.Double, java.lang.Double)
+    {
+        java.lang.Integer r0;
+        int i0;
+        java.lang.Double r1, r2;
+        double $d2;
+
+        r0 := @parameter0: java.lang.Integer;
+
+        r2 := @parameter1: java.lang.Double;
+
+        r1 := @parameter2: java.lang.Double;
+
+        i0 = virtualinvoke r0.<java.lang.Integer: int intValue()>();
+
+        virtualinvoke r1.<java.lang.Double: double doubleValue()>();
+
+        virtualinvoke r2.<java.lang.Double: double doubleValue()>();
+
+        $d2 = (double) i0;
+
+        return 0.0;
+    }
+}

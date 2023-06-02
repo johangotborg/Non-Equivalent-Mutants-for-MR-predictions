@@ -1,0 +1,40 @@
+public class count_non_zeroes_SDL_6 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        count_non_zeroes_SDL_6 r0;
+
+        r0 := @this: count_non_zeroes_SDL_6;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int count_non_zeroes_SDL_6_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, i1, i2;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        i1 = 0;
+
+        i2 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i2 >= $i0 goto label2;
+
+        i1 = i1 + 1;
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        return i1;
+    }
+}

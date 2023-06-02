@@ -1,0 +1,61 @@
+public class insertion_sort_ODL_10 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        insertion_sort_ODL_10 r0;
+
+        r0 := @this: insertion_sort_ODL_10;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Integer[] insertion_sort_ODL_10(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, i1, $i2, i3, i4;
+        java.lang.Integer $r1, $r2, $r3;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        i3 = 1;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i3 >= $i0 goto label4;
+
+        i4 = i3;
+
+        $r1 = r0[i3];
+
+        i1 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+     label2:
+        if i4 <= 0 goto label3;
+
+        $i2 = i4 - 1;
+
+        $r3 = r0[$i2];
+
+        r0[i4] = $r3;
+
+        i4 = i4 + -1;
+
+        goto label2;
+
+     label3:
+        $r2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i1);
+
+        r0[i4] = $r2;
+
+        i3 = i3 + 1;
+
+        goto label1;
+
+     label4:
+        return r0;
+    }
+}

@@ -1,0 +1,36 @@
+public class get_array_value_ROR_13 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        get_array_value_ROR_13 r0;
+
+        r0 := @this: get_array_value_ROR_13;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int get_array_value_ROR_13_m(java.lang.Integer[], java.lang.Integer)
+    {
+        java.lang.Integer r0;
+        int $i0, $i1, $i2;
+        java.lang.Integer[] r1;
+
+        r1 := @parameter0: java.lang.Integer[];
+
+        r0 := @parameter1: java.lang.Integer;
+
+        $i0 = virtualinvoke r0.<java.lang.Integer: int intValue()>();
+
+        $i2 = $i0 - 1;
+
+        $i1 = lengthof r1;
+
+        if $i2 >= $i1 goto label1;
+
+     label1:
+        return -100000;
+    }
+}

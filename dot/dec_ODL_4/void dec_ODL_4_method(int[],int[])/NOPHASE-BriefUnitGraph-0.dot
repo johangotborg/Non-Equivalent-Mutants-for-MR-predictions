@@ -1,0 +1,24 @@
+digraph "void dec_ODL_4_method(int[],int[])" {
+    label="void dec_ODL_4_method(int[],int[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r1 := @parameter1",];
+    "0"->"1";
+    "2" [label="i2 = 0",];
+    "1"->"2";
+    "3" [label="label1: $i0 = lengthof r0",];
+    "2"->"3";
+    "4" [label="if i2 >= $i0 goto label2",];
+    "3"->"4";
+    "5" [label="$i1 = r1[i2]",];
+    "4"->"5";
+    "9" [style=filled,fillcolor=lightgray,label="label2: return",];
+    "4"->"9";
+    "6" [label="r0[i2] = $i1",];
+    "5"->"6";
+    "7" [label="i2 = i2 + 1",];
+    "6"->"7";
+    "8" [label="goto label1",];
+    "7"->"8";
+    "8"->"3";
+}

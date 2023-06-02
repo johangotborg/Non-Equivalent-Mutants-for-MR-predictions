@@ -1,0 +1,189 @@
+public class safeNorm_ODL_70 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        safeNorm_ODL_70 r0;
+
+        r0 := @this: safeNorm_ODL_70;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double safeNorm_ODL_70_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int $i0, $i1, i11;
+        double d2, d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, $d11, $d12, $d13, $d14, $d15, $d16, d17, $d18, $d19, $d20, $d21, $d22, $d23, $d24, d25, d26, d27, d28, d29, d30, d31, d32, d33, d34;
+        byte $b2, $b3, $b4, $b5, $b6, $b7, $b8, $b9, $b10;
+        java.lang.Double $r1;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        d25 = 0.0;
+
+        d26 = 0.0;
+
+        d27 = 0.0;
+
+        d28 = 0.0;
+
+        d29 = 0.0;
+
+        $i0 = lengthof r0;
+
+        d2 = (double) $i0;
+
+        d3 = 1.304E19 / d2;
+
+        i11 = 0;
+
+     label01:
+        $i1 = lengthof r0;
+
+        if i11 >= $i1 goto label08;
+
+        $r1 = r0[i11];
+
+        $d16 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        d17 = staticinvoke <java.lang.Math: double abs(double)>($d16);
+
+        $b5 = d17 cmpg 3.834E-20;
+
+        if $b5 < 0 goto label02;
+
+        $b10 = d17 cmpl d3;
+
+        if $b10 <= 0 goto label06;
+
+     label02:
+        $b6 = d17 cmpl 3.834E-20;
+
+        if $b6 <= 0 goto label04;
+
+        $b9 = d17 cmpl d28;
+
+        if $b9 <= 0 goto label03;
+
+        d30 = d28 / d17;
+
+        $d22 = d25 * d30;
+
+        $d23 = $d22 * d30;
+
+        d25 = 1.0 + $d23;
+
+        d28 = d17;
+
+        goto label07;
+
+     label03:
+        d31 = d17 / d28;
+
+        $d21 = d31 * d31;
+
+        d25 = d25 + $d21;
+
+        goto label07;
+
+     label04:
+        $b7 = d17 cmpl d29;
+
+        if $b7 <= 0 goto label05;
+
+        d32 = d29 / d17;
+
+        $d19 = d27 * d32;
+
+        $d20 = $d19 * d32;
+
+        d27 = 1.0 + $d20;
+
+        d29 = d17;
+
+        goto label07;
+
+     label05:
+        $b8 = d17 cmpl 0.0;
+
+        if $b8 == 0 goto label07;
+
+        d33 = d17 / d29;
+
+        $d18 = d33 * d33;
+
+        d27 = d27 + $d18;
+
+        goto label07;
+
+     label06:
+        $d24 = d17 * d17;
+
+        d26 = d26 + $d24;
+
+     label07:
+        i11 = i11 + 1;
+
+        goto label01;
+
+     label08:
+        $b2 = d25 cmpl 0.0;
+
+        if $b2 == 0 goto label09;
+
+        $d12 = d26 / d28;
+
+        $d13 = $d12 / d28;
+
+        $d14 = d25 + $d13;
+
+        $d15 = staticinvoke <java.lang.Math: double sqrt(double)>($d14);
+
+        d34 = d28 * $d15;
+
+        goto label12;
+
+     label09:
+        $b3 = d26 cmpl 0.0;
+
+        if $b3 != 0 goto label10;
+
+        $d11 = staticinvoke <java.lang.Math: double sqrt(double)>(d27);
+
+        d34 = d29 * $d11;
+
+        goto label12;
+
+     label10:
+        $b4 = d26 cmpl d29;
+
+        if $b4 < 0 goto label11;
+
+        $d8 = d29 * d27;
+
+        $d9 = 1.0 + $d8;
+
+        $d10 = d26 * $d9;
+
+        d34 = staticinvoke <java.lang.Math: double sqrt(double)>($d10);
+
+        goto label12;
+
+     label11:
+        $d5 = d26 / d29;
+
+        $d4 = d29 * d27;
+
+        $d6 = $d5 + $d4;
+
+        $d7 = d29 * $d6;
+
+        d34 = staticinvoke <java.lang.Math: double sqrt(double)>($d7);
+
+     label12:
+        return d34;
+    }
+}

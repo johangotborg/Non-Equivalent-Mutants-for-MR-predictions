@@ -1,0 +1,118 @@
+public class pooledVariance_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        pooledVariance_SDL_1 r0;
+
+        r0 := @this: pooledVariance_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double pooledVariance_SDL_1(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, i10;
+        double $d2, d3, $d4, $d5, $d6, d7, $d8, $d9, $d10, $d11, d12, $d13, $d14, $d15, $d16, $d17, $d18, $d19, $d20, $d21, $d22, $d23, d24, d25, d26;
+        java.lang.Double $r2, $r3, $r4;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        $i0 = lengthof r0;
+
+        $d2 = (double) $i0;
+
+        d3 = 0.0 / $d2;
+
+        $d4 = d3 * 0.0;
+
+        $d6 = 0.0 - $d4;
+
+        $i1 = lengthof r0;
+
+        $d5 = (double) $i1;
+
+        d7 = $d6 / $d5;
+
+        d24 = 0.0;
+
+        d25 = 0.0;
+
+        i10 = 0;
+
+     label1:
+        $i2 = lengthof r1;
+
+        if i10 >= $i2 goto label2;
+
+        $r2 = r1[i10];
+
+        $d20 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        d24 = d24 + $d20;
+
+        $r3 = r1[i10];
+
+        $d21 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $r4 = r1[i10];
+
+        $d22 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $d23 = $d21 * $d22;
+
+        d25 = d25 + $d23;
+
+        i10 = i10 + 1;
+
+        goto label1;
+
+     label2:
+        $i3 = lengthof r1;
+
+        $d8 = (double) $i3;
+
+        d26 = d24 / $d8;
+
+        $d9 = d26 * d24;
+
+        $d11 = d25 - $d9;
+
+        $i4 = lengthof r1;
+
+        $d10 = (double) $i4;
+
+        d12 = $d11 / $d10;
+
+        $i5 = lengthof r0;
+
+        $d13 = (double) $i5;
+
+        $d16 = $d13 * d7;
+
+        $i6 = lengthof r1;
+
+        $d14 = (double) $i6;
+
+        $d15 = $d14 * d12;
+
+        $d18 = $d16 + $d15;
+
+        $i8 = lengthof r0;
+
+        $i7 = lengthof r1;
+
+        $i9 = $i8 + $i7;
+
+        $d17 = (double) $i9;
+
+        $d19 = $d18 / $d17;
+
+        return $d19;
+    }
+}

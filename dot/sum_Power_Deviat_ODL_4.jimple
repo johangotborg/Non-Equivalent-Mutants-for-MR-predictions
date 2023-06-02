@@ -1,0 +1,57 @@
+public class sum_Power_Deviat_ODL_4 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sum_Power_Deviat_ODL_4 r0;
+
+        r0 := @this: sum_Power_Deviat_ODL_4;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double sum_Power_Deviat_ODL_4_m(java.lang.Double[], java.lang.Integer, java.lang.Double)
+    {
+        java.lang.Double[] r0;
+        int $i0, $i1, i2;
+        java.lang.Double $r1, r3;
+        double $d0, $d1, $d2, d3;
+        java.lang.Integer r2;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Integer;
+
+        r3 := @parameter2: java.lang.Double;
+
+        d3 = 0.0;
+
+        i2 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i2 >= $i0 goto label2;
+
+        $r1 = r0[i2];
+
+        $d0 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $i1 = virtualinvoke r2.<java.lang.Integer: int intValue()>();
+
+        $d1 = (double) $i1;
+
+        $d2 = staticinvoke <java.lang.Math: double pow(double,double)>($d0, $d1);
+
+        d3 = d3 + $d2;
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        return d3;
+    }
+}

@@ -1,0 +1,41 @@
+public class set_min_val_SDL_6 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        set_min_val_SDL_6 r0;
+
+        r0 := @this: set_min_val_SDL_6;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Integer[] set_min_val_SDL_6_m(java.lang.Integer[], java.lang.Integer)
+    {
+        java.lang.Integer[] r0;
+        int $i0, i1;
+        java.lang.Integer r1;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r1 := @parameter1: java.lang.Integer;
+
+        i1 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i1 >= $i0 goto label2;
+
+        r0[i1] = r1;
+
+        i1 = i1 + 1;
+
+        goto label1;
+
+     label2:
+        return r0;
+    }
+}

@@ -1,0 +1,70 @@
+public class ebeSubtract_AOIS_17 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        ebeSubtract_AOIS_17 r0;
+
+        r0 := @this: ebeSubtract_AOIS_17;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Double[] ebeSubtract_AOIS_17_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1, r3;
+        int $i0, $i1, $i2, i4, i5;
+        java.lang.Object $r2;
+        java.lang.Double $r4, $r5, $r6;
+        double $d0, $d1, $d2;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        $i1 = lengthof r0;
+
+        $i0 = lengthof r1;
+
+        if $i1 == $i0 goto label1;
+
+        return null;
+
+     label1:
+        $r2 = virtualinvoke r0.<java.lang.Object: java.lang.Object clone()>();
+
+        r3 = (java.lang.Double[]) $r2;
+
+        i4 = 0;
+
+     label2:
+        $i2 = lengthof r0;
+
+        if i4 >= $i2 goto label3;
+
+        $r4 = r3[i4];
+
+        $d0 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        i5 = i4 + 1;
+
+        $r5 = r1[i5];
+
+        $d1 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $d2 = $d0 - $d1;
+
+        $r6 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>($d2);
+
+        r3[i4] = $r6;
+
+        i4 = i5 + 1;
+
+        goto label2;
+
+     label3:
+        return r3;
+    }
+}

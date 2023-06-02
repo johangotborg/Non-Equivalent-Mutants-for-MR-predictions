@@ -1,0 +1,38 @@
+digraph "double weighted_average_ODL_4(java.lang.Double[],java.lang.Double[])" {
+    label="double weighted_average_ODL_4(java.lang.Double[],java.lang.Double[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r2 := @parameter1",];
+    "0"->"1";
+    "2" [label="d3 = 0.0",];
+    "1"->"2";
+    "3" [label="d4 = 0.0",];
+    "2"->"3";
+    "4" [label="i1 = 0",];
+    "3"->"4";
+    "5" [label="label1: $i0 = lengthof r0",];
+    "4"->"5";
+    "6" [label="if i1 >= $i0 goto label2",];
+    "5"->"6";
+    "7" [label="$r1 = r0[i1]",];
+    "6"->"7";
+    "15" [label="label2: $d0 = d3 / d4",];
+    "6"->"15";
+    "8" [label="$d1 = $r1.doubleValue()",];
+    "7"->"8";
+    "9" [label="d3 = d3 + $d1",];
+    "8"->"9";
+    "10" [label="$r3 = r2[i1]",];
+    "9"->"10";
+    "11" [label="$d2 = $r3.doubleValue()",];
+    "10"->"11";
+    "12" [label="d4 = d4 + $d2",];
+    "11"->"12";
+    "13" [label="i1 = i1 + 1",];
+    "12"->"13";
+    "14" [label="goto label1",];
+    "13"->"14";
+    "14"->"5";
+    "16" [style=filled,fillcolor=lightgray,label="return $d0",];
+    "15"->"16";
+}

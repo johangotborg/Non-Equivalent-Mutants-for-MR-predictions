@@ -1,0 +1,58 @@
+public class find_magnitude_LOI_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        find_magnitude_LOI_1 r0;
+
+        r0 := @this: find_magnitude_LOI_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double find_magnitude_LOI_1_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, $i2, $i3, $i4, i5;
+        double d0, $d1, d2;
+        java.lang.Integer $r1, $r2;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        d2 = 0.0;
+
+        i5 = 0;
+
+     label1:
+        $i1 = i5 ^ -1;
+
+        $i0 = lengthof r0;
+
+        if $i1 >= $i0 goto label2;
+
+        $r1 = r0[i5];
+
+        $i2 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        $r2 = r0[i5];
+
+        $i3 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        $i4 = $i2 * $i3;
+
+        $d1 = (double) $i4;
+
+        d2 = d2 + $d1;
+
+        i5 = i5 + 1;
+
+        goto label1;
+
+     label2:
+        d0 = staticinvoke <java.lang.Math: double sqrt(double)>(d2);
+
+        return d0;
+    }
+}

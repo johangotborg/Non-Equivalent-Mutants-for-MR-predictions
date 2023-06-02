@@ -1,0 +1,53 @@
+public class cal_Diff_AOIS_17 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        cal_Diff_AOIS_17 r0;
+
+        r0 := @this: cal_Diff_AOIS_17;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double[] cal_Diff_AOIS_17_m(double[], double[])
+    {
+        double[] r0, r1, r2;
+        int $i0, $i1, i2, i3;
+        double $d0, $d1, $d2;
+
+        r0 := @parameter0: double[];
+
+        r2 := @parameter1: double[];
+
+        $i0 = lengthof r0;
+
+        r1 = newarray (double)[$i0];
+
+        i2 = 0;
+
+     label1:
+        $i1 = lengthof r0;
+
+        if i2 >= $i1 goto label2;
+
+        $d0 = r2[i2];
+
+        i3 = i2 + 1;
+
+        $d1 = r0[i2];
+
+        $d2 = $d0 - $d1;
+
+        r1[i2] = $d2;
+
+        i2 = i3 + 1;
+
+        goto label1;
+
+     label2:
+        return r1;
+    }
+}

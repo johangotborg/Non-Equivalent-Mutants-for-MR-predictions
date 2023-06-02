@@ -1,0 +1,53 @@
+public class euc_Dist_AOIS_12 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        euc_Dist_AOIS_12 r0;
+
+        r0 := @this: euc_Dist_AOIS_12;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double euc_Dist_AOIS_12_m(double[], double[])
+    {
+        double[] r0, r1;
+        int $i0, i1;
+        double $d0, $d2, $d3, $d4, $d5, d6;
+
+        r0 := @parameter0: double[];
+
+        r1 := @parameter1: double[];
+
+        d6 = 0.0;
+
+        i1 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i1 >= $i0 goto label2;
+
+        $d3 = r0[i1];
+
+        $d2 = r1[i1];
+
+        $d4 = $d3 - $d2;
+
+        $d5 = staticinvoke <java.lang.Math: double pow(double,double)>($d4, 2.0);
+
+        d6 = d6 + $d5;
+
+        i1 = i1 + 1;
+
+        goto label1;
+
+     label2:
+        $d0 = staticinvoke <java.lang.Math: double sqrt(double)>(d6);
+
+        return $d0;
+    }
+}

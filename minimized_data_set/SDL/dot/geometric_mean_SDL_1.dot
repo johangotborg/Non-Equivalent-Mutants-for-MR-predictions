@@ -1,0 +1,17 @@
+digraph "double geometric_mean_SDL_1(java.lang.Integer[])" {
+    label="double geometric_mean_SDL_1(java.lang.Integer[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="$d2 = (double) 1L",];
+    "0"->"1";
+    "2" [label="$i1 = lengthof r0",];
+    "1"->"2";
+    "3" [label="$d0 = (double) $i1",];
+    "2"->"3";
+    "4" [label="$d1 = 1.0 / $d0",];
+    "3"->"4";
+    "5" [label="$d3 = java.lang.Math.pow($d2, $d1)",];
+    "4"->"5";
+    "6" [style=filled,fillcolor=lightgray,label="return $d3",];
+    "5"->"6";
+}

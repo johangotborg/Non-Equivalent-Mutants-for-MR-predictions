@@ -1,0 +1,78 @@
+public class bubble_AOIU_5 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        bubble_AOIU_5 r0;
+
+        r0 := @this: bubble_AOIU_5;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Integer[] bubble_AOIU_5_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, $i2, $i3, $i4, i5, $i6, $i7, i8, i9;
+        java.lang.Integer $r1, $r2, $r3, $r4, $r5;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        $i0 = lengthof r0;
+
+        i8 = $i0 - 2;
+
+     label1:
+        if i8 < 0 goto label5;
+
+        i9 = 0;
+
+     label2:
+        if i9 > i8 goto label4;
+
+        $i1 = neg i9;
+
+        $r1 = r0[$i1];
+
+        $i2 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        $i3 = i9 + 1;
+
+        $r2 = r0[$i3];
+
+        $i4 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        if $i2 <= $i4 goto label3;
+
+        $r3 = r0[i9];
+
+        i5 = virtualinvoke $r3.<java.lang.Integer: int intValue()>();
+
+        $i6 = i9 + 1;
+
+        $r4 = r0[$i6];
+
+        r0[i9] = $r4;
+
+        $i7 = i9 + 1;
+
+        $r5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i5);
+
+        r0[$i7] = $r5;
+
+     label3:
+        i9 = i9 + 1;
+
+        goto label2;
+
+     label4:
+        i8 = i8 + -1;
+
+        goto label1;
+
+     label5:
+        return r0;
+    }
+}

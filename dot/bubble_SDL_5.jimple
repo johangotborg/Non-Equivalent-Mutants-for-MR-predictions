@@ -1,0 +1,46 @@
+public class bubble_SDL_5 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        bubble_SDL_5 r0;
+
+        r0 := @this: bubble_SDL_5;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Integer[] bubble_SDL_5_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, i1, i2;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        $i0 = lengthof r0;
+
+        i1 = $i0 - 2;
+
+     label1:
+        if i1 < 0 goto label4;
+
+        i2 = 0;
+
+     label2:
+        if i2 > i1 goto label3;
+
+        i2 = i2 + 1;
+
+        goto label2;
+
+     label3:
+        i1 = i1 + -1;
+
+        goto label1;
+
+     label4:
+        return r0;
+    }
+}

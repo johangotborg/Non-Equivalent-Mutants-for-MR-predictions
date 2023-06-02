@@ -1,0 +1,89 @@
+public class clip_AOIS_21 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        clip_AOIS_21 r0;
+
+        r0 := @this: clip_AOIS_21;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int[] clip_AOIS_21_m(java.lang.Integer[], java.lang.Integer, java.lang.Integer)
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, i11;
+        int[] r1;
+        java.lang.Integer $r2, r3, $r4, r5, $r6;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r3 := @parameter1: java.lang.Integer;
+
+        r5 := @parameter2: java.lang.Integer;
+
+        $i0 = lengthof r0;
+
+        r1 = newarray (int)[$i0];
+
+        i11 = 0;
+
+     label1:
+        $i1 = lengthof r0;
+
+        if i11 >= $i1 goto label5;
+
+        $r2 = r0[i11];
+
+        $i2 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        $i3 = virtualinvoke r3.<java.lang.Integer: int intValue()>();
+
+        if $i2 >= $i3 goto label2;
+
+        $i10 = virtualinvoke r3.<java.lang.Integer: int intValue()>();
+
+        r1[i11] = $i10;
+
+        goto label4;
+
+     label2:
+        $r4 = r0[i11];
+
+        $i4 = virtualinvoke $r4.<java.lang.Integer: int intValue()>();
+
+        $i5 = virtualinvoke r5.<java.lang.Integer: int intValue()>();
+
+        if $i4 <= $i5 goto label3;
+
+        $i9 = virtualinvoke r5.<java.lang.Integer: int intValue()>();
+
+        r1[i11] = $i9;
+
+        goto label4;
+
+     label3:
+        $i6 = i11;
+
+        $i7 = i11;
+
+        i11 = i11 + 1;
+
+        $r6 = r0[$i7];
+
+        $i8 = virtualinvoke $r6.<java.lang.Integer: int intValue()>();
+
+        r1[$i6] = $i8;
+
+     label4:
+        i11 = i11 + 1;
+
+        goto label1;
+
+     label5:
+        return r1;
+    }
+}

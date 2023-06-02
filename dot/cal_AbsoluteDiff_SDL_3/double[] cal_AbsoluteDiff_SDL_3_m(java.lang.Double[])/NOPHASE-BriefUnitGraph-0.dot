@@ -1,0 +1,21 @@
+digraph "double[] cal_AbsoluteDiff_SDL_3_m(java.lang.Double[])" {
+    label="double[] cal_AbsoluteDiff_SDL_3_m(java.lang.Double[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="if r0 != null goto label1",];
+    "0"->"1";
+    "2" [style=filled,fillcolor=lightgray,label="return null",];
+    "1"->"2";
+    "3" [label="label1: $i0 = lengthof r0",];
+    "1"->"3";
+    "4" [label="if $i0 != 0 goto label2",];
+    "3"->"4";
+    "5" [style=filled,fillcolor=lightgray,label="return null",];
+    "4"->"5";
+    "6" [label="label2: $i1 = lengthof r0",];
+    "4"->"6";
+    "7" [label="r1 = newarray (double)[$i1]",];
+    "6"->"7";
+    "8" [style=filled,fillcolor=lightgray,label="return r1",];
+    "7"->"8";
+}

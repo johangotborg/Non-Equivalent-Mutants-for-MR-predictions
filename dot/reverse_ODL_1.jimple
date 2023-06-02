@@ -1,0 +1,50 @@
+public class reverse_ODL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        reverse_ODL_1 r0;
+
+        r0 := @this: reverse_ODL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int[] reverse_ODL_1_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, i2, i3;
+        int[] r1;
+        java.lang.Integer $r2;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        $i0 = lengthof r0;
+
+        r1 = newarray (int)[$i0];
+
+        i2 = 0;
+
+        i3 = lengthof r0;
+
+     label1:
+        if i3 < 0 goto label2;
+
+        $r2 = r0[i3];
+
+        $i1 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        r1[i2] = $i1;
+
+        i2 = i2 + 1;
+
+        i3 = i3 + -1;
+
+        goto label1;
+
+     label2:
+        return r1;
+    }
+}

@@ -1,0 +1,103 @@
+public class g_Test_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        g_Test_SDL_1 r0;
+
+        r0 := @this: g_Test_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double g_Test_SDL_1(java.lang.Double[], java.lang.Double[])
+    {
+        double $d2, $d3, $d4, $d5, $d6, $d7, $d9, $d10, $d11, $d12, $d13, $d14, d15, d16, $d17;
+        byte $b0;
+        java.lang.Double[] r0, r2;
+        java.lang.Double $r1, $r3, $r4, $r5, $r6;
+        boolean z0;
+        int i1, $i2;
+
+        r2 := @parameter0: java.lang.Double[];
+
+        r0 := @parameter1: java.lang.Double[];
+
+        d15 = 1.0;
+
+        z0 = 0;
+
+        $d2 = 0.0 - 0.0;
+
+        $d3 = staticinvoke <java.lang.Math: double abs(double)>($d2);
+
+        $b0 = $d3 cmpl 1.0E-5;
+
+        if $b0 <= 0 goto label1;
+
+        d15 = 0.0 / 0.0;
+
+        z0 = 1;
+
+     label1:
+        d16 = 0.0;
+
+        i1 = 0;
+
+     label2:
+        $i2 = lengthof r0;
+
+        if i1 >= $i2 goto label5;
+
+        if z0 == 0 goto label3;
+
+        $r5 = r0[i1];
+
+        $d11 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $r6 = r2[i1];
+
+        $d12 = virtualinvoke $r6.<java.lang.Double: double doubleValue()>();
+
+        $d13 = d15 * $d12;
+
+        $d14 = $d11 / $d13;
+
+        $d17 = staticinvoke <java.lang.Math: double log(double)>($d14);
+
+        goto label4;
+
+     label3:
+        $r1 = r0[i1];
+
+        $d5 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r2[i1];
+
+        $d6 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d7 = $d5 / $d6;
+
+        $d17 = staticinvoke <java.lang.Math: double log(double)>($d7);
+
+     label4:
+        $r4 = r0[i1];
+
+        $d9 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $d10 = $d9 * $d17;
+
+        d16 = d16 + $d10;
+
+        i1 = i1 + 1;
+
+        goto label2;
+
+     label5:
+        $d4 = 2.0 * d16;
+
+        return $d4;
+    }
+}

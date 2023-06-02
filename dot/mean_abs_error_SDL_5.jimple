@@ -1,0 +1,51 @@
+public class mean_abs_error_SDL_5 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        mean_abs_error_SDL_5 r0;
+
+        r0 := @this: mean_abs_error_SDL_5;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double mean_abs_error_SDL_5_m(java.lang.Integer[], java.lang.Integer[])
+    {
+        java.lang.Integer[] r0, r2;
+        int $i0, $i1, $i2, $i3, i6;
+        java.lang.Integer $r1, $r3;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r2 := @parameter1: java.lang.Integer[];
+
+        i6 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i6 >= $i0 goto label2;
+
+        $r1 = r0[i6];
+
+        $i1 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        $r3 = r2[i6];
+
+        $i2 = virtualinvoke $r3.<java.lang.Integer: int intValue()>();
+
+        $i3 = $i1 - $i2;
+
+        staticinvoke <java.lang.Math: int abs(int)>($i3);
+
+        i6 = i6 + 1;
+
+        goto label1;
+
+     label2:
+        return 0.0;
+    }
+}

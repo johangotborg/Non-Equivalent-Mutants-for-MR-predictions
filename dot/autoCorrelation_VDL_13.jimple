@@ -1,0 +1,79 @@
+public class autoCorrelation_VDL_13 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        autoCorrelation_VDL_13 r0;
+
+        r0 := @this: autoCorrelation_VDL_13;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double autoCorrelation_VDL_13_m(java.lang.Double[], java.lang.Integer, java.lang.Double, java.lang.Double)
+    {
+        java.lang.Double[] r0;
+        int i0, $i1, $i2, $i3, $i4, i5;
+        java.lang.Integer r1;
+        double $d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, d9;
+        java.lang.Double $r2, r3, $r4, r5;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Integer;
+
+        r3 := @parameter2: java.lang.Double;
+
+        r5 := @parameter3: java.lang.Double;
+
+        i0 = lengthof r0;
+
+        d9 = 0.0;
+
+        i5 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+     label1:
+        if i5 >= i0 goto label2;
+
+        $r2 = r0[i5];
+
+        $d2 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        $d3 = virtualinvoke r3.<java.lang.Double: double doubleValue()>();
+
+        $d4 = $d2 - $d3;
+
+        $i3 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        $i4 = i5 - $i3;
+
+        $r4 = r0[$i4];
+
+        $d5 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $d6 = virtualinvoke r3.<java.lang.Double: double doubleValue()>();
+
+        $d7 = $d5 - $d6;
+
+        $d8 = $d4 * $d7;
+
+        d9 = d9 + $d8;
+
+        i5 = i5 + 1;
+
+        goto label1;
+
+     label2:
+        $i1 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        $i2 = i0 - $i1;
+
+        $d0 = (double) $i2;
+
+        $d1 = d9 / $d0;
+
+        return $d1;
+    }
+}

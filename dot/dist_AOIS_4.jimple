@@ -1,0 +1,58 @@
+public class dist_AOIS_4 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        dist_AOIS_4 r0;
+
+        r0 := @this: dist_AOIS_4;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double dist_AOIS_4_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r2;
+        int $i0, i1, i2;
+        java.lang.Double $r1, $r3;
+        double $d0, $d1, $d2, $d3, d4;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double[];
+
+        d4 = 0.0;
+
+        i1 = 0;
+
+     label1:
+        i2 = i1 + -1;
+
+        $i0 = lengthof r0;
+
+        if i1 >= $i0 goto label2;
+
+        $r1 = r0[i2];
+
+        $d0 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r2[i2];
+
+        $d1 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d2 = $d0 - $d1;
+
+        $d3 = staticinvoke <java.lang.Math: double abs(double)>($d2);
+
+        d4 = d4 + $d3;
+
+        i1 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        return d4;
+    }
+}

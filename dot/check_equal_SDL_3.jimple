@@ -1,0 +1,25 @@
+public class check_equal_SDL_3 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        check_equal_SDL_3 r0;
+
+        r0 := @this: check_equal_SDL_3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static boolean check_equal_SDL_3_m(java.lang.Integer[], java.lang.Integer[])
+    {
+        java.lang.Integer[] r0, r1;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r1 := @parameter1: java.lang.Integer[];
+
+        return 0;
+    }
+}

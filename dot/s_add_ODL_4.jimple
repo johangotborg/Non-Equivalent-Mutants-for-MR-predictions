@@ -1,0 +1,42 @@
+public class s_add_ODL_4 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        s_add_ODL_4 r0;
+
+        r0 := @this: s_add_ODL_4;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void s_add_ODL_4_m(int[], int[])
+    {
+        int[] r0, r1;
+        int $i0, $i1, i2;
+
+        r0 := @parameter0: int[];
+
+        r1 := @parameter1: int[];
+
+        i2 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i2 >= $i0 goto label2;
+
+        $i1 = r1[i2];
+
+        r0[i2] = $i1;
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        return;
+    }
+}

@@ -1,0 +1,9 @@
+digraph "double find_magnitude_SDL_1(java.lang.Integer[])" {
+    label="double find_magnitude_SDL_1(java.lang.Integer[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="d1 = java.lang.Math.sqrt(0.0)",];
+    "0"->"1";
+    "2" [style=filled,fillcolor=lightgray,label="return d1",];
+    "1"->"2";
+}

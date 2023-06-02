@@ -1,0 +1,52 @@
+public class evaluateHoners_ODL_9 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        evaluateHoners_ODL_9 r0;
+
+        r0 := @this: evaluateHoners_ODL_9;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double evaluateHoners_ODL_9_m(java.lang.Double[], java.lang.Double)
+    {
+        java.lang.Double[] r0;
+        int i0, $i1, i2;
+        java.lang.Double $r1, $r2, r3;
+        double $d0, d1;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r3 := @parameter1: java.lang.Double;
+
+        i0 = lengthof r0;
+
+        $i1 = i0 - 1;
+
+        $r1 = r0[$i1];
+
+        d1 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        i2 = i0 - 2;
+
+     label1:
+        if i2 < 0 goto label2;
+
+        $r2 = r0[i2];
+
+        $d0 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        d1 = d1 + $d0;
+
+        i2 = i2 + -1;
+
+        goto label1;
+
+     label2:
+        return d1;
+    }
+}

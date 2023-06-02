@@ -1,0 +1,58 @@
+public class shell_sort_SDL_8 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        shell_sort_SDL_8 r0;
+
+        r0 := @this: shell_sort_SDL_8;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Integer[] shell_sort_SDL_8_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, i2, i3, i4;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        $i0 = lengthof r0;
+
+        i2 = $i0 / 2;
+
+     label1:
+        if i2 <= 0 goto label6;
+
+        i3 = i2;
+
+     label2:
+        $i1 = lengthof r0;
+
+        if i3 >= $i1 goto label5;
+
+        i4 = i3 - i2;
+
+     label3:
+        if i4 < 0 goto label4;
+
+        i4 = i4 - i2;
+
+        goto label3;
+
+     label4:
+        i3 = i3 + 1;
+
+        goto label2;
+
+     label5:
+        i2 = i2 / 2;
+
+        goto label1;
+
+     label6:
+        return r0;
+    }
+}

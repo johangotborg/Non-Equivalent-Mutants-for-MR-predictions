@@ -1,0 +1,48 @@
+public class check_equal_ROR_7 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        check_equal_ROR_7 r0;
+
+        r0 := @this: check_equal_ROR_7;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static boolean check_equal_ROR_7_m(java.lang.Integer[], java.lang.Integer[])
+    {
+        java.lang.Integer[] r0, r1;
+        int $i0, i1;
+        java.lang.Integer $r2, $r3;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r1 := @parameter1: java.lang.Integer[];
+
+        i1 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i1 >= $i0 goto label3;
+
+        $r3 = r0[i1];
+
+        $r2 = r1[i1];
+
+        if $r3 == $r2 goto label2;
+
+        return 0;
+
+     label2:
+        i1 = i1 + 1;
+
+        goto label1;
+
+     label3:
+        return 1;
+    }
+}

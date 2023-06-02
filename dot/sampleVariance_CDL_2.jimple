@@ -1,0 +1,58 @@
+public class sampleVariance_CDL_2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sampleVariance_CDL_2 r0;
+
+        r0 := @this: sampleVariance_CDL_2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double sampleVariance_CDL_2_m(java.lang.Double[], java.lang.Double)
+    {
+        java.lang.Double[] r0;
+        int i0, i1;
+        double $d0, $d1, $d2, $d3, d4, $d5, d6;
+        java.lang.Double $r1, r2;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double;
+
+        i0 = lengthof r0;
+
+        d6 = 0.0;
+
+        i1 = i0;
+
+     label1:
+        i1 = i1 + -1;
+
+        if i1 < 0 goto label2;
+
+        $r1 = r0[i1];
+
+        $d2 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $d3 = virtualinvoke r2.<java.lang.Double: double doubleValue()>();
+
+        d4 = $d2 - $d3;
+
+        $d5 = d4 * d4;
+
+        d6 = d6 + $d5;
+
+        goto label1;
+
+     label2:
+        $d0 = (double) i0;
+
+        $d1 = d6 / $d0;
+
+        return $d1;
+    }
+}

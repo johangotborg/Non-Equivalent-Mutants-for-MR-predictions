@@ -1,0 +1,76 @@
+public class find_max2_ROR_3 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        find_max2_ROR_3 r0;
+
+        r0 := @this: find_max2_ROR_3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int find_max2_ROR_3_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        java.lang.Integer $r1, $r2, $r3, $r4, $r5, $r6;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, i11, i12;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        $r1 = r0[0];
+
+        $i0 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        $r2 = r0[1];
+
+        $i1 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        i11 = $i0 + $i1;
+
+        i12 = 0;
+
+     label1:
+        $i2 = lengthof r0;
+
+        $i3 = $i2 - 1;
+
+        if i12 > $i3 goto label3;
+
+        $r3 = r0[i12];
+
+        $i4 = virtualinvoke $r3.<java.lang.Integer: int intValue()>();
+
+        $i5 = i12 + 1;
+
+        $r4 = r0[$i5];
+
+        $i6 = virtualinvoke $r4.<java.lang.Integer: int intValue()>();
+
+        $i7 = $i4 + $i6;
+
+        if $i7 <= i11 goto label2;
+
+        $r5 = r0[i12];
+
+        $i8 = virtualinvoke $r5.<java.lang.Integer: int intValue()>();
+
+        $i9 = i12 + 1;
+
+        $r6 = r0[$i9];
+
+        $i10 = virtualinvoke $r6.<java.lang.Integer: int intValue()>();
+
+        i11 = $i8 + $i10;
+
+     label2:
+        i12 = i12 + 1;
+
+        goto label1;
+
+     label3:
+        return i11;
+    }
+}

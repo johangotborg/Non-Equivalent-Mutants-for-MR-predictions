@@ -1,0 +1,83 @@
+public class autoCorrelation_AOIS_26 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        autoCorrelation_AOIS_26 r0;
+
+        r0 := @this: autoCorrelation_AOIS_26;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double autoCorrelation_AOIS_26_m(java.lang.Double[], java.lang.Integer, java.lang.Double, java.lang.Double)
+    {
+        java.lang.Double[] r0;
+        java.lang.Integer r1;
+        int $i0, $i1, $i2, $i3, i4, i5;
+        double $d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, d11;
+        java.lang.Double r2, $r3, r4, $r5;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Integer;
+
+        r4 := @parameter2: java.lang.Double;
+
+        r2 := @parameter3: java.lang.Double;
+
+        i4 = lengthof r0;
+
+        d11 = 0.0;
+
+        i5 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+     label1:
+        if i5 >= i4 goto label2;
+
+        $r3 = r0[i5];
+
+        $d4 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d5 = virtualinvoke r4.<java.lang.Double: double doubleValue()>();
+
+        $d6 = $d4 - $d5;
+
+        $i2 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        $i3 = i5 - $i2;
+
+        $r5 = r0[$i3];
+
+        $d7 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $d8 = virtualinvoke r4.<java.lang.Double: double doubleValue()>();
+
+        $d9 = $d7 - $d8;
+
+        $d10 = $d6 * $d9;
+
+        d11 = d11 + $d10;
+
+        i5 = i5 + 1;
+
+        goto label1;
+
+     label2:
+        $i0 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        $i1 = i4 - $i0;
+
+        $d0 = (double) $i1;
+
+        $d1 = d11 / $d0;
+
+        $d2 = virtualinvoke r2.<java.lang.Double: double doubleValue()>();
+
+        $d3 = $d1 / $d2;
+
+        return $d3;
+    }
+}

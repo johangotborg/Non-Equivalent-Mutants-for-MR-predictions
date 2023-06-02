@@ -1,0 +1,108 @@
+public class var_Difference_AOIS_22 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        var_Difference_AOIS_22 r0;
+
+        r0 := @this: var_Difference_AOIS_22;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double var_Difference_AOIS_22_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r2;
+        int i0, $i1, i2, i3;
+        double $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, $d11, $d12, $d13, $d14, $d15, $d16, d17, d18, d20, d22, d23;
+        java.lang.Double $r1, $r3, $r4, $r5;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double[];
+
+        d17 = 0.0;
+
+        d18 = 0.0;
+
+        i0 = lengthof r0;
+
+        d20 = 0.0;
+
+        i2 = 0;
+
+     label1:
+        if i2 >= i0 goto label2;
+
+        $r4 = r0[i2];
+
+        $d14 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $r5 = r2[i2];
+
+        $d15 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $d16 = $d14 - $d15;
+
+        d20 = d20 + $d16;
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        $d1 = (double) i0;
+
+        d22 = d20 / $d1;
+
+        i3 = 0;
+
+     label3:
+        if i3 >= i0 goto label4;
+
+        $r1 = r0[i3];
+
+        $d8 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r2[i3];
+
+        $d9 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        d23 = $d8 - $d9;
+
+        $d11 = d23 - d22;
+
+        $d10 = d23 - d22;
+
+        $d12 = $d11 * $d10;
+
+        d17 = d17 + $d12;
+
+        $d13 = d23 - d22;
+
+        d18 = d18 + $d13;
+
+        i3 = i3 + 1;
+
+        goto label3;
+
+     label4:
+        $d3 = d18 * d18;
+
+        $d2 = (double) i0;
+
+        $d4 = $d3 / $d2;
+
+        $d6 = d17 - $d4;
+
+        $i1 = i0 - 1;
+
+        $d5 = (double) $i1;
+
+        $d7 = $d6 / $d5;
+
+        return $d7;
+    }
+}

@@ -1,0 +1,81 @@
+public class quantile_AOIS_3 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        quantile_AOIS_3 r0;
+
+        r0 := @this: quantile_AOIS_3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double quantile_AOIS_3_m(java.lang.Double[], java.lang.Double)
+    {
+        java.lang.Double[] r0;
+        java.lang.Double r1, $r2, $r3, $r4;
+        double $d0, $d1, d2, $d3, d4, $d5, $d6, $d7, $d8, $d9, d10;
+        int $i0, i1, $i2, $i3, i4, i5;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double;
+
+        i4 = lengthof r0;
+
+        $d0 = virtualinvoke r1.<java.lang.Double: double doubleValue()>();
+
+        i5 = i4 + 1;
+
+        $i0 = i5 - 1;
+
+        $d1 = (double) $i0;
+
+        d2 = $d0 * $d1;
+
+        i1 = (int) d2;
+
+        $d3 = (double) i1;
+
+        d4 = d2 - $d3;
+
+        if i5 != 0 goto label1;
+
+        return 0.0;
+
+     label1:
+        $i2 = i5 - 1;
+
+        if i1 != $i2 goto label2;
+
+        $r4 = r0[i1];
+
+        d10 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        goto label3;
+
+     label2:
+        $d5 = 1.0 - d4;
+
+        $r2 = r0[i1];
+
+        $d6 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        $d7 = $d5 * $d6;
+
+        $i3 = i1 + 1;
+
+        $r3 = r0[$i3];
+
+        $d8 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d9 = d4 * $d8;
+
+        d10 = $d7 + $d9;
+
+     label3:
+        return d10;
+    }
+}

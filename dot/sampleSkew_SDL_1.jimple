@@ -1,0 +1,38 @@
+public class sampleSkew_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sampleSkew_SDL_1 r0;
+
+        r0 := @this: sampleSkew_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double sampleSkew_SDL_1_m(java.lang.Integer, java.lang.Double, double)
+    {
+        java.lang.Integer r0;
+        int i0;
+        double d0, $d3;
+        java.lang.Double r1;
+
+        r0 := @parameter0: java.lang.Integer;
+
+        r1 := @parameter1: java.lang.Double;
+
+        d0 := @parameter2: double;
+
+        i0 = virtualinvoke r0.<java.lang.Integer: int intValue()>();
+
+        staticinvoke <java.lang.Math: double sqrt(double)>(d0);
+
+        virtualinvoke r1.<java.lang.Double: double doubleValue()>();
+
+        $d3 = (double) i0;
+
+        return 0.0;
+    }
+}

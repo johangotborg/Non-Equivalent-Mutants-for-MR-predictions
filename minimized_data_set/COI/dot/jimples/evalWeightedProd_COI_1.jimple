@@ -1,0 +1,63 @@
+public class evalWeightedProd_COI_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        evalWeightedProd_COI_1 r0;
+
+        r0 := @this: evalWeightedProd_COI_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double evalWeightedProd_COI_1(java.lang.Double[], java.lang.Double[], java.lang.Integer, java.lang.Integer)
+    {
+        java.lang.Integer r0, r1;
+        int $i0, $i1, $i2, i3;
+        java.lang.Double[] r2, r4;
+        java.lang.Double $r3, $r5;
+        double $d0, $d1, $d2, d4;
+
+        r2 := @parameter0: java.lang.Double[];
+
+        r4 := @parameter1: java.lang.Double[];
+
+        r0 := @parameter2: java.lang.Integer;
+
+        r1 := @parameter3: java.lang.Integer;
+
+        d4 = 1.0;
+
+        i3 = virtualinvoke r0.<java.lang.Integer: int intValue()>();
+
+     label1:
+        $i0 = virtualinvoke r0.<java.lang.Integer: int intValue()>();
+
+        $i1 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        $i2 = $i0 + $i1;
+
+        if i3 < $i2 goto label2;
+
+        $r3 = r2[i3];
+
+        $d0 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $r5 = r4[i3];
+
+        $d1 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $d2 = staticinvoke <java.lang.Math: double pow(double,double)>($d0, $d1);
+
+        d4 = d4 * $d2;
+
+        i3 = i3 + 1;
+
+        goto label1;
+
+     label2:
+        return d4;
+    }
+}

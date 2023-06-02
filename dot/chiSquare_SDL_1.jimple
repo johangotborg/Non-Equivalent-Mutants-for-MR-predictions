@@ -1,0 +1,111 @@
+public class chiSquare_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        chiSquare_SDL_1 r0;
+
+        r0 := @this: chiSquare_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double chiSquare_SDL_1_m(java.lang.Double[], java.lang.Double[])
+    {
+        double $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, $d11, $d12, $d13, $d14, $d15, d16, d17, d18, d19;
+        byte $b0;
+        java.lang.Double[] r0, r2;
+        java.lang.Double $r1, $r3, $r4, $r5, $r6, $r7;
+        boolean z0;
+        int i1, $i2;
+
+        r2 := @parameter0: java.lang.Double[];
+
+        r0 := @parameter1: java.lang.Double[];
+
+        d16 = 1.0;
+
+        z0 = 0;
+
+        $d2 = 0.0 - 0.0;
+
+        $d3 = staticinvoke <java.lang.Math: double abs(double)>($d2);
+
+        $b0 = $d3 cmpl 1.0E-5;
+
+        if $b0 <= 0 goto label1;
+
+        d16 = 0.0 / 0.0;
+
+        z0 = 1;
+
+     label1:
+        d17 = 0.0;
+
+        i1 = 0;
+
+     label2:
+        $i2 = lengthof r0;
+
+        if i1 >= $i2 goto label5;
+
+        if z0 == 0 goto label3;
+
+        $r5 = r0[i1];
+
+        $d9 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $r6 = r2[i1];
+
+        $d10 = virtualinvoke $r6.<java.lang.Double: double doubleValue()>();
+
+        $d11 = d16 * $d10;
+
+        d18 = $d9 - $d11;
+
+        $d12 = d18 * d18;
+
+        $r7 = r2[i1];
+
+        $d13 = virtualinvoke $r7.<java.lang.Double: double doubleValue()>();
+
+        $d14 = d16 * $d13;
+
+        $d15 = $d12 / $d14;
+
+        d17 = d17 + $d15;
+
+        goto label4;
+
+     label3:
+        $r1 = r0[i1];
+
+        $d4 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r2[i1];
+
+        $d5 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        d19 = $d4 - $d5;
+
+        $d6 = d19 * d19;
+
+        $r4 = r2[i1];
+
+        $d7 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $d8 = $d6 / $d7;
+
+        d17 = d17 + $d8;
+
+     label4:
+        i1 = i1 + 1;
+
+        goto label2;
+
+     label5:
+        return d17;
+    }
+}

@@ -1,0 +1,36 @@
+digraph "double[] scale_LOI_1(java.lang.Double,java.lang.Double[])" {
+    label="double[] scale_LOI_1(java.lang.Double,java.lang.Double[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r3 := @parameter0",];
+    "1" [label="r0 := @parameter1",];
+    "0"->"1";
+    "2" [label="$i0 = lengthof r0",];
+    "1"->"2";
+    "3" [label="$i1 = $i0 ^ -1",];
+    "2"->"3";
+    "4" [label="r1 = newarray (double)[$i1]",];
+    "3"->"4";
+    "5" [label="i3 = 0",];
+    "4"->"5";
+    "6" [label="label1: $i2 = lengthof r0",];
+    "5"->"6";
+    "7" [label="if i3 >= $i2 goto label2",];
+    "6"->"7";
+    "8" [label="$r2 = r0[i3]",];
+    "7"->"8";
+    "15" [style=filled,fillcolor=lightgray,label="label2: return r1",];
+    "7"->"15";
+    "9" [label="$d0 = $r2.doubleValue()",];
+    "8"->"9";
+    "10" [label="$d1 = r3.doubleValue()",];
+    "9"->"10";
+    "11" [label="$d2 = $d0 * $d1",];
+    "10"->"11";
+    "12" [label="r1[i3] = $d2",];
+    "11"->"12";
+    "13" [label="i3 = i3 + 1",];
+    "12"->"13";
+    "14" [label="goto label1",];
+    "13"->"14";
+    "14"->"6";
+}

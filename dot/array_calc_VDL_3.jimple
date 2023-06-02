@@ -1,0 +1,48 @@
+public class array_calc_VDL_3 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        array_calc_VDL_3 r0;
+
+        r0 := @this: array_calc_VDL_3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int[] array_calc_VDL_3_m(java.lang.Integer[], java.lang.Integer)
+    {
+        java.lang.Integer[] r0;
+        int $i0, $i1, $i2, i3;
+        int[] r1;
+        java.lang.Integer r2;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r2 := @parameter1: java.lang.Integer;
+
+        $i0 = lengthof r0;
+
+        r1 = newarray (int)[$i0];
+
+        i3 = 0;
+
+     label1:
+        $i1 = lengthof r0;
+
+        if i3 >= $i1 goto label2;
+
+        $i2 = virtualinvoke r2.<java.lang.Integer: int intValue()>();
+
+        r1[i3] = $i2;
+
+        i3 = i3 + 1;
+
+        goto label1;
+
+     label2:
+        return r1;
+    }
+}

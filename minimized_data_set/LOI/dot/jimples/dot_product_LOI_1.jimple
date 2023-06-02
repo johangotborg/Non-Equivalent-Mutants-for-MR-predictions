@@ -1,0 +1,55 @@
+public class dot_product_LOI_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        dot_product_LOI_1 r0;
+
+        r0 := @this: dot_product_LOI_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int dot_product_LOI_1(java.lang.Integer[], java.lang.Integer[])
+    {
+        java.lang.Integer[] r0, r2;
+        int $i0, $i1, $i2, $i3, $i4, i5, i6;
+        java.lang.Integer $r1, $r3;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r2 := @parameter1: java.lang.Integer[];
+
+        i5 = 0;
+
+        i6 = 0;
+
+     label1:
+        $i1 = i6 ^ -1;
+
+        $i0 = lengthof r0;
+
+        if $i1 >= $i0 goto label2;
+
+        $r1 = r0[i6];
+
+        $i2 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        $r3 = r2[i6];
+
+        $i3 = virtualinvoke $r3.<java.lang.Integer: int intValue()>();
+
+        $i4 = $i2 * $i3;
+
+        i5 = i5 + $i4;
+
+        i6 = i6 + 1;
+
+        goto label1;
+
+     label2:
+        return i5;
+    }
+}

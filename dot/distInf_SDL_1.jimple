@@ -1,0 +1,25 @@
+public class distInf_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        distInf_SDL_1 r0;
+
+        r0 := @this: distInf_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double distInf_SDL_1_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        return 0.0;
+    }
+}

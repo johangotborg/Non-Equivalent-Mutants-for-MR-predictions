@@ -1,0 +1,29 @@
+public class array_copy_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        array_copy_SDL_1 r0;
+
+        r0 := @this: array_copy_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int[] array_copy_SDL_1_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+        int $i0;
+        int[] r1;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        $i0 = lengthof r0;
+
+        r1 = newarray (int)[$i0];
+
+        return r1;
+    }
+}

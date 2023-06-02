@@ -1,0 +1,107 @@
+public class tanimotoDist_AOIU_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        tanimotoDist_AOIU_1 r0;
+
+        r0 := @this: tanimotoDist_AOIU_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double tanimotoDist_AOIU_1(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r2;
+        int $i0, $i1, i4;
+        double $d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, $d11, d12, d13, d14, d15;
+        byte $b2, $b3;
+        java.lang.Double $r1, $r3, $r4, $r5, $r6, $r7;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double[];
+
+        d12 = 0.0;
+
+        d13 = 0.0;
+
+        d14 = 0.0;
+
+        i4 = 0;
+
+     label1:
+        $i1 = neg i4;
+
+        $i0 = lengthof r0;
+
+        if $i1 >= $i0 goto label2;
+
+        $r1 = r0[i4];
+
+        $d3 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r2[i4];
+
+        $d4 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d5 = $d3 * $d4;
+
+        d12 = d12 + $d5;
+
+        $r4 = r0[i4];
+
+        $d6 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $r5 = r0[i4];
+
+        $d7 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $d8 = $d6 * $d7;
+
+        d13 = d13 + $d8;
+
+        $r6 = r2[i4];
+
+        $d9 = virtualinvoke $r6.<java.lang.Double: double doubleValue()>();
+
+        $r7 = r2[i4];
+
+        $d10 = virtualinvoke $r7.<java.lang.Double: double doubleValue()>();
+
+        $d11 = $d9 * $d10;
+
+        d14 = d14 + $d11;
+
+        i4 = i4 + 1;
+
+        goto label1;
+
+     label2:
+        $d0 = d13 + d14;
+
+        d15 = $d0 - d12;
+
+        $b2 = d15 cmpg d12;
+
+        if $b2 >= 0 goto label3;
+
+        d15 = d12;
+
+     label3:
+        $b3 = d15 cmpl 0.0;
+
+        if $b3 <= 0 goto label4;
+
+        $d1 = d12 / d15;
+
+        $d2 = 1.0 - $d1;
+
+        return $d2;
+
+     label4:
+        return 0.0;
+    }
+}

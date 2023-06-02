@@ -1,0 +1,24 @@
+digraph "int count_non_zeroes_VDL_4(java.lang.Integer[])" {
+    label="int count_non_zeroes_VDL_4(java.lang.Integer[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="i3 = 0",];
+    "0"->"1";
+    "2" [label="label1: $i1 = lengthof r0",];
+    "1"->"2";
+    "3" [label="if i3 >= $i1 goto label3",];
+    "2"->"3";
+    "4" [label="$r1 = r0[i3]",];
+    "3"->"4";
+    "9" [style=filled,fillcolor=lightgray,label="label3: return 0",];
+    "3"->"9";
+    "5" [label="$i2 = $r1.intValue()",];
+    "4"->"5";
+    "6" [label="if $i2 == 0 goto label2",];
+    "5"->"6";
+    "7" [label="label2: i3 = i3 + 1",];
+    "6"->"7";
+    "8" [label="goto label1",];
+    "7"->"8";
+    "8"->"2";
+}

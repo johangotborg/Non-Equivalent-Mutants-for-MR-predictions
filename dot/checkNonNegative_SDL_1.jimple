@@ -1,0 +1,23 @@
+public class checkNonNegative_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        checkNonNegative_SDL_1 r0;
+
+        r0 := @this: checkNonNegative_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static boolean checkNonNegative_SDL_1_m(double[])
+    {
+        double[] r0;
+
+        r0 := @parameter0: double[];
+
+        return 1;
+    }
+}

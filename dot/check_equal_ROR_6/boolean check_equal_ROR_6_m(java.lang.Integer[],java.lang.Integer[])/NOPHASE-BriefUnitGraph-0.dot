@@ -1,0 +1,9 @@
+digraph "boolean check_equal_ROR_6_m(java.lang.Integer[],java.lang.Integer[])" {
+    label="boolean check_equal_ROR_6_m(java.lang.Integer[],java.lang.Integer[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r1 := @parameter1",];
+    "0"->"1";
+    "2" [style=filled,fillcolor=lightgray,label="return 0",];
+    "1"->"2";
+}

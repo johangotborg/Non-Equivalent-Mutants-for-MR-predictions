@@ -1,0 +1,17 @@
+package data_set.euc_Dist.mutations;
+// This is a mutant program.
+// Author : ysma
+
+public class euc_Dist_ODL_7
+{
+
+    public static  double euc_Dist_ODL_7( double[] array1, double[] array2 )
+    {
+        double Sum = 0.0;
+        for (int i = 0; i < array1.length; i++) {
+            Sum = Math.pow( array1[i] - array2[i], 2.0 );
+        }
+        return Math.sqrt( Sum );
+    }
+
+}

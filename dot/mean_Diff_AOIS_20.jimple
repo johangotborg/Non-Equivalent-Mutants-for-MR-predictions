@@ -1,0 +1,60 @@
+public class mean_Diff_AOIS_20 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        mean_Diff_AOIS_20 r0;
+
+        r0 := @this: mean_Diff_AOIS_20;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double mean_Diff_AOIS_20_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r2;
+        int $i0, $i1, i2;
+        double $d1, $d2, $d3, $d4, $d5, d6;
+        java.lang.Double $r1, $r3;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double[];
+
+        d6 = 0.0;
+
+        i2 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i2 >= $i0 goto label2;
+
+        $r1 = r0[i2];
+
+        $d3 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r2[i2];
+
+        $d4 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d5 = $d3 - $d4;
+
+        d6 = d6 + $d5;
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        $i1 = lengthof r0;
+
+        $d1 = (double) $i1;
+
+        $d2 = d6 / $d1;
+
+        return $d2;
+    }
+}

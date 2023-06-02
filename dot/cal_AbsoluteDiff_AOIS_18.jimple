@@ -1,0 +1,65 @@
+public class cal_AbsoluteDiff_AOIS_18 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        cal_AbsoluteDiff_AOIS_18 r0;
+
+        r0 := @this: cal_AbsoluteDiff_AOIS_18;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double[] cal_AbsoluteDiff_AOIS_18_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int $i0, $i1, $i2, i3, i4;
+        double[] r1;
+        java.lang.Double $r2;
+        double $d0, $d1;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        if r0 != null goto label1;
+
+        return null;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if $i0 != 0 goto label2;
+
+        return null;
+
+     label2:
+        $i1 = lengthof r0;
+
+        r1 = newarray (double)[$i1];
+
+        i3 = 0;
+
+     label3:
+        $i2 = lengthof r0;
+
+        if i3 >= $i2 goto label4;
+
+        i4 = i3 + -1;
+
+        $r2 = r0[i3];
+
+        $d0 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        $d1 = staticinvoke <java.lang.Math: double abs(double)>($d0);
+
+        r1[i3] = $d1;
+
+        i3 = i4 + 1;
+
+        goto label3;
+
+     label4:
+        return r1;
+    }
+}

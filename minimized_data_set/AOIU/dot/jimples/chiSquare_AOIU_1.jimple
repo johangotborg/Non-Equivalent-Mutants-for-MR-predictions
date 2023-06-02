@@ -1,0 +1,141 @@
+public class chiSquare_AOIU_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        chiSquare_AOIU_1 r0;
+
+        r0 := @this: chiSquare_AOIU_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double chiSquare_AOIU_1(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r2;
+        int $i0, $i1, i3, i4, $i5;
+        double $d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, $d11, $d12, $d13, $d14, $d15, d16, d17, d18, d19, d20, d21;
+        byte $b2;
+        java.lang.Double $r1, $r3, $r4, $r5, $r6, $r7, $r8, $r9;
+        boolean z0;
+
+        r2 := @parameter0: java.lang.Double[];
+
+        r0 := @parameter1: java.lang.Double[];
+
+        d16 = 0.0;
+
+        d17 = 0.0;
+
+        i3 = 0;
+
+     label1:
+        $i1 = neg i3;
+
+        $i0 = lengthof r0;
+
+        if $i1 >= $i0 goto label2;
+
+        $r8 = r2[i3];
+
+        $d14 = virtualinvoke $r8.<java.lang.Double: double doubleValue()>();
+
+        d16 = d16 + $d14;
+
+        $r9 = r0[i3];
+
+        $d15 = virtualinvoke $r9.<java.lang.Double: double doubleValue()>();
+
+        d17 = d17 + $d15;
+
+        i3 = i3 + 1;
+
+        goto label1;
+
+     label2:
+        d18 = 1.0;
+
+        z0 = 0;
+
+        $d0 = d16 - d17;
+
+        $d1 = staticinvoke <java.lang.Math: double abs(double)>($d0);
+
+        $b2 = $d1 cmpl 1.0E-5;
+
+        if $b2 <= 0 goto label3;
+
+        d18 = d17 / d16;
+
+        z0 = 1;
+
+     label3:
+        d19 = 0.0;
+
+        i4 = 0;
+
+     label4:
+        $i5 = lengthof r0;
+
+        if i4 >= $i5 goto label7;
+
+        if z0 == 0 goto label5;
+
+        $r5 = r0[i4];
+
+        $d7 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $r6 = r2[i4];
+
+        $d8 = virtualinvoke $r6.<java.lang.Double: double doubleValue()>();
+
+        $d9 = d18 * $d8;
+
+        d20 = $d7 - $d9;
+
+        $d10 = d20 * d20;
+
+        $r7 = r2[i4];
+
+        $d11 = virtualinvoke $r7.<java.lang.Double: double doubleValue()>();
+
+        $d12 = d18 * $d11;
+
+        $d13 = $d10 / $d12;
+
+        d19 = d19 + $d13;
+
+        goto label6;
+
+     label5:
+        $r1 = r0[i4];
+
+        $d2 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r2[i4];
+
+        $d3 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        d21 = $d2 - $d3;
+
+        $d4 = d21 * d21;
+
+        $r4 = r2[i4];
+
+        $d5 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $d6 = $d4 / $d5;
+
+        d19 = d19 + $d6;
+
+     label6:
+        i4 = i4 + 1;
+
+        goto label4;
+
+     label7:
+        return d19;
+    }
+}

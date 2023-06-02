@@ -1,0 +1,123 @@
+public class g_Test_SDL_4 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        g_Test_SDL_4 r0;
+
+        r0 := @this: g_Test_SDL_4;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double g_Test_SDL_4_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r2;
+        int $i0, i2, i3, $i4;
+        double $d1, $d2, $d3, $d4, $d5, $d6, $d8, $d9, $d10, $d11, $d12, $d13, $d14, d15, d16, d17, $d18;
+        byte $b1;
+        java.lang.Double $r1, $r3, $r4, $r5, $r6, $r7;
+        boolean z0;
+
+        r2 := @parameter0: java.lang.Double[];
+
+        r0 := @parameter1: java.lang.Double[];
+
+        d15 = 0.0;
+
+        i2 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i2 >= $i0 goto label2;
+
+        $r7 = r0[i2];
+
+        $d14 = virtualinvoke $r7.<java.lang.Double: double doubleValue()>();
+
+        d15 = d15 + $d14;
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        d16 = 1.0;
+
+        z0 = 0;
+
+        $d1 = 0.0 - d15;
+
+        $d2 = staticinvoke <java.lang.Math: double abs(double)>($d1);
+
+        $b1 = $d2 cmpl 1.0E-5;
+
+        if $b1 <= 0 goto label3;
+
+        d16 = d15 / 0.0;
+
+        z0 = 1;
+
+     label3:
+        d17 = 0.0;
+
+        i3 = 0;
+
+     label4:
+        $i4 = lengthof r0;
+
+        if i3 >= $i4 goto label7;
+
+        if z0 == 0 goto label5;
+
+        $r5 = r0[i3];
+
+        $d10 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $r6 = r2[i3];
+
+        $d11 = virtualinvoke $r6.<java.lang.Double: double doubleValue()>();
+
+        $d12 = d16 * $d11;
+
+        $d13 = $d10 / $d12;
+
+        $d18 = staticinvoke <java.lang.Math: double log(double)>($d13);
+
+        goto label6;
+
+     label5:
+        $r1 = r0[i3];
+
+        $d4 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r2[i3];
+
+        $d5 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d6 = $d4 / $d5;
+
+        $d18 = staticinvoke <java.lang.Math: double log(double)>($d6);
+
+     label6:
+        $r4 = r0[i3];
+
+        $d8 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $d9 = $d8 * $d18;
+
+        d17 = d17 + $d9;
+
+        i3 = i3 + 1;
+
+        goto label4;
+
+     label7:
+        $d3 = 2.0 * d17;
+
+        return $d3;
+    }
+}

@@ -1,0 +1,68 @@
+public class pooledMean_SDL_9 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        pooledMean_SDL_9 r0;
+
+        r0 := @this: pooledMean_SDL_9;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double pooledMean_SDL_9_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1;
+        int $i0, $i1, $i2, $i3, i4, i5;
+        double $d0, $d1;
+        java.lang.Double $r2, $r3;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        i4 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i4 >= $i0 goto label2;
+
+        $r3 = r0[i4];
+
+        virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        i4 = i4 + 1;
+
+        goto label1;
+
+     label2:
+        $i1 = lengthof r0;
+
+        $d0 = (double) $i1;
+
+        i5 = 0;
+
+     label3:
+        $i2 = lengthof r1;
+
+        if i5 >= $i2 goto label4;
+
+        $r2 = r1[i5];
+
+        virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        i5 = i5 + 1;
+
+        goto label3;
+
+     label4:
+        $i3 = lengthof r1;
+
+        $d1 = (double) $i3;
+
+        return 0.0;
+    }
+}

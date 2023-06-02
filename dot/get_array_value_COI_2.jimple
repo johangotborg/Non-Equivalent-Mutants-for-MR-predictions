@@ -1,0 +1,53 @@
+public class get_array_value_COI_2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        get_array_value_COI_2 r0;
+
+        r0 := @this: get_array_value_COI_2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int get_array_value_COI_2_m(java.lang.Integer[], java.lang.Integer)
+    {
+        java.lang.Integer r0, $r2;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7;
+        java.lang.Integer[] r1;
+
+        r1 := @parameter0: java.lang.Integer[];
+
+        r0 := @parameter1: java.lang.Integer;
+
+        $i0 = virtualinvoke r0.<java.lang.Integer: int intValue()>();
+
+        $i2 = $i0 - 1;
+
+        $i1 = lengthof r1;
+
+        if $i2 >= $i1 goto label1;
+
+        $i3 = virtualinvoke r0.<java.lang.Integer: int intValue()>();
+
+        $i4 = $i3 - 1;
+
+        if $i4 < 0 goto label2;
+
+     label1:
+        return -100000;
+
+     label2:
+        $i5 = virtualinvoke r0.<java.lang.Integer: int intValue()>();
+
+        $i6 = $i5 - 1;
+
+        $r2 = r1[$i6];
+
+        $i7 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        return $i7;
+    }
+}

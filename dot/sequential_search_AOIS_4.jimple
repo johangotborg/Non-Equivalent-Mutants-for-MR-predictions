@@ -1,0 +1,48 @@
+public class sequential_search_AOIS_4 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sequential_search_AOIS_4 r0;
+
+        r0 := @this: sequential_search_AOIS_4;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int sequential_search_AOIS_4_m(java.lang.Integer[], java.lang.Integer)
+    {
+        java.lang.Integer[] r0;
+        int $i0, i1, i2;
+        java.lang.Integer r1, $r2;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r1 := @parameter1: java.lang.Integer;
+
+        i1 = 0;
+
+     label1:
+        i2 = i1 + -1;
+
+        $i0 = lengthof r0;
+
+        if i1 >= $i0 goto label3;
+
+        $r2 = r0[i2];
+
+        if $r2 != r1 goto label2;
+
+        return i2;
+
+     label2:
+        i1 = i2 + 1;
+
+        goto label1;
+
+     label3:
+        return -1;
+    }
+}

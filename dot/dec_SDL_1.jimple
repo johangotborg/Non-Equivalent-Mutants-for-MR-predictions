@@ -1,0 +1,25 @@
+public class dec_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        dec_SDL_1 r0;
+
+        r0 := @this: dec_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void dec_SDL_1_method(int[], int[])
+    {
+        int[] r0, r1;
+
+        r0 := @parameter0: int[];
+
+        r1 := @parameter1: int[];
+
+        return;
+    }
+}

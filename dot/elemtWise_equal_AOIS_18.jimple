@@ -1,0 +1,60 @@
+public class elemtWise_equal_AOIS_18 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        elemtWise_equal_AOIS_18 r0;
+
+        r0 := @this: elemtWise_equal_AOIS_18;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static boolean[] elemtWise_equal_AOIS_18_m(java.lang.Integer[], java.lang.Integer[])
+    {
+        java.lang.Integer[] r0, r2;
+        int $i0, $i1, i2, i3;
+        boolean[] r1;
+        java.lang.Integer $r3, $r4;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r2 := @parameter1: java.lang.Integer[];
+
+        $i0 = lengthof r0;
+
+        r1 = newarray (boolean)[$i0];
+
+        i2 = 0;
+
+     label1:
+        $i1 = lengthof r0;
+
+        if i2 >= $i1 goto label4;
+
+        $r3 = r0[i2];
+
+        i3 = i2 + -1;
+
+        $r4 = r2[i2];
+
+        if $r3 != $r4 goto label2;
+
+        r1[i3] = 1;
+
+        goto label3;
+
+     label2:
+        r1[i3] = 0;
+
+     label3:
+        i2 = i3 + 1;
+
+        goto label1;
+
+     label4:
+        return r1;
+    }
+}

@@ -1,0 +1,30 @@
+digraph "void dec_LOI_4_method(int[],int[])" {
+    label="void dec_LOI_4_method(int[],int[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r1 := @parameter1",];
+    "0"->"1";
+    "2" [label="i5 = 0",];
+    "1"->"2";
+    "3" [label="label1: $i0 = lengthof r0",];
+    "2"->"3";
+    "4" [label="if i5 >= $i0 goto label2",];
+    "3"->"4";
+    "5" [label="$i1 = i5 ^ -1",];
+    "4"->"5";
+    "12" [style=filled,fillcolor=lightgray,label="label2: return",];
+    "4"->"12";
+    "6" [label="$i3 = r0[$i1]",];
+    "5"->"6";
+    "7" [label="$i2 = r1[i5]",];
+    "6"->"7";
+    "8" [label="$i4 = $i3 - $i2",];
+    "7"->"8";
+    "9" [label="r0[$i1] = $i4",];
+    "8"->"9";
+    "10" [label="i5 = i5 + 1",];
+    "9"->"10";
+    "11" [label="goto label1",];
+    "10"->"11";
+    "11"->"3";
+}

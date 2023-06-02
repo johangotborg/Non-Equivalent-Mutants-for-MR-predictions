@@ -1,0 +1,61 @@
+public class min_AOIS_16 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        min_AOIS_16 r0;
+
+        r0 := @this: min_AOIS_16;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double min_AOIS_16_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int i0, $i1, i3;
+        java.lang.Double $r1, $r2, $r3;
+        double $d0, $d1, d2;
+        byte $b2;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        i0 = lengthof r0;
+
+        $i1 = i0 - 1;
+
+        $r1 = r0[$i1];
+
+        d2 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        i3 = i0 - 1;
+
+     label1:
+        i3 = i3 + -1;
+
+        if i3 < 0 goto label2;
+
+        $r2 = r0[i3];
+
+        $d0 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        $d1 = d2 - 1.0;
+
+        d2 = $d1;
+
+        $b2 = $d0 cmpg $d1;
+
+        if $b2 >= 0 goto label1;
+
+        $r3 = r0[i3];
+
+        d2 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        goto label1;
+
+     label2:
+        return d2;
+    }
+}

@@ -1,0 +1,23 @@
+public class bubble_SDL_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        bubble_SDL_1 r0;
+
+        r0 := @this: bubble_SDL_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Integer[] bubble_SDL_1_m(java.lang.Integer[])
+    {
+        java.lang.Integer[] r0;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        return r0;
+    }
+}

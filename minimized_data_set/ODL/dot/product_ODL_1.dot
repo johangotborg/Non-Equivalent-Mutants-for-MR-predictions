@@ -1,0 +1,22 @@
+digraph "double product_ODL_1(java.lang.Double[])" {
+    label="double product_ODL_1(java.lang.Double[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="i0 = lengthof r0",];
+    "0"->"1";
+    "2" [label="d1 = 1.0",];
+    "1"->"2";
+    "3" [label="label1: if i0 < 0 goto label2",];
+    "2"->"3";
+    "4" [label="$r1 = r0[i0]",];
+    "3"->"4";
+    "8" [style=filled,fillcolor=lightgray,label="label2: return d1",];
+    "3"->"8";
+    "5" [label="$d0 = $r1.doubleValue()",];
+    "4"->"5";
+    "6" [label="d1 = d1 * $d0",];
+    "5"->"6";
+    "7" [label="goto label1",];
+    "6"->"7";
+    "7"->"3";
+}

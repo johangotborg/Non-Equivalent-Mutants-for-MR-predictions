@@ -1,0 +1,7 @@
+digraph "int count_non_zeroes_SDL_1(java.lang.Integer[])" {
+    label="int count_non_zeroes_SDL_1(java.lang.Integer[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [style=filled,fillcolor=lightgray,label="return 0",];
+    "0"->"1";
+}

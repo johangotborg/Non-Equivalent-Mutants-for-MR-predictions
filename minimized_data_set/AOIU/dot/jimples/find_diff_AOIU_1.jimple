@@ -1,0 +1,58 @@
+public class find_diff_AOIU_1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        find_diff_AOIU_1 r0;
+
+        r0 := @this: find_diff_AOIU_1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int[] find_diff_AOIU_1(java.lang.Integer[], java.lang.Integer[])
+    {
+        java.lang.Integer[] r0, r3;
+        int $i0, $i1, $i2, $i3, $i4, $i5, i6;
+        int[] r1;
+        java.lang.Integer $r2, $r4;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r3 := @parameter1: java.lang.Integer[];
+
+        $i0 = lengthof r0;
+
+        $i1 = neg $i0;
+
+        r1 = newarray (int)[$i1];
+
+        i6 = 0;
+
+     label1:
+        $i2 = lengthof r0;
+
+        if i6 >= $i2 goto label2;
+
+        $r2 = r0[i6];
+
+        $i3 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();
+
+        $r4 = r3[i6];
+
+        $i4 = virtualinvoke $r4.<java.lang.Integer: int intValue()>();
+
+        $i5 = $i3 - $i4;
+
+        r1[i6] = $i5;
+
+        i6 = i6 + 1;
+
+        goto label1;
+
+     label2:
+        return r1;
+    }
+}

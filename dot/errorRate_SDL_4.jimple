@@ -1,0 +1,65 @@
+public class errorRate_SDL_4 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        errorRate_SDL_4 r0;
+
+        r0 := @this: errorRate_SDL_4;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double errorRate_SDL_4_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1;
+        int $i0, i2;
+        double $d1, $d2, d3;
+        java.lang.Double $r2, $r3, $r4;
+        byte $b1;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        d3 = 0.0;
+
+        i2 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i2 >= $i0 goto label4;
+
+        $r2 = r1[i2];
+
+        $d2 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        $b1 = $d2 cmpl -1.0;
+
+        if $b1 != 0 goto label2;
+
+        goto label3;
+
+     label2:
+        $r4 = r1[i2];
+
+        $r3 = r0[i2];
+
+        if $r4 == $r3 goto label3;
+
+        d3 = d3 + 1.0;
+
+     label3:
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label4:
+        $d1 = d3 / 0.0;
+
+        return $d1;
+    }
+}

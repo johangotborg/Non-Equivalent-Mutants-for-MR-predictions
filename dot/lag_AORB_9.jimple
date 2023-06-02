@@ -1,0 +1,104 @@
+public class lag_AORB_9 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        lag_AORB_9 r0;
+
+        r0 := @this: lag_AORB_9;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double lag_AORB_9_m(java.lang.Double[], java.lang.Double)
+    {
+        java.lang.Double[] r0;
+        int i0, $i1, $i2, $i3, i4;
+        java.lang.Double $r1, r2, $r3, $r4, $r5;
+        double $d0, $d1, $d2, $d3, $d4, $d5, d6, $d7, $d8, d9, $d10, $d11, d12, $d13, $d14, $d15, $d16, $d17, $d18, $d19, $d20, d21, d22;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r2 := @parameter1: java.lang.Double;
+
+        i0 = lengthof r0;
+
+        d21 = 0.0;
+
+        $r1 = r0[0];
+
+        $d0 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        $d1 = virtualinvoke r2.<java.lang.Double: double doubleValue()>();
+
+        $d2 = $d0 - $d1;
+
+        $r3 = r0[0];
+
+        $d3 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d4 = virtualinvoke r2.<java.lang.Double: double doubleValue()>();
+
+        $d5 = $d3 - $d4;
+
+        d22 = $d2 * $d5;
+
+        i4 = 1;
+
+     label1:
+        if i4 >= i0 goto label2;
+
+        $i1 = i4 - 1;
+
+        $r4 = r0[$i1];
+
+        $d7 = virtualinvoke $r4.<java.lang.Double: double doubleValue()>();
+
+        $d8 = virtualinvoke r2.<java.lang.Double: double doubleValue()>();
+
+        d9 = $d7 - $d8;
+
+        $r5 = r0[i4];
+
+        $d10 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        $d11 = virtualinvoke r2.<java.lang.Double: double doubleValue()>();
+
+        d12 = $d10 - $d11;
+
+        $d13 = d9 * d12;
+
+        $d15 = $d13 * d21;
+
+        $i2 = i4 + 1;
+
+        $d14 = (double) $i2;
+
+        $d16 = $d15 / $d14;
+
+        d21 = d21 + $d16;
+
+        $d17 = d12 * d12;
+
+        $d19 = $d17 - d22;
+
+        $i3 = i4 + 1;
+
+        $d18 = (double) $i3;
+
+        $d20 = $d19 / $d18;
+
+        d22 = d22 + $d20;
+
+        i4 = i4 + 1;
+
+        goto label1;
+
+     label2:
+        d6 = d21 / d22;
+
+        return d6;
+    }
+}

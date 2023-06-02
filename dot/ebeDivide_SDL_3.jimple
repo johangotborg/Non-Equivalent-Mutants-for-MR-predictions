@@ -1,0 +1,25 @@
+public class ebeDivide_SDL_3 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        ebeDivide_SDL_3 r0;
+
+        r0 := @this: ebeDivide_SDL_3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Double[] ebeDivide_SDL_3_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r1;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r1 := @parameter1: java.lang.Double[];
+
+        return null;
+    }
+}

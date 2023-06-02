@@ -1,0 +1,23 @@
+digraph "boolean check_equal_SDL_8_m(java.lang.Integer[],java.lang.Integer[])" {
+    label="boolean check_equal_SDL_8_m(java.lang.Integer[],java.lang.Integer[])";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @parameter0",];
+    "1" [label="r1 := @parameter1",];
+    "0"->"1";
+    "2" [label="$i1 = lengthof r0",];
+    "1"->"2";
+    "3" [label="$i0 = lengthof r1",];
+    "2"->"3";
+    "4" [label="if $i1 == $i0 goto label1",];
+    "3"->"4";
+    "5" [style=filled,fillcolor=lightgray,label="return 0",];
+    "4"->"5";
+    "6" [label="label1: $i3 = lengthof r0",];
+    "4"->"6";
+    "7" [label="if 0 >= $i3 goto label2",];
+    "6"->"7";
+    "8" [style=filled,fillcolor=lightgray,label="return 0",];
+    "7"->"8";
+    "9" [style=filled,fillcolor=lightgray,label="label2: return 1",];
+    "7"->"9";
+}

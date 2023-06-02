@@ -1,0 +1,56 @@
+public class entropy_SDL_6 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        entropy_SDL_6 r0;
+
+        r0 := @this: entropy_SDL_6;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double entropy_SDL_6_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int $i0, $i1, i2, i3;
+        double $d1;
+        java.lang.Double $r1;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        i2 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i2 >= $i0 goto label2;
+
+        $r1 = r0[i2];
+
+        virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        i3 = 0;
+
+     label3:
+        $i1 = lengthof r0;
+
+        if i3 >= $i1 goto label4;
+
+        i3 = i3 + 1;
+
+        goto label3;
+
+     label4:
+        $d1 = neg 0.0;
+
+        return $d1;
+    }
+}

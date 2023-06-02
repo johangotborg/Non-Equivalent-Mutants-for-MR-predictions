@@ -1,0 +1,55 @@
+public class dot_product_AOIS_14 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        dot_product_AOIS_14 r0;
+
+        r0 := @this: dot_product_AOIS_14;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int dot_product_AOIS_14_m(java.lang.Integer[], java.lang.Integer[])
+    {
+        java.lang.Integer[] r0, r2;
+        int $i0, $i1, $i2, $i3, i4, i5, i6;
+        java.lang.Integer $r1, $r3;
+
+        r0 := @parameter0: java.lang.Integer[];
+
+        r2 := @parameter1: java.lang.Integer[];
+
+        i4 = 0;
+
+        i5 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i5 >= $i0 goto label2;
+
+        $r1 = r0[i5];
+
+        $i1 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        i6 = i5 + -1;
+
+        $r3 = r2[i6];
+
+        $i2 = virtualinvoke $r3.<java.lang.Integer: int intValue()>();
+
+        $i3 = $i1 * $i2;
+
+        i4 = i4 + $i3;
+
+        i5 = i6 + 1;
+
+        goto label1;
+
+     label2:
+        return i4;
+    }
+}

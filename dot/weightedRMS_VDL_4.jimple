@@ -1,0 +1,68 @@
+public class weightedRMS_VDL_4 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        weightedRMS_VDL_4 r0;
+
+        r0 := @this: weightedRMS_VDL_4;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static double weightedRMS_VDL_4_m(java.lang.Double[], java.lang.Double[])
+    {
+        java.lang.Double[] r0, r4;
+        int $i0, i1;
+        double $d0, $d1, $d2, $d3, $d4, $d5, d6, d7;
+        java.lang.Double $r1, $r2, $r3, $r5;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        r4 := @parameter1: java.lang.Double[];
+
+        d6 = 0.0;
+
+        d7 = 0.0;
+
+        i1 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i1 >= $i0 goto label2;
+
+        $r1 = r0[i1];
+
+        $d1 = virtualinvoke $r1.<java.lang.Double: double doubleValue()>();
+
+        d6 = d6 + $d1;
+
+        $r2 = r0[i1];
+
+        $d2 = virtualinvoke $r2.<java.lang.Double: double doubleValue()>();
+
+        $r3 = r0[i1];
+
+        $d3 = virtualinvoke $r3.<java.lang.Double: double doubleValue()>();
+
+        $d4 = $d2 * $d3;
+
+        $r5 = r4[i1];
+
+        $d5 = virtualinvoke $r5.<java.lang.Double: double doubleValue()>();
+
+        d7 = $d4 * $d5;
+
+        i1 = i1 + 1;
+
+        goto label1;
+
+     label2:
+        $d0 = d6 / d7;
+
+        return $d0;
+    }
+}

@@ -1,0 +1,41 @@
+public class square_VDL_4 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        square_VDL_4 r0;
+
+        r0 := @this: square_VDL_4;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static java.lang.Double[] square_VDL_4_m(java.lang.Double[])
+    {
+        java.lang.Double[] r0;
+        int $i0, i1;
+        java.lang.Double $r1;
+
+        r0 := @parameter0: java.lang.Double[];
+
+        i1 = 0;
+
+     label1:
+        $i0 = lengthof r0;
+
+        if i1 >= $i0 goto label2;
+
+        $r1 = r0[i1];
+
+        r0[i1] = $r1;
+
+        i1 = i1 + 1;
+
+        goto label1;
+
+     label2:
+        return r0;
+    }
+}

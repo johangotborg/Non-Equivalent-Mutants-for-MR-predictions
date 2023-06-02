@@ -1,0 +1,18 @@
+package data_set.evalNewton.mutations;
+// This is a mutant program.
+// Author : ysma
+
+public class evalNewton_CDL_2
+{
+
+    public static  double evalNewton_CDL_2( java.lang.Double[] a, java.lang.Double[] c, java.lang.Double z )
+    {
+        final int n = c.length - 1;
+        double value = a[n];
+        for (int i = n; i >= 0; i--) {
+            value = a[i] + (z - c[i]) * value;
+        }
+        return value;
+    }
+
+}
